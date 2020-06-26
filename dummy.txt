@@ -1,1 +1,13 @@
-dummy file
+NOTES:
+
+			ENVIRONMENT SETUP - ANACONDA - for yolov3 model create, save, process images, insert to neo4j
+conda create -n ce2da41 python=3.7
+conda install jupyter
+conda install pandas
+pip install py2neo
+#pip install neo4j -- not using this now
+conda install pytz
+conda install -c conda-forge opencv
+conda install keras
+conda install pydot
+
