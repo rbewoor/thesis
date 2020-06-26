@@ -11,7 +11,3 @@ conda install -c conda-forge opencv
 conda install keras
 conda install pydot
 
-
-on 2020.06.22 , from 0700 to 1900 (11 hours) processed the flickr30k dataset, on Yolov3, coco80 model. Directory had 31783 jpg images. Specified, 8 consumers, 250 files per task. Created 128 jobs. Only 124 output files were created. 4 of the processes never rejoined main process - CHECK WHAT PROBLEM!
-Console output copied to file: console_op_process_flick30k_2020062226_1.txt
-
