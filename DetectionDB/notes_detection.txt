@@ -5,3 +5,6 @@ Console output copied to file: console_op_process_test127image_20200622.txt
 
 on 2020.06.22 , from 0700 to 1900 (11 hours) processed the flickr30k dataset, on Yolov3, coco80 model. Directory had 31783 jpg images. Specified, 8 consumers, 250 files per task. Created 128 jobs. Only 124 output files were created. 4 of the processes never rejoined main process - CHECK WHAT PROBLEM!
 Console output copied to file: console_op_process_flickr30k_20200626.txt
+
+on 2020.06.22 , processed CocoVal2017 dataset on Yolov3, coco80 model. Directory had 5000 jpg images. Specified, 8 consumers, 125 files per task. Created 40 jobs. All 40 output files were created.
+Console output copied to file: console_op_process_cocoval5k_20200626.txt
