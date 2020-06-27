@@ -1,0 +1,944 @@
+(ce3th1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_val2017_5k/val2017" -isrc coco_val_2017 -sf 25 -nipt 125 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+
+
+Images folder: /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_val2017_5k/val2017
+Images found count = 5000
+Image source = coco_val_2017
+With nipt = 125, number of jobs required = 40
+
+Created 8 consumers
+Process Consumer-1 picked job = 1
+Process Consumer-2 picked job = 2
+Process Consumer-3 picked job = 3
+Process Consumer-4 picked job = 4
+Process Consumer-5 picked job = 5
+Process Consumer-6 picked job = 6
+Process Consumer-7 picked job = 7
+Process Consumer-8 picked job = 8
+Using TensorFlow backend.
+Using TensorFlow backend.
+Using TensorFlow backend.
+Using TensorFlow backend.
+Using TensorFlow backend.
+Using TensorFlow backend.
+Using TensorFlow backend.
+Using TensorFlow backend.
+2020-06-27 01:53:31.245127: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-06-27 01:53:31.245155: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-06-27 01:53:31.245165: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-06-27 01:53:31.245190: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-06-27 01:53:31.257107: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-06-27 01:53:31.257107: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-06-27 01:53:31.257107: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-06-27 01:53:31.257107: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-06-27 01:53:31.396843: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-06-27 01:53:31.396902: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-06-27 01:53:31.396927: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-06-27 01:53:31.396935: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-06-27 01:53:31.396936: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-06-27 01:53:31.396991: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-06-27 01:53:31.396991: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-06-27 01:53:31.403297: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564f8ab28230 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-27 01:53:31.403378: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-27 01:53:31.403447: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564f8ac58410 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-27 01:53:31.403532: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-27 01:53:31.403528: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564f8ac57ee0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-27 01:53:31.403621: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-27 01:53:31.403609: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564f8ac57620 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-27 01:53:31.403707: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-27 01:53:31.403759: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564f8ac578a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-27 01:53:31.403750: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564f8a08ca60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-27 01:53:31.403829: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-27 01:53:31.403838: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-27 01:53:31.403909: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564f8a5fa1f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-27 01:53:31.404015: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-27 01:53:31.418826: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-06-27 01:53:31.420132: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564f8aaf5170 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-06-27 01:53:31.420185: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-06-27 01:53:31.428031: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-06-27 01:53:31.428078: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-06-27 01:53:31.428091: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-06-27 01:53:31.428082: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-06-27 01:53:31.428093: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-06-27 01:53:31.428108: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-06-27 01:53:31.428121: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-06-27 01:53:31.428144: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+/home/rohit/anaconda3/envs/ce3th1/lib/python3.7/site-packages/keras/engine/saving.py:341: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+/home/rohit/anaconda3/envs/ce3th1/lib/python3.7/site-packages/keras/engine/saving.py:341: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+/home/rohit/anaconda3/envs/ce3th1/lib/python3.7/site-packages/keras/engine/saving.py:341: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+/home/rohit/anaconda3/envs/ce3th1/lib/python3.7/site-packages/keras/engine/saving.py:341: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+
+
+Consumer-6-Job-6:: Processing image 1 of 125 : 000000384666.jpg
+
+Consumer-2-Job-2:: Processing image 1 of 125 : 000000233771.jpg
+
+Consumer-7-Job-7:: Processing image 1 of 125 : 000000271457.jpg
+
+
+
+
+Consumer-1-Job-1:: Processing image 1 of 125 : 000000000139.jpg
+/home/rohit/anaconda3/envs/ce3th1/lib/python3.7/site-packages/keras/engine/saving.py:341: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+/home/rohit/anaconda3/envs/ce3th1/lib/python3.7/site-packages/keras/engine/saving.py:341: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+
+
+Consumer-8-Job-8:: Processing image 1 of 125 : 000000008762.jpg
+
+
+Consumer-4-Job-4:: Processing image 1 of 125 : 000000261161.jpg
+/home/rohit/anaconda3/envs/ce3th1/lib/python3.7/site-packages/keras/engine/saving.py:341: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+/home/rohit/anaconda3/envs/ce3th1/lib/python3.7/site-packages/keras/engine/saving.py:341: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+
+
+Consumer-3-Job-3:: Processing image 1 of 125 : 000000462614.jpg
+
+Consumer-5-Job-5:: Processing image 1 of 125 : 000000064868.jpg
+
+
+
+Consumer-3-Job-3:: Processing image 26 of 125 : 000000464476.jpg
+
+
+Consumer-8-Job-8:: Processing image 26 of 125 : 000000454978.jpg
+
+
+Consumer-7-Job-7:: Processing image 26 of 125 : 000000274272.jpg
+
+
+Consumer-1-Job-1:: Processing image 26 of 125 : 000000322352.jpg
+
+
+Consumer-4-Job-4:: Processing image 26 of 125 : 000000442661.jpg
+
+
+Consumer-2-Job-2:: Processing image 26 of 125 : 000000085329.jpg
+
+
+Consumer-6-Job-6:: Processing image 26 of 125 : 000000101068.jpg
+
+
+Consumer-5-Job-5:: Processing image 26 of 125 : 000000168974.jpg
+
+
+Consumer-8-Job-8:: Processing image 51 of 125 : 000000078266.jpg
+
+
+Consumer-7-Job-7:: Processing image 51 of 125 : 000000370042.jpg
+
+
+Consumer-3-Job-3:: Processing image 51 of 125 : 000000187362.jpg
+
+
+Consumer-1-Job-1:: Processing image 51 of 125 : 000000154705.jpg
+
+
+Consumer-2-Job-2:: Processing image 51 of 125 : 000000369812.jpg
+
+
+Consumer-4-Job-4:: Processing image 51 of 125 : 000000310862.jpg
+
+
+Consumer-5-Job-5:: Processing image 51 of 125 : 000000489046.jpg
+
+
+Consumer-6-Job-6:: Processing image 51 of 125 : 000000249025.jpg
+
+
+Consumer-7-Job-7:: Processing image 76 of 125 : 000000411938.jpg
+
+
+Consumer-8-Job-8:: Processing image 76 of 125 : 000000178469.jpg
+
+
+Consumer-1-Job-1:: Processing image 76 of 125 : 000000004395.jpg
+
+
+Consumer-3-Job-3:: Processing image 76 of 125 : 000000402473.jpg
+
+
+Consumer-2-Job-2:: Processing image 76 of 125 : 000000287959.jpg
+
+
+Consumer-5-Job-5:: Processing image 76 of 125 : 000000144784.jpg
+
+
+Consumer-4-Job-4:: Processing image 76 of 125 : 000000210520.jpg
+
+
+Consumer-6-Job-6:: Processing image 76 of 125 : 000000567886.jpg
+
+
+Consumer-7-Job-7:: Processing image 101 of 125 : 000000300913.jpg
+
+
+Consumer-1-Job-1:: Processing image 101 of 125 : 000000068286.jpg
+
+
+Consumer-8-Job-8:: Processing image 101 of 125 : 000000521282.jpg
+
+
+Consumer-3-Job-3:: Processing image 101 of 125 : 000000553731.jpg
+
+
+Consumer-5-Job-5:: Processing image 101 of 125 : 000000021604.jpg
+
+
+Consumer-2-Job-2:: Processing image 101 of 125 : 000000121744.jpg
+
+
+Consumer-6-Job-6:: Processing image 101 of 125 : 000000338901.jpg
+
+
+Consumer-4-Job-4:: Processing image 101 of 125 : 000000527695.jpg
+
+
+Consumer-7-Job-7:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_7.txt
+Process Consumer-7 picked job = 9
+
+
+Consumer-7-Job-9:: Processing image 1 of 125 : 000000542856.jpg
+
+
+Consumer-8-Job-8:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_8.txt
+Process Consumer-8 picked job = 10
+
+
+Consumer-1-Job-1:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_1.txt
+Process Consumer-1 picked job = 11
+
+
+Consumer-8-Job-10:: Processing image 1 of 125 : 000000500663.jpg
+
+
+Consumer-1-Job-11:: Processing image 1 of 125 : 000000315001.jpg
+
+
+Consumer-3-Job-3:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_3.txt
+Process Consumer-3 picked job = 12
+
+
+Consumer-2-Job-2:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_2.txt
+Process Consumer-2 picked job = 13
+
+
+Consumer-3-Job-12:: Processing image 1 of 125 : 000000331280.jpg
+
+
+Consumer-2-Job-13:: Processing image 1 of 125 : 000000561256.jpg
+
+
+Consumer-5-Job-5:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_5.txt
+Process Consumer-5 picked job = 14
+
+
+Consumer-5-Job-14:: Processing image 1 of 125 : 000000376307.jpg
+
+
+Consumer-4-Job-4:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_4.txt
+Process Consumer-4 picked job = 15
+
+
+Consumer-4-Job-15:: Processing image 1 of 125 : 000000486104.jpg
+
+
+Consumer-6-Job-6:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_6.txt
+Process Consumer-6 picked job = 16
+
+
+Consumer-6-Job-16:: Processing image 1 of 125 : 000000343706.jpg
+
+
+Consumer-3-Job-12:: Processing image 26 of 125 : 000000128051.jpg
+
+
+Consumer-7-Job-9:: Processing image 26 of 125 : 000000224093.jpg
+
+
+Consumer-1-Job-11:: Processing image 26 of 125 : 000000254016.jpg
+
+
+Consumer-8-Job-10:: Processing image 26 of 125 : 000000163746.jpg
+
+
+Consumer-5-Job-14:: Processing image 26 of 125 : 000000449190.jpg
+
+
+Consumer-4-Job-15:: Processing image 26 of 125 : 000000365207.jpg
+
+
+Consumer-2-Job-13:: Processing image 26 of 125 : 000000202001.jpg
+
+
+Consumer-6-Job-16:: Processing image 26 of 125 : 000000535306.jpg
+
+
+Consumer-3-Job-12:: Processing image 51 of 125 : 000000130586.jpg
+
+
+Consumer-7-Job-9:: Processing image 51 of 125 : 000000058029.jpg
+
+
+Consumer-1-Job-11:: Processing image 51 of 125 : 000000390555.jpg
+
+
+Consumer-8-Job-10:: Processing image 51 of 125 : 000000092177.jpg
+
+
+Consumer-4-Job-15:: Processing image 51 of 125 : 000000547854.jpg
+
+
+Consumer-6-Job-16:: Processing image 51 of 125 : 000000191580.jpg
+
+
+Consumer-5-Job-14:: Processing image 51 of 125 : 000000173183.jpg
+
+
+Consumer-2-Job-13:: Processing image 51 of 125 : 000000280918.jpg
+
+
+Consumer-3-Job-12:: Processing image 76 of 125 : 000000183127.jpg
+
+
+Consumer-7-Job-9:: Processing image 76 of 125 : 000000134034.jpg
+
+
+Consumer-1-Job-11:: Processing image 76 of 125 : 000000574315.jpg
+
+
+Consumer-8-Job-10:: Processing image 76 of 125 : 000000111207.jpg
+
+
+Consumer-6-Job-16:: Processing image 76 of 125 : 000000014888.jpg
+
+
+Consumer-4-Job-15:: Processing image 76 of 125 : 000000355240.jpg
+
+
+Consumer-5-Job-14:: Processing image 76 of 125 : 000000149568.jpg
+
+
+Consumer-3-Job-12:: Processing image 101 of 125 : 000000213035.jpg
+
+
+Consumer-2-Job-13:: Processing image 76 of 125 : 000000294350.jpg
+
+
+Consumer-7-Job-9:: Processing image 101 of 125 : 000000360325.jpg
+
+
+Consumer-8-Job-10:: Processing image 101 of 125 : 000000029397.jpg
+
+
+Consumer-4-Job-15:: Processing image 101 of 125 : 000000459500.jpg
+
+
+Consumer-6-Job-16:: Processing image 101 of 125 : 000000106235.jpg
+
+
+Consumer-1-Job-11:: Processing image 101 of 125 : 000000470773.jpg
+
+
+Consumer-5-Job-14:: Processing image 101 of 125 : 000000494759.jpg
+
+
+Consumer-3-Job-12:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_12.txt
+Process Consumer-3 picked job = 17
+
+
+Consumer-3-Job-17:: Processing image 1 of 125 : 000000229111.jpg
+
+
+Consumer-2-Job-13:: Processing image 101 of 125 : 000000418961.jpg
+
+
+Consumer-7-Job-9:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_9.txt
+Process Consumer-7 picked job = 18
+
+
+Consumer-7-Job-18:: Processing image 1 of 125 : 000000218997.jpg
+
+
+Consumer-8-Job-10:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_10.txt
+Process Consumer-8 picked job = 19
+
+
+Consumer-8-Job-19:: Processing image 1 of 125 : 000000139077.jpg
+
+
+Consumer-4-Job-15:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_15.txt
+Process Consumer-4 picked job = 20
+
+
+Consumer-5-Job-14:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_14.txt
+Process Consumer-5 picked job = 21
+
+
+Consumer-4-Job-20:: Processing image 1 of 125 : 000000429109.jpg
+
+
+Consumer-6-Job-16:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_16.txt
+Process Consumer-6 picked job = 22
+
+
+Consumer-5-Job-21:: Processing image 1 of 125 : 000000396903.jpg
+
+
+Consumer-6-Job-22:: Processing image 1 of 125 : 000000096960.jpg
+
+
+Consumer-1-Job-11:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_11.txt
+Process Consumer-1 picked job = 23
+
+
+Consumer-1-Job-23:: Processing image 1 of 125 : 000000525322.jpg
+
+
+Consumer-3-Job-17:: Processing image 26 of 125 : 000000407943.jpg
+
+
+Consumer-2-Job-13:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_13.txt
+Process Consumer-2 picked job = 24
+
+
+Consumer-2-Job-24:: Processing image 1 of 125 : 000000298396.jpg
+
+
+Consumer-8-Job-19:: Processing image 26 of 125 : 000000268996.jpg
+
+
+Consumer-7-Job-18:: Processing image 26 of 125 : 000000005477.jpg
+
+
+Consumer-4-Job-20:: Processing image 26 of 125 : 000000432085.jpg
+
+
+Consumer-1-Job-23:: Processing image 26 of 125 : 000000374551.jpg
+
+
+Consumer-5-Job-21:: Processing image 26 of 125 : 000000415716.jpg
+
+
+Consumer-6-Job-22:: Processing image 26 of 125 : 000000275392.jpg
+
+
+Consumer-3-Job-17:: Processing image 51 of 125 : 000000308631.jpg
+
+
+Consumer-8-Job-19:: Processing image 51 of 125 : 000000485237.jpg
+
+
+Consumer-7-Job-18:: Processing image 51 of 125 : 000000507042.jpg
+
+
+Consumer-2-Job-24:: Processing image 26 of 125 : 000000266768.jpg
+
+
+Consumer-4-Job-20:: Processing image 51 of 125 : 000000116439.jpg
+
+
+Consumer-5-Job-21:: Processing image 51 of 125 : 000000417632.jpg
+
+
+Consumer-1-Job-23:: Processing image 51 of 125 : 000000569976.jpg
+
+
+Consumer-3-Job-17:: Processing image 76 of 125 : 000000036861.jpg
+
+
+Consumer-6-Job-22:: Processing image 51 of 125 : 000000278848.jpg
+
+
+Consumer-8-Job-19:: Processing image 76 of 125 : 000000284698.jpg
+
+
+Consumer-7-Job-18:: Processing image 76 of 125 : 000000514914.jpg
+
+
+Consumer-4-Job-20:: Processing image 76 of 125 : 000000061268.jpg
+
+
+Consumer-2-Job-24:: Processing image 51 of 125 : 000000124659.jpg
+
+
+Consumer-5-Job-21:: Processing image 76 of 125 : 000000356424.jpg
+
+
+Consumer-1-Job-23:: Processing image 76 of 125 : 000000236784.jpg
+
+
+Consumer-3-Job-17:: Processing image 101 of 125 : 000000071226.jpg
+
+
+Consumer-6-Job-22:: Processing image 76 of 125 : 000000257478.jpg
+
+
+Consumer-8-Job-19:: Processing image 101 of 125 : 000000159791.jpg
+
+
+Consumer-7-Job-18:: Processing image 101 of 125 : 000000024919.jpg
+
+
+Consumer-4-Job-20:: Processing image 101 of 125 : 000000440617.jpg
+
+
+Consumer-2-Job-24:: Processing image 76 of 125 : 000000404479.jpg
+
+
+Consumer-5-Job-21:: Processing image 101 of 125 : 000000326082.jpg
+
+
+Consumer-1-Job-23:: Processing image 101 of 125 : 000000251824.jpg
+
+
+Consumer-3-Job-17:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_17.txt
+Process Consumer-3 picked job = 25
+
+
+Consumer-3-Job-25:: Processing image 1 of 125 : 000000530146.jpg
+
+
+Consumer-6-Job-22:: Processing image 101 of 125 : 000000260925.jpg
+
+
+Consumer-8-Job-19:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_19.txt
+Process Consumer-8 picked job = 26
+
+
+Consumer-8-Job-26:: Processing image 1 of 125 : 000000468124.jpg
+
+
+Consumer-7-Job-18:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_18.txt
+Process Consumer-7 picked job = 27
+
+
+Consumer-4-Job-20:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_20.txt
+Process Consumer-4 picked job = 28
+
+
+Consumer-7-Job-27:: Processing image 1 of 125 : 000000244019.jpg
+
+
+Consumer-2-Job-24:: Processing image 101 of 125 : 000000386879.jpg
+
+
+Consumer-4-Job-28:: Processing image 1 of 125 : 000000213445.jpg
+
+
+Consumer-5-Job-21:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_21.txt
+Process Consumer-5 picked job = 29
+
+
+Consumer-5-Job-29:: Processing image 1 of 125 : 000000456292.jpg
+
+
+Consumer-1-Job-23:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_23.txt
+Process Consumer-1 picked job = 30
+
+
+Consumer-1-Job-30:: Processing image 1 of 125 : 000000194724.jpg
+
+
+Consumer-3-Job-25:: Processing image 26 of 125 : 000000532855.jpg
+
+
+Consumer-8-Job-26:: Processing image 26 of 125 : 000000153510.jpg
+
+
+Consumer-6-Job-22:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_22.txt
+Process Consumer-6 picked job = 31
+
+
+Consumer-6-Job-31:: Processing image 1 of 125 : 000000513181.jpg
+
+
+Consumer-2-Job-24:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_24.txt
+Process Consumer-2 picked job = 32
+
+
+Consumer-2-Job-32:: Processing image 1 of 125 : 000000460841.jpg
+
+
+Consumer-7-Job-27:: Processing image 26 of 125 : 000000451084.jpg
+
+
+Consumer-4-Job-28:: Processing image 26 of 125 : 000000165351.jpg
+
+
+Consumer-8-Job-26:: Processing image 51 of 125 : 000000292415.jpg
+
+
+Consumer-5-Job-29:: Processing image 26 of 125 : 000000017178.jpg
+
+
+Consumer-1-Job-30:: Processing image 26 of 125 : 000000201418.jpg
+
+
+Consumer-6-Job-31:: Processing image 26 of 125 : 000000162035.jpg
+
+
+Consumer-3-Job-25:: Processing image 51 of 125 : 000000314264.jpg
+
+
+Consumer-2-Job-32:: Processing image 26 of 125 : 000000141597.jpg
+
+
+Consumer-7-Job-27:: Processing image 51 of 125 : 000000490936.jpg
+
+
+Consumer-4-Job-28:: Processing image 51 of 125 : 000000038048.jpg
+
+
+Consumer-5-Job-29:: Processing image 51 of 125 : 000000226147.jpg
+
+
+Consumer-3-Job-25:: Processing image 76 of 125 : 000000088848.jpg
+
+
+Consumer-1-Job-30:: Processing image 51 of 125 : 000000334309.jpg
+
+
+Consumer-8-Job-26:: Processing image 76 of 125 : 000000563470.jpg
+
+
+Consumer-6-Job-31:: Processing image 51 of 125 : 000000498919.jpg
+
+
+Consumer-2-Job-32:: Processing image 51 of 125 : 000000188296.jpg
+
+
+Consumer-7-Job-27:: Processing image 76 of 125 : 000000522638.jpg
+
+
+Consumer-4-Job-28:: Processing image 76 of 125 : 000000537506.jpg
+
+
+Consumer-1-Job-30:: Processing image 76 of 125 : 000000007108.jpg
+
+
+Consumer-8-Job-26:: Processing image 101 of 125 : 000000207538.jpg
+
+
+Consumer-5-Job-29:: Processing image 76 of 125 : 000000320425.jpg
+
+
+Consumer-3-Job-25:: Processing image 101 of 125 : 000000465179.jpg
+
+
+Consumer-7-Job-27:: Processing image 101 of 125 : 000000344909.jpg
+
+
+Consumer-2-Job-32:: Processing image 76 of 125 : 000000410221.jpg
+
+
+Consumer-6-Job-31:: Processing image 76 of 125 : 000000351609.jpg
+
+
+Consumer-8-Job-26:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_26.txt
+Process Consumer-8 picked job = 33
+
+
+Consumer-4-Job-28:: Processing image 101 of 125 : 000000379441.jpg
+
+
+Consumer-8-Job-33:: Processing image 1 of 125 : 000000053529.jpg
+
+
+Consumer-1-Job-30:: Processing image 101 of 125 : 000000184384.jpg
+
+
+Consumer-5-Job-29:: Processing image 101 of 125 : 000000418281.jpg
+
+
+Consumer-3-Job-25:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_25.txt
+Process Consumer-3 picked job = 34
+
+
+Consumer-3-Job-34:: Processing image 1 of 125 : 000000032570.jpg
+
+
+Consumer-6-Job-31:: Processing image 101 of 125 : 000000422836.jpg
+
+
+Consumer-2-Job-32:: Processing image 101 of 125 : 000000328430.jpg
+
+
+Consumer-7-Job-27:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_27.txt
+Process Consumer-7 picked job = 35
+
+
+Consumer-7-Job-35:: Processing image 1 of 125 : 000000263425.jpg
+
+
+Consumer-4-Job-28:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_28.txt
+Process Consumer-4 picked job = 36
+
+
+Consumer-5-Job-29:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_29.txt
+Process Consumer-5 picked job = 37
+
+
+Consumer-4-Job-36:: Processing image 1 of 125 : 000000438226.jpg
+
+
+Consumer-5-Job-37:: Processing image 1 of 125 : 000000082085.jpg
+
+
+Consumer-1-Job-30:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_30.txt
+Process Consumer-1 picked job = 38
+
+
+Consumer-8-Job-33:: Processing image 26 of 125 : 000000022623.jpg
+
+
+Consumer-1-Job-38:: Processing image 1 of 125 : 000000570782.jpg
+
+
+Consumer-6-Job-31:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_31.txt
+Process Consumer-6 picked job = 39
+
+
+Consumer-3-Job-34:: Processing image 26 of 125 : 000000269932.jpg
+
+
+Consumer-6-Job-39:: Processing image 1 of 125 : 000000519569.jpg
+
+
+Consumer-2-Job-32:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_32.txt
+Process Consumer-2 picked job = 40
+
+
+Consumer-2-Job-40:: Processing image 1 of 125 : 000000094871.jpg
+
+
+Consumer-7-Job-35:: Processing image 26 of 125 : 000000397354.jpg
+
+
+Consumer-5-Job-37:: Processing image 26 of 125 : 000000581100.jpg
+
+
+Consumer-4-Job-36:: Processing image 26 of 125 : 000000557672.jpg
+
+
+Consumer-1-Job-38:: Processing image 26 of 125 : 000000289741.jpg
+
+
+Consumer-6-Job-39:: Processing image 26 of 125 : 000000175438.jpg
+
+
+Consumer-8-Job-33:: Processing image 51 of 125 : 000000103723.jpg
+
+
+Consumer-3-Job-34:: Processing image 51 of 125 : 000000446207.jpg
+
+
+Consumer-2-Job-40:: Processing image 26 of 125 : 000000475484.jpg
+
+
+Consumer-5-Job-37:: Processing image 51 of 125 : 000000575357.jpg
+
+
+Consumer-4-Job-36:: Processing image 51 of 125 : 000000286908.jpg
+
+
+Consumer-7-Job-35:: Processing image 51 of 125 : 000000550322.jpg
+
+
+Consumer-1-Job-38:: Processing image 51 of 125 : 000000050331.jpg
+
+
+Consumer-6-Job-39:: Processing image 51 of 125 : 000000427655.jpg
+
+
+Consumer-8-Job-33:: Processing image 76 of 125 : 000000473015.jpg
+
+
+Consumer-2-Job-40:: Processing image 51 of 125 : 000000205647.jpg
+
+
+Consumer-3-Job-34:: Processing image 76 of 125 : 000000012280.jpg
+
+
+Consumer-4-Job-36:: Processing image 76 of 125 : 000000303908.jpg
+
+
+Consumer-5-Job-37:: Processing image 76 of 125 : 000000027620.jpg
+
+
+Consumer-7-Job-35:: Processing image 76 of 125 : 000000074733.jpg
+
+
+Consumer-8-Job-33:: Processing image 101 of 125 : 000000108244.jpg
+
+
+Consumer-6-Job-39:: Processing image 76 of 125 : 000000155443.jpg
+
+
+Consumer-1-Job-38:: Processing image 76 of 125 : 000000366884.jpg
+
+
+Consumer-2-Job-40:: Processing image 76 of 125 : 000000240940.jpg
+
+
+Consumer-3-Job-34:: Processing image 101 of 125 : 000000505451.jpg
+
+
+Consumer-4-Job-36:: Processing image 101 of 125 : 000000002153.jpg
+
+
+Consumer-5-Job-37:: Processing image 101 of 125 : 000000180560.jpg
+
+
+Consumer-7-Job-35:: Processing image 101 of 125 : 000000172617.jpg
+
+
+Consumer-8-Job-33:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_33.txt
+Exiting process Consumer-8
+
+
+Consumer-6-Job-39:: Processing image 101 of 125 : 000000370818.jpg
+
+
+Consumer-1-Job-38:: Processing image 101 of 125 : 000000324158.jpg
+
+
+Consumer-2-Job-40:: Processing image 101 of 125 : 000000394199.jpg
+
+
+Consumer-3-Job-34:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_34.txt
+Exiting process Consumer-3
+
+
+Consumer-4-Job-36:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_36.txt
+Exiting process Consumer-4
+
+
+Consumer-5-Job-37:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_37.txt
+Exiting process Consumer-5
+
+
+Consumer-7-Job-35:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_35.txt
+Exiting process Consumer-7
+
+
+Consumer-6-Job-39:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_39.txt
+Exiting process Consumer-6
+
+
+Consumer-2-Job-40:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_40.txt
+Exiting process Consumer-2
+
+
+Consumer-1-Job-38:: Completed. Output file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_38.txt
+Exiting process Consumer-1
+
+
+------------  All consumers rejoined  ------------
+
+
+Job 7, return code = 0, skipped files = 40, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_7.txt
+Job 8, return code = 0, skipped files = 36, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_8.txt
+Job 1, return code = 0, skipped files = 37, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_1.txt
+Job 3, return code = 0, skipped files = 34, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_3.txt
+Job 2, return code = 0, skipped files = 33, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_2.txt
+Job 5, return code = 0, skipped files = 30, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_5.txt
+Job 4, return code = 0, skipped files = 28, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_4.txt
+Job 6, return code = 0, skipped files = 24, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_6.txt
+Job 12, return code = 0, skipped files = 45, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_12.txt
+Job 9, return code = 0, skipped files = 32, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_9.txt
+Job 10, return code = 0, skipped files = 35, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_10.txt
+Job 15, return code = 0, skipped files = 38, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_15.txt
+Job 14, return code = 0, skipped files = 34, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_14.txt
+Job 16, return code = 0, skipped files = 41, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_16.txt
+Job 11, return code = 0, skipped files = 28, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_11.txt
+Job 13, return code = 0, skipped files = 22, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_13.txt
+Job 17, return code = 0, skipped files = 35, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_17.txt
+Job 19, return code = 0, skipped files = 39, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_19.txt
+Job 18, return code = 0, skipped files = 30, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_18.txt
+Job 20, return code = 0, skipped files = 38, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_20.txt
+Job 21, return code = 0, skipped files = 35, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_21.txt
+Job 23, return code = 0, skipped files = 35, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_23.txt
+Job 22, return code = 0, skipped files = 27, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_22.txt
+Job 24, return code = 0, skipped files = 32, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_24.txt
+Job 26, return code = 0, skipped files = 41, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_26.txt
+Job 25, return code = 0, skipped files = 32, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_25.txt
+Job 27, return code = 0, skipped files = 33, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_27.txt
+Job 28, return code = 0, skipped files = 29, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_28.txt
+Job 29, return code = 0, skipped files = 34, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_29.txt
+Job 30, return code = 0, skipped files = 32, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_30.txt
+Job 31, return code = 0, skipped files = 36, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_31.txt
+Job 32, return code = 0, skipped files = 37, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_32.txt
+Job 33, return code = 0, skipped files = 33, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_33.txt
+Job 34, return code = 0, skipped files = 32, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_34.txt
+Job 36, return code = 0, skipped files = 38, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_36.txt
+Job 37, return code = 0, skipped files = 39, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_37.txt
+Job 35, return code = 0, skipped files = 31, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_35.txt
+Job 39, return code = 0, skipped files = 41, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_39.txt
+Job 40, return code = 0, skipped files = 41, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_40.txt
+Job 38, return code = 0, skipped files = 32, output_file = /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_38.txt
+
+
+-------- SUMMARY ------
+Images folder: /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_val2017_5k/val2017
+Image source = coco_val_2017
+Total images found count = 5000
+Total files skipped across all jobs = 1369
+
+Total files processed = 3631
+ALL  jobs completed with RC=0
+Total output files created = 40
+The output files:
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_7.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_8.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_1.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_3.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_2.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_5.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_4.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_6.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_12.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_9.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_10.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_15.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_14.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_16.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_11.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_13.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_17.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_19.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_18.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_20.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_21.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_23.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_22.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_24.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_26.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_25.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_27.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_28.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_29.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_30.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_31.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_32.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_33.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_34.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_36.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_37.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_35.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_39.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_40.txt
+	/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_38.txt
+
+
+
+Normal exit from program.
+
+(ce3th1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$
