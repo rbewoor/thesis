@@ -1,0 +1,2397 @@
+(ce3th1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ python3 detection_update_neo_1.py -sf 20 -iploc /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_95.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3432187474.jpg', 'datasource': 'coco80', 'det': [['person', 94.85], ['person', 86.86]]}, {'img': '3432431690.jpg', 'datasource': 'coco80', 'det': [['person', 99.44], ['person', 99.82], ['person', 82.65], ['person', 87.02]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 198
+		Processing image 21 of 198
+		Processing image 41 of 198
+		Processing image 61 of 198
+		Processing image 81 of 198
+		Processing image 101 of 198
+		Processing image 121 of 198
+		Processing image 141 of 198
+		Processing image 161 of 198
+		Processing image 181 of 198
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_49.txt
+First 2 entries of data for Neo4j array:
+[{'img': '276598014.jpg', 'datasource': 'coco80', 'det': [['person', 99.31], ['person', 73.55]]}, {'img': '2766325714.jpg', 'datasource': 'coco80', 'det': [['person', 93.85], ['person', 91.8], ['person', 58.2], ['book', 54.02]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 192
+		Processing image 21 of 192
+		Processing image 41 of 192
+		Processing image 61 of 192
+		Processing image 81 of 192
+		Processing image 101 of 192
+		Processing image 121 of 192
+		Processing image 141 of 192
+		Processing image 161 of 192
+		Processing image 181 of 192
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_66.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4509270396.jpg', 'datasource': 'coco80', 'det': [['person', 99.86], ['person', 99.87], ['tie', 79.38], ['person', 98.47], ['person', 73.57]]}, {'img': '4509404105.jpg', 'datasource': 'coco80', 'det': [['person', 99.01], ['person', 84.08], ['person', 94.76], ['person', 68.58], ['person', 98.82], ['person', 95.14], ['person', 85.17], ['person', 99.34], ['person', 99.1], ['person', 99.2], ['person', 68.22], ['person', 92.65], ['person', 91.64], ['traffic light', 76.42], ['traffic light', 74.78], ['traffic light', 55.95], ['person', 50.83]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 195
+		Processing image 21 of 195
+		Processing image 41 of 195
+		Processing image 61 of 195
+		Processing image 81 of 195
+		Processing image 101 of 195
+		Processing image 121 of 195
+		Processing image 141 of 195
+		Processing image 161 of 195
+		Processing image 181 of 195
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_43.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4980323529.jpg', 'datasource': 'coco80', 'det': [['person', 97.05], ['person', 99.73], ['person', 99.66], ['person', 81.4], ['person', 94.43], ['person', 92.92]]}, {'img': '4980391949.jpg', 'datasource': 'coco80', 'det': [['person', 99.97], ['person', 99.85], ['hot dog', 95.13], ['bottle', 58.16]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 187
+		Processing image 21 of 187
+		Processing image 41 of 187
+		Processing image 61 of 187
+		Processing image 81 of 187
+		Processing image 101 of 187
+		Processing image 121 of 187
+		Processing image 141 of 187
+		Processing image 161 of 187
+		Processing image 181 of 187
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_128.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2414352262.jpg', 'datasource': 'coco80', 'det': [['person', 99.63], ['person', 99.54]]}, {'img': '2414384480.jpg', 'datasource': 'coco80', 'det': [['person', 99.46], ['handbag', 92.99], ['handbag', 94.96], ['backpack', 61.36], ['handbag', 66.28], ['person', 97.04], ['person', 77.69], ['person', 99.15], ['person', 98.36], ['person', 99.1], ['person', 97.95], ['person', 99.93], ['person', 99.11]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 28
+		Processing image 21 of 28
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_64.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3299408000.jpg', 'datasource': 'coco80', 'det': [['person', 99.91]]}, {'img': '3299418821.jpg', 'datasource': 'coco80', 'det': [['person', 100.0], ['person', 95.97], ['car', 98.07], ['car', 57.62], ['car', 83.87], ['car', 89.21], ['car', 58.85]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 202
+		Processing image 21 of 202
+		Processing image 41 of 202
+		Processing image 61 of 202
+		Processing image 81 of 202
+		Processing image 101 of 202
+		Processing image 121 of 202
+		Processing image 141 of 202
+		Processing image 161 of 202
+		Processing image 181 of 202
+		Processing image 201 of 202
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_126.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3185695861.jpg', 'datasource': 'coco80', 'det': [['dog', 99.6]]}, {'img': '3185787277.jpg', 'datasource': 'coco80', 'det': [['person', 93.06], ['person', 98.53], ['person', 99.88], ['chair', 77.74], ['sofa', 71.28], ['person', 99.78]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 179
+		Processing image 21 of 179
+		Processing image 41 of 179
+		Processing image 61 of 179
+		Processing image 81 of 179
+		Processing image 101 of 179
+		Processing image 121 of 179
+		Processing image 141 of 179
+		Processing image 161 of 179
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_89.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3707990914.jpg', 'datasource': 'coco80', 'det': [['person', 99.86], ['surfboard', 99.07]]}, {'img': '3708172446.jpg', 'datasource': 'coco80', 'det': [['bench', 65.21], ['person', 99.68], ['person', 99.87]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 199
+		Processing image 21 of 199
+		Processing image 41 of 199
+		Processing image 61 of 199
+		Processing image 81 of 199
+		Processing image 101 of 199
+		Processing image 121 of 199
+		Processing image 141 of 199
+		Processing image 161 of 199
+		Processing image 181 of 199
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_54.txt
+First 2 entries of data for Neo4j array:
+[{'img': '5404950935.jpg', 'datasource': 'coco80', 'det': [['person', 53.94], ['person', 99.83], ['person', 99.9], ['person', 73.43], ['person', 70.18], ['person', 64.99], ['person', 94.57], ['person', 99.73], ['person', 99.42], ['person', 82.9], ['person', 51.64], ['person', 85.77], ['person', 56.15]]}, {'img': '540503255.jpg', 'datasource': 'coco80', 'det': [['person', 99.97]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 188
+		Processing image 21 of 188
+		Processing image 41 of 188
+		Processing image 61 of 188
+		Processing image 81 of 188
+		Processing image 101 of 188
+		Processing image 121 of 188
+		Processing image 141 of 188
+		Processing image 161 of 188
+		Processing image 181 of 188
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_41.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4888123485.jpg', 'datasource': 'coco80', 'det': [['pottedplant', 72.04], ['person', 99.91], ['pottedplant', 73.85], ['pottedplant', 64.22], ['person', 97.83], ['backpack', 68.37], ['person', 99.93], ['person', 99.79], ['person', 99.68], ['handbag', 81.81], ['handbag', 52.24]]}, {'img': '4888149239.jpg', 'datasource': 'coco80', 'det': [['person', 99.81], ['person', 81.91], ['person', 99.28], ['person', 97.65], ['person', 90.62]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 196
+		Processing image 21 of 196
+		Processing image 41 of 196
+		Processing image 61 of 196
+		Processing image 81 of 196
+		Processing image 101 of 196
+		Processing image 121 of 196
+		Processing image 141 of 196
+		Processing image 161 of 196
+		Processing image 181 of 196
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_6.txt
+First 2 entries of data for Neo4j array:
+[{'img': '458255256.jpg', 'datasource': 'coco80', 'det': [['person', 99.83], ['person', 99.53], ['tie', 53.42]]}, {'img': '4582690868.jpg', 'datasource': 'coco80', 'det': [['person', 97.05], ['person', 63.71], ['person', 99.57], ['person', 99.59], ['person', 97.04], ['person', 72.07], ['person', 96.49]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 208
+		Processing image 21 of 208
+		Processing image 41 of 208
+		Processing image 61 of 208
+		Processing image 81 of 208
+		Processing image 101 of 208
+		Processing image 121 of 208
+		Processing image 141 of 208
+		Processing image 161 of 208
+		Processing image 181 of 208
+		Processing image 201 of 208
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_23.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2438726098.jpg', 'datasource': 'coco80', 'det': [['person', 99.9]]}, {'img': '5341921763.jpg', 'datasource': 'coco80', 'det': [['horse', 99.94], ['person', 88.65], ['person', 94.68], ['person', 50.29], ['person', 99.58], ['person', 91.53], ['person', 93.19], ['person', 92.27]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 207
+		Processing image 21 of 207
+		Processing image 41 of 207
+		Processing image 61 of 207
+		Processing image 81 of 207
+		Processing image 101 of 207
+		Processing image 121 of 207
+		Processing image 141 of 207
+		Processing image 161 of 207
+		Processing image 181 of 207
+		Processing image 201 of 207
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_101.txt
+First 2 entries of data for Neo4j array:
+[{'img': '451875908.jpg', 'datasource': 'coco80', 'det': [['person', 99.89]]}, {'img': '4518796612.jpg', 'datasource': 'coco80', 'det': [['bench', 99.55], ['person', 99.96], ['dog', 98.54], ['sports ball', 75.61]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 210
+		Processing image 21 of 210
+		Processing image 41 of 210
+		Processing image 61 of 210
+		Processing image 81 of 210
+		Processing image 101 of 210
+		Processing image 121 of 210
+		Processing image 141 of 210
+		Processing image 161 of 210
+		Processing image 181 of 210
+		Processing image 201 of 210
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_46.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4465857504.jpg', 'datasource': 'coco80', 'det': [['person', 99.96], ['person', 99.38], ['person', 65.76], ['person', 53.95]]}, {'img': '4465902203.jpg', 'datasource': 'coco80', 'det': [['person', 99.97], ['person', 99.97], ['person', 97.75], ['person', 99.61], ['person', 98.56]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 198
+		Processing image 21 of 198
+		Processing image 41 of 198
+		Processing image 61 of 198
+		Processing image 81 of 198
+		Processing image 101 of 198
+		Processing image 121 of 198
+		Processing image 141 of 198
+		Processing image 161 of 198
+		Processing image 181 of 198
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_2.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3376014640.jpg', 'datasource': 'coco80', 'det': [['person', 99.98], ['person', 76.74]]}, {'img': '337605969.jpg', 'datasource': 'coco80', 'det': [['person', 92.62], ['laptop', 98.29], ['person', 98.43], ['backpack', 87.5], ['person', 57.09], ['person', 68.04], ['bottle', 99.51], ['person', 55.02], ['person', 84.36], ['person', 91.08], ['person', 75.89], ['person', 59.37], ['person', 50.44]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 206
+		Processing image 21 of 206
+		Processing image 41 of 206
+		Processing image 61 of 206
+		Processing image 81 of 206
+		Processing image 101 of 206
+		Processing image 121 of 206
+		Processing image 141 of 206
+		Processing image 161 of 206
+		Processing image 181 of 206
+		Processing image 201 of 206
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_26.txt
+First 2 entries of data for Neo4j array:
+[{'img': '179009558.jpg', 'datasource': 'coco80', 'det': [['person', 99.93], ['dog', 99.61], ['bicycle', 99.7]]}, {'img': '179686689.jpg', 'datasource': 'coco80', 'det': [['person', 93.46], ['person', 88.15], ['chair', 66.55], ['chair', 86.68], ['chair', 79.17]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 189
+		Processing image 21 of 189
+		Processing image 41 of 189
+		Processing image 61 of 189
+		Processing image 81 of 189
+		Processing image 101 of 189
+		Processing image 121 of 189
+		Processing image 141 of 189
+		Processing image 161 of 189
+		Processing image 181 of 189
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_39.txt
+First 2 entries of data for Neo4j array:
+[{'img': '268654674.jpg', 'datasource': 'coco80', 'det': [['person', 82.66], ['person', 84.89], ['bicycle', 54.97], ['horse', 54.61], ['bicycle', 68.59]]}, {'img': '2686803722.jpg', 'datasource': 'coco80', 'det': [['person', 99.56], ['dog', 95.92], ['boat', 67.91], ['person', 85.23], ['boat', 78.65], ['person', 71.24]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 200
+		Processing image 21 of 200
+		Processing image 41 of 200
+		Processing image 61 of 200
+		Processing image 81 of 200
+		Processing image 101 of 200
+		Processing image 121 of 200
+		Processing image 141 of 200
+		Processing image 161 of 200
+		Processing image 181 of 200
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_65.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4714730332.jpg', 'datasource': 'coco80', 'det': [['person', 99.89], ['person', 99.76], ['person', 99.84], ['car', 73.21]]}, {'img': '4714815517.jpg', 'datasource': 'coco80', 'det': [['person', 99.11], ['person', 99.94], ['car', 52.1]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 182
+		Processing image 21 of 182
+		Processing image 41 of 182
+		Processing image 61 of 182
+		Processing image 81 of 182
+		Processing image 101 of 182
+		Processing image 121 of 182
+		Processing image 141 of 182
+		Processing image 161 of 182
+		Processing image 181 of 182
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_53.txt
+First 2 entries of data for Neo4j array:
+[{'img': '159096105.jpg', 'datasource': 'coco80', 'det': [['person', 99.67], ['person', 99.73], ['person', 99.0], ['bicycle', 92.88], ['person', 85.52]]}, {'img': '1592910015.jpg', 'datasource': 'coco80', 'det': [['person', 99.97]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 193
+		Processing image 21 of 193
+		Processing image 41 of 193
+		Processing image 61 of 193
+		Processing image 81 of 193
+		Processing image 101 of 193
+		Processing image 121 of 193
+		Processing image 141 of 193
+		Processing image 161 of 193
+		Processing image 181 of 193
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_70.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2840866676.jpg', 'datasource': 'coco80', 'det': [['person', 99.99], ['person', 98.18]]}, {'img': '284105062.jpg', 'datasource': 'coco80', 'det': [['person', 99.82], ['horse', 98.03]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 188
+		Processing image 21 of 188
+		Processing image 41 of 188
+		Processing image 61 of 188
+		Processing image 81 of 188
+		Processing image 101 of 188
+		Processing image 121 of 188
+		Processing image 141 of 188
+		Processing image 161 of 188
+		Processing image 181 of 188
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_7.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3856176585.jpg', 'datasource': 'coco80', 'det': [['person', 99.38], ['person', 99.65], ['person', 99.88], ['person', 99.97], ['person', 97.44], ['person', 80.46]]}, {'img': '3856178809.jpg', 'datasource': 'coco80', 'det': [['person', 99.98], ['person', 99.98], ['person', 83.08], ['person', 85.23]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 191
+		Processing image 21 of 191
+		Processing image 41 of 191
+		Processing image 61 of 191
+		Processing image 81 of 191
+		Processing image 101 of 191
+		Processing image 121 of 191
+		Processing image 141 of 191
+		Processing image 161 of 191
+		Processing image 181 of 191
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_14.txt
+First 2 entries of data for Neo4j array:
+[{'img': '799431781.jpg', 'datasource': 'coco80', 'det': [['person', 99.76], ['person', 94.99], ['person', 99.67]]}, {'img': '799486353.jpg', 'datasource': 'coco80', 'det': [['person', 99.7]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 190
+		Processing image 21 of 190
+		Processing image 41 of 190
+		Processing image 61 of 190
+		Processing image 81 of 190
+		Processing image 101 of 190
+		Processing image 121 of 190
+		Processing image 141 of 190
+		Processing image 161 of 190
+		Processing image 181 of 190
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_73.txt
+First 2 entries of data for Neo4j array:
+[{'img': '346073628.jpg', 'datasource': 'coco80', 'det': [['person', 96.65], ['sofa', 95.36], ['person', 97.13]]}, {'img': '3460936621.jpg', 'datasource': 'coco80', 'det': [['person', 99.99], ['person', 83.21], ['person', 97.82], ['person', 98.96], ['person', 98.03], ['person', 52.24], ['fire hydrant', 60.07], ['frisbee', 92.31]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 191
+		Processing image 21 of 191
+		Processing image 41 of 191
+		Processing image 61 of 191
+		Processing image 81 of 191
+		Processing image 101 of 191
+		Processing image 121 of 191
+		Processing image 141 of 191
+		Processing image 161 of 191
+		Processing image 181 of 191
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_18.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3201910861.jpg', 'datasource': 'coco80', 'det': [['person', 87.92], ['person', 97.83]]}, {'img': '3201943535.jpg', 'datasource': 'coco80', 'det': [['person', 99.96], ['bicycle', 80.34]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 214
+		Processing image 21 of 214
+		Processing image 41 of 214
+		Processing image 61 of 214
+		Processing image 81 of 214
+		Processing image 101 of 214
+		Processing image 121 of 214
+		Processing image 141 of 214
+		Processing image 161 of 214
+		Processing image 181 of 214
+		Processing image 201 of 214
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_115.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2386635533.jpg', 'datasource': 'coco80', 'det': [['person', 99.94], ['car', 98.56]]}, {'img': '18378347.jpg', 'datasource': 'coco80', 'det': [['person', 99.94], ['person', 99.87], ['person', 70.52], ['person', 99.45]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 195
+		Processing image 21 of 195
+		Processing image 41 of 195
+		Processing image 61 of 195
+		Processing image 81 of 195
+		Processing image 101 of 195
+		Processing image 121 of 195
+		Processing image 141 of 195
+		Processing image 161 of 195
+		Processing image 181 of 195
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_55.txt
+First 2 entries of data for Neo4j array:
+[{'img': '571000535.jpg', 'datasource': 'coco80', 'det': [['person', 99.93], ['toothbrush', 99.24]]}, {'img': '571002259.jpg', 'datasource': 'coco80', 'det': [['person', 99.91], ['person', 98.1]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 193
+		Processing image 21 of 193
+		Processing image 41 of 193
+		Processing image 61 of 193
+		Processing image 81 of 193
+		Processing image 101 of 193
+		Processing image 121 of 193
+		Processing image 141 of 193
+		Processing image 161 of 193
+		Processing image 181 of 193
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_17.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2675643250.jpg', 'datasource': 'coco80', 'det': [['person', 90.5], ['person', 93.63], ['person', 99.62], ['person', 99.57], ['person', 82.83], ['person', 99.84], ['person', 99.27], ['person', 94.16], ['person', 94.72], ['person', 78.39], ['person', 86.13], ['person', 52.69]]}, {'img': '2675685200.jpg', 'datasource': 'coco80', 'det': [['person', 98.42], ['diningtable', 87.01], ['chair', 99.1], ['chair', 73.88], ['cup', 77.69]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 200
+		Processing image 21 of 200
+		Processing image 41 of 200
+		Processing image 61 of 200
+		Processing image 81 of 200
+		Processing image 101 of 200
+		Processing image 121 of 200
+		Processing image 141 of 200
+		Processing image 161 of 200
+		Processing image 181 of 200
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_42.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3468635612.jpg', 'datasource': 'coco80', 'det': [['person', 98.7], ['person', 96.98]]}, {'img': '3468635980.jpg', 'datasource': 'coco80', 'det': [['bus', 64.29], ['train', 56.55], ['person', 99.94]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 201
+		Processing image 21 of 201
+		Processing image 41 of 201
+		Processing image 61 of 201
+		Processing image 81 of 201
+		Processing image 101 of 201
+		Processing image 121 of 201
+		Processing image 141 of 201
+		Processing image 161 of 201
+		Processing image 181 of 201
+		Processing image 201 of 201
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_38.txt
+First 2 entries of data for Neo4j array:
+[{'img': '1930975781.jpg', 'datasource': 'coco80', 'det': [['person', 98.33], ['person', 99.0]]}, {'img': '1931018353.jpg', 'datasource': 'coco80', 'det': [['person', 54.04], ['person', 98.98], ['person', 99.84]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 189
+		Processing image 21 of 189
+		Processing image 41 of 189
+		Processing image 61 of 189
+		Processing image 81 of 189
+		Processing image 101 of 189
+		Processing image 121 of 189
+		Processing image 141 of 189
+		Processing image 161 of 189
+		Processing image 181 of 189
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_8.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4725459622.jpg', 'datasource': 'coco80', 'det': [['horse', 98.49], ['person', 93.93], ['person', 78.54], ['person', 98.59], ['person', 99.23], ['person', 81.49], ['person', 72.64], ['horse', 71.83], ['horse', 95.38], ['person', 61.88]]}, {'img': '4725480987.jpg', 'datasource': 'coco80', 'det': [['umbrella', 77.09], ['person', 66.55], ['person', 51.0], ['person', 99.92], ['tie', 60.16], ['person', 78.84], ['person', 99.74], ['person', 99.98], ['person', 99.78], ['person', 96.96], ['person', 98.55], ['umbrella', 60.49]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 190
+		Processing image 21 of 190
+		Processing image 41 of 190
+		Processing image 61 of 190
+		Processing image 81 of 190
+		Processing image 101 of 190
+		Processing image 121 of 190
+		Processing image 141 of 190
+		Processing image 161 of 190
+		Processing image 181 of 190
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_27.txt
+First 2 entries of data for Neo4j array:
+[{'img': '559102835.jpg', 'datasource': 'coco80', 'det': [['person', 99.96], ['sports ball', 99.99], ['person', 91.97]]}, {'img': '5591545538.jpg', 'datasource': 'coco80', 'det': [['person', 99.39]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 196
+		Processing image 21 of 196
+		Processing image 41 of 196
+		Processing image 61 of 196
+		Processing image 81 of 196
+		Processing image 101 of 196
+		Processing image 121 of 196
+		Processing image 141 of 196
+		Processing image 161 of 196
+		Processing image 181 of 196
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_61.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4812310213.jpg', 'datasource': 'coco80', 'det': [['person', 94.35], ['apple', 59.23], ['person', 58.79], ['person', 76.77], ['person', 75.98]]}, {'img': '4812765398.jpg', 'datasource': 'coco80', 'det': [['car', 98.49], ['person', 95.54], ['person', 88.15], ['person', 59.63], ['person', 99.13], ['chair', 70.57], ['chair', 57.44]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 194
+		Processing image 21 of 194
+		Processing image 41 of 194
+		Processing image 61 of 194
+		Processing image 81 of 194
+		Processing image 101 of 194
+		Processing image 121 of 194
+		Processing image 141 of 194
+		Processing image 161 of 194
+		Processing image 181 of 194
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_103.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2438754748.jpg', 'datasource': 'coco80', 'det': [['person', 99.65], ['person', 99.14]]}, {'img': '2438847889.jpg', 'datasource': 'coco80', 'det': [['person', 99.98], ['person', 92.79], ['person', 98.05], ['person', 97.48], ['person', 97.24], ['person', 58.74], ['person', 78.31], ['person', 91.33], ['person', 71.67]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 181
+		Processing image 21 of 181
+		Processing image 41 of 181
+		Processing image 61 of 181
+		Processing image 81 of 181
+		Processing image 101 of 181
+		Processing image 121 of 181
+		Processing image 141 of 181
+		Processing image 161 of 181
+		Processing image 181 of 181
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_28.txt
+First 2 entries of data for Neo4j array:
+[{'img': '5244864049.jpg', 'datasource': 'coco80', 'det': [['person', 99.89]]}, {'img': '5246144625.jpg', 'datasource': 'coco80', 'det': [['person', 62.17], ['person', 99.91], ['person', 98.16], ['person', 94.48], ['person', 59.92], ['person', 58.37]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 205
+		Processing image 21 of 205
+		Processing image 41 of 205
+		Processing image 61 of 205
+		Processing image 81 of 205
+		Processing image 101 of 205
+		Processing image 121 of 205
+		Processing image 141 of 205
+		Processing image 161 of 205
+		Processing image 181 of 205
+		Processing image 201 of 205
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_106.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4797559702.jpg', 'datasource': 'coco80', 'det': []}, {'img': '4797654743.jpg', 'datasource': 'coco80', 'det': [['person', 99.88]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 187
+		Processing image 21 of 187
+		Processing image 41 of 187
+		Processing image 61 of 187
+		Processing image 81 of 187
+		Processing image 101 of 187
+		Processing image 121 of 187
+		Processing image 141 of 187
+		Processing image 161 of 187
+		Processing image 181 of 187
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_67.txt
+First 2 entries of data for Neo4j array:
+[{'img': '7738684358.jpg', 'datasource': 'coco80', 'det': [['person', 99.88], ['person', 71.48]]}, {'img': '7739176066.jpg', 'datasource': 'coco80', 'det': [['person', 92.31], ['person', 94.01], ['person', 95.62], ['person', 96.72], ['person', 90.11], ['person', 98.26], ['person', 92.76], ['person', 98.03], ['person', 96.04], ['person', 93.36], ['person', 96.14], ['person', 75.95], ['person', 86.94], ['person', 84.04]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 204
+		Processing image 21 of 204
+		Processing image 41 of 204
+		Processing image 61 of 204
+		Processing image 81 of 204
+		Processing image 101 of 204
+		Processing image 121 of 204
+		Processing image 141 of 204
+		Processing image 161 of 204
+		Processing image 181 of 204
+		Processing image 201 of 204
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_108.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4781897636.jpg', 'datasource': 'coco80', 'det': [['person', 99.88], ['handbag', 88.31], ['person', 99.3], ['person', 99.93], ['handbag', 66.35], ['person', 82.79], ['person', 74.97], ['handbag', 60.02]]}, {'img': '4781925272.jpg', 'datasource': 'coco80', 'det': [['person', 97.8], ['person', 99.39], ['person', 99.66], ['person', 62.86], ['person', 66.69], ['person', 97.68], ['person', 85.51], ['person', 75.36]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 201
+		Processing image 21 of 201
+		Processing image 41 of 201
+		Processing image 61 of 201
+		Processing image 81 of 201
+		Processing image 101 of 201
+		Processing image 121 of 201
+		Processing image 141 of 201
+		Processing image 161 of 201
+		Processing image 181 of 201
+		Processing image 201 of 201
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_98.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4706791275.jpg', 'datasource': 'coco80', 'det': [['chair', 94.53], ['bowl', 71.32]]}, {'img': '4706793376.jpg', 'datasource': 'coco80', 'det': [['person', 99.98]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 203
+		Processing image 21 of 203
+		Processing image 41 of 203
+		Processing image 61 of 203
+		Processing image 81 of 203
+		Processing image 101 of 203
+		Processing image 121 of 203
+		Processing image 141 of 203
+		Processing image 161 of 203
+		Processing image 181 of 203
+		Processing image 201 of 203
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_15.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3072730593.jpg', 'datasource': 'coco80', 'det': [['person', 99.49], ['person', 69.34], ['person', 84.88]]}, {'img': '3072782873.jpg', 'datasource': 'coco80', 'det': [['car', 97.16], ['person', 99.41], ['person', 99.25], ['person', 98.38], ['person', 96.55], ['person', 99.22], ['person', 99.52], ['person', 96.76], ['person', 54.96]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 207
+		Processing image 21 of 207
+		Processing image 41 of 207
+		Processing image 61 of 207
+		Processing image 81 of 207
+		Processing image 101 of 207
+		Processing image 121 of 207
+		Processing image 141 of 207
+		Processing image 161 of 207
+		Processing image 181 of 207
+		Processing image 201 of 207
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_12.txt
+First 2 entries of data for Neo4j array:
+[{'img': '510711623.jpg', 'datasource': 'coco80', 'det': [['person', 90.24], ['person', 55.47], ['person', 99.02], ['person', 91.48]]}, {'img': '510714879.jpg', 'datasource': 'coco80', 'det': [['person', 63.93], ['person', 63.02], ['person', 95.46], ['person', 50.51], ['person', 59.46], ['person', 83.54], ['person', 92.09], ['person', 85.48], ['person', 53.32], ['person', 96.7], ['person', 89.41], ['person', 83.59], ['person', 96.71], ['person', 99.01], ['person', 87.9], ['person', 99.48]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 198
+		Processing image 21 of 198
+		Processing image 41 of 198
+		Processing image 61 of 198
+		Processing image 81 of 198
+		Processing image 101 of 198
+		Processing image 121 of 198
+		Processing image 141 of 198
+		Processing image 161 of 198
+		Processing image 181 of 198
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_63.txt
+First 2 entries of data for Neo4j array:
+[{'img': '281706216.jpg', 'datasource': 'coco80', 'det': [['person', 99.98], ['baseball bat', 73.03]]}, {'img': '2817132182.jpg', 'datasource': 'coco80', 'det': [['person', 99.55], ['diningtable', 54.59], ['car', 91.5], ['cup', 97.3]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 199
+		Processing image 21 of 199
+		Processing image 41 of 199
+		Processing image 61 of 199
+		Processing image 81 of 199
+		Processing image 101 of 199
+		Processing image 121 of 199
+		Processing image 141 of 199
+		Processing image 161 of 199
+		Processing image 181 of 199
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_110.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3590653633.jpg', 'datasource': 'coco80', 'det': [['person', 95.51], ['person', 99.74], ['backpack', 87.07]]}, {'img': '3590654365.jpg', 'datasource': 'coco80', 'det': [['cow', 99.02], ['person', 96.14], ['person', 93.38], ['person', 99.16], ['person', 63.38]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 195
+		Processing image 21 of 195
+		Processing image 41 of 195
+		Processing image 61 of 195
+		Processing image 81 of 195
+		Processing image 101 of 195
+		Processing image 121 of 195
+		Processing image 141 of 195
+		Processing image 161 of 195
+		Processing image 181 of 195
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_104.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4586247564.jpg', 'datasource': 'coco80', 'det': [['person', 99.93], ['handbag', 94.16], ['person', 60.34], ['person', 68.9], ['boat', 76.76]]}, {'img': '4586925517.jpg', 'datasource': 'coco80', 'det': [['person', 99.91]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 185
+		Processing image 21 of 185
+		Processing image 41 of 185
+		Processing image 61 of 185
+		Processing image 81 of 185
+		Processing image 101 of 185
+		Processing image 121 of 185
+		Processing image 141 of 185
+		Processing image 161 of 185
+		Processing image 181 of 185
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_112.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3118425885.jpg', 'datasource': 'coco80', 'det': [['person', 99.96], ['person', 54.93], ['person', 90.15], ['person', 53.99], ['person', 92.99], ['person', 82.42], ['chair', 82.84], ['chair', 76.93], ['cup', 81.86]]}, {'img': '3118505332.jpg', 'datasource': 'coco80', 'det': [['person', 99.99]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 187
+		Processing image 21 of 187
+		Processing image 41 of 187
+		Processing image 61 of 187
+		Processing image 81 of 187
+		Processing image 101 of 187
+		Processing image 121 of 187
+		Processing image 141 of 187
+		Processing image 161 of 187
+		Processing image 181 of 187
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_35.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4957461228.jpg', 'datasource': 'coco80', 'det': [['person', 100.0], ['person', 97.87], ['car', 83.13]]}, {'img': '4957726897.jpg', 'datasource': 'coco80', 'det': [['person', 99.98]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 186
+		Processing image 21 of 186
+		Processing image 41 of 186
+		Processing image 61 of 186
+		Processing image 81 of 186
+		Processing image 101 of 186
+		Processing image 121 of 186
+		Processing image 141 of 186
+		Processing image 161 of 186
+		Processing image 181 of 186
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_84.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3477289176.jpg', 'datasource': 'coco80', 'det': [['person', 99.99], ['skateboard', 99.87], ['car', 87.23]]}, {'img': '6829605875.jpg', 'datasource': 'coco80', 'det': [['person', 99.87], ['person', 96.19], ['person', 97.32], ['person', 99.84], ['person', 86.07]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 194
+		Processing image 21 of 194
+		Processing image 41 of 194
+		Processing image 61 of 194
+		Processing image 81 of 194
+		Processing image 101 of 194
+		Processing image 121 of 194
+		Processing image 141 of 194
+		Processing image 161 of 194
+		Processing image 181 of 194
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_125.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3490874218.jpg', 'datasource': 'coco80', 'det': [['person', 99.67], ['bicycle', 59.67]]}, {'img': '3490936658.jpg', 'datasource': 'coco80', 'det': [['person', 98.4]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 186
+		Processing image 21 of 186
+		Processing image 41 of 186
+		Processing image 61 of 186
+		Processing image 81 of 186
+		Processing image 101 of 186
+		Processing image 121 of 186
+		Processing image 141 of 186
+		Processing image 161 of 186
+		Processing image 181 of 186
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_69.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4688320491.jpg', 'datasource': 'coco80', 'det': [['person', 84.46], ['person', 68.04], ['person', 97.36], ['diningtable', 58.62], ['person', 85.34], ['person', 99.19], ['laptop', 97.42], ['chair', 92.92], ['tie', 54.38], ['wine glass', 79.58], ['bottle', 94.16], ['cup', 98.42]]}, {'img': '4688342011.jpg', 'datasource': 'coco80', 'det': [['person', 89.93], ['person', 95.16], ['person', 76.05]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 196
+		Processing image 21 of 196
+		Processing image 41 of 196
+		Processing image 61 of 196
+		Processing image 81 of 196
+		Processing image 101 of 196
+		Processing image 121 of 196
+		Processing image 141 of 196
+		Processing image 161 of 196
+		Processing image 181 of 196
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_114.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4199553000.jpg', 'datasource': 'coco80', 'det': [['person', 87.43], ['person', 85.83], ['person', 90.89]]}, {'img': '4199589368.jpg', 'datasource': 'coco80', 'det': [['person', 99.9], ['person', 99.84]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 201
+		Processing image 21 of 201
+		Processing image 41 of 201
+		Processing image 61 of 201
+		Processing image 81 of 201
+		Processing image 101 of 201
+		Processing image 121 of 201
+		Processing image 141 of 201
+		Processing image 161 of 201
+		Processing image 181 of 201
+		Processing image 201 of 201
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_121.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4950418775.jpg', 'datasource': 'coco80', 'det': [['person', 80.05], ['person', 61.01], ['person', 99.6], ['person', 99.25], ['handbag', 62.02], ['person', 99.77], ['person', 80.42], ['handbag', 59.43], ['person', 95.88], ['person', 99.62], ['person', 84.25], ['person', 74.94]]}, {'img': '495054019.jpg', 'datasource': 'coco80', 'det': [['person', 62.84], ['person', 99.94], ['person', 99.98]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 195
+		Processing image 21 of 195
+		Processing image 41 of 195
+		Processing image 61 of 195
+		Processing image 81 of 195
+		Processing image 101 of 195
+		Processing image 121 of 195
+		Processing image 141 of 195
+		Processing image 161 of 195
+		Processing image 181 of 195
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_88.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3697359692.jpg', 'datasource': 'coco80', 'det': [['chair', 79.46], ['person', 93.35], ['chair', 74.49]]}, {'img': '3697378565.jpg', 'datasource': 'coco80', 'det': [['person', 98.37], ['person', 86.45], ['person', 78.61], ['person', 85.79], ['person', 74.64], ['person', 72.43], ['person', 81.89], ['person', 64.94], ['person', 76.42], ['person', 56.3], ['person', 54.58], ['person', 78.21], ['person', 66.4], ['person', 84.43], ['person', 71.38], ['person', 90.74], ['person', 94.4], ['person', 58.31]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 203
+		Processing image 21 of 203
+		Processing image 41 of 203
+		Processing image 61 of 203
+		Processing image 81 of 203
+		Processing image 101 of 203
+		Processing image 121 of 203
+		Processing image 141 of 203
+		Processing image 161 of 203
+		Processing image 181 of 203
+		Processing image 201 of 203
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_34.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2456472092.jpg', 'datasource': 'coco80', 'det': [['person', 99.52], ['person', 99.65], ['person', 98.41], ['person', 89.45], ['person', 75.71], ['person', 99.57], ['person', 86.18], ['person', 83.73], ['chair', 78.11]]}, {'img': '2456532329.jpg', 'datasource': 'coco80', 'det': [['person', 99.91]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 181
+		Processing image 21 of 181
+		Processing image 41 of 181
+		Processing image 61 of 181
+		Processing image 81 of 181
+		Processing image 101 of 181
+		Processing image 121 of 181
+		Processing image 141 of 181
+		Processing image 161 of 181
+		Processing image 181 of 181
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_93.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4622908706.jpg', 'datasource': 'coco80', 'det': [['truck', 79.38], ['person', 99.47], ['person', 60.22], ['person', 50.22]]}, {'img': '4622993220.jpg', 'datasource': 'coco80', 'det': [['person', 99.97], ['person', 83.39], ['handbag', 84.83]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 203
+		Processing image 21 of 203
+		Processing image 41 of 203
+		Processing image 61 of 203
+		Processing image 81 of 203
+		Processing image 101 of 203
+		Processing image 121 of 203
+		Processing image 141 of 203
+		Processing image 161 of 203
+		Processing image 181 of 203
+		Processing image 201 of 203
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_59.txt
+First 2 entries of data for Neo4j array:
+[{'img': '5660037266.jpg', 'datasource': 'coco80', 'det': [['person', 61.94], ['person', 99.9]]}, {'img': '566077886.jpg', 'datasource': 'coco80', 'det': [['person', 99.92]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 196
+		Processing image 21 of 196
+		Processing image 41 of 196
+		Processing image 61 of 196
+		Processing image 81 of 196
+		Processing image 101 of 196
+		Processing image 121 of 196
+		Processing image 141 of 196
+		Processing image 161 of 196
+		Processing image 181 of 196
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_100.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2552207770.jpg', 'datasource': 'coco80', 'det': [['tennis racket', 77.41], ['person', 92.46]]}, {'img': '2552419863.jpg', 'datasource': 'coco80', 'det': [['person', 99.89], ['diningtable', 59.79], ['pizza', 69.33], ['pizza', 56.73]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 203
+		Processing image 21 of 203
+		Processing image 41 of 203
+		Processing image 61 of 203
+		Processing image 81 of 203
+		Processing image 101 of 203
+		Processing image 121 of 203
+		Processing image 141 of 203
+		Processing image 161 of 203
+		Processing image 181 of 203
+		Processing image 201 of 203
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_9.txt
+First 2 entries of data for Neo4j array:
+[{'img': '7249763658.jpg', 'datasource': 'coco80', 'det': [['person', 99.98], ['person', 99.58], ['person', 99.66], ['person', 97.81], ['handbag', 58.97]]}, {'img': '7252197964.jpg', 'datasource': 'coco80', 'det': [['person', 98.99], ['person', 99.57]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 199
+		Processing image 21 of 199
+		Processing image 41 of 199
+		Processing image 61 of 199
+		Processing image 81 of 199
+		Processing image 101 of 199
+		Processing image 121 of 199
+		Processing image 141 of 199
+		Processing image 161 of 199
+		Processing image 181 of 199
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_80.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2990471798.jpg', 'datasource': 'coco80', 'det': [['person', 99.68]]}, {'img': '2990563425.jpg', 'datasource': 'coco80', 'det': [['motorbike', 99.59], ['person', 99.5]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 211
+		Processing image 21 of 211
+		Processing image 41 of 211
+		Processing image 61 of 211
+		Processing image 81 of 211
+		Processing image 101 of 211
+		Processing image 121 of 211
+		Processing image 141 of 211
+		Processing image 161 of 211
+		Processing image 181 of 211
+		Processing image 201 of 211
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_113.txt
+First 2 entries of data for Neo4j array:
+[{'img': '5270960438.jpg', 'datasource': 'coco80', 'det': [['train', 95.6], ['person', 97.33], ['person', 99.42], ['person', 99.77], ['person', 69.07]]}, {'img': '527255763.jpg', 'datasource': 'coco80', 'det': [['person', 99.98]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 204
+		Processing image 21 of 204
+		Processing image 41 of 204
+		Processing image 61 of 204
+		Processing image 81 of 204
+		Processing image 101 of 204
+		Processing image 121 of 204
+		Processing image 141 of 204
+		Processing image 161 of 204
+		Processing image 181 of 204
+		Processing image 201 of 204
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_124.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2166529027.jpg', 'datasource': 'coco80', 'det': [['person', 98.16], ['skateboard', 71.04]]}, {'img': '2166946777.jpg', 'datasource': 'coco80', 'det': [['boat', 92.05], ['person', 99.4], ['person', 99.87], ['boat', 62.67], ['boat', 55.03], ['boat', 60.8], ['person', 51.32], ['person', 50.81]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 196
+		Processing image 21 of 196
+		Processing image 41 of 196
+		Processing image 61 of 196
+		Processing image 81 of 196
+		Processing image 101 of 196
+		Processing image 121 of 196
+		Processing image 141 of 196
+		Processing image 161 of 196
+		Processing image 181 of 196
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_19.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3667939633.jpg', 'datasource': 'coco80', 'det': [['person', 99.98], ['person', 99.31], ['handbag', 73.28], ['car', 78.93], ['car', 91.81], ['handbag', 50.04], ['person', 92.33], ['person', 99.7]]}, {'img': '3668027351.jpg', 'datasource': 'coco80', 'det': [['person', 99.96]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 210
+		Processing image 21 of 210
+		Processing image 41 of 210
+		Processing image 61 of 210
+		Processing image 81 of 210
+		Processing image 101 of 210
+		Processing image 121 of 210
+		Processing image 141 of 210
+		Processing image 161 of 210
+		Processing image 181 of 210
+		Processing image 201 of 210
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_13.txt
+First 2 entries of data for Neo4j array:
+[{'img': '439638376.jpg', 'datasource': 'coco80', 'det': [['pottedplant', 94.66], ['pottedplant', 65.21]]}, {'img': '3151898976.jpg', 'datasource': 'coco80', 'det': [['person', 99.78], ['person', 99.91]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 173
+		Processing image 21 of 173
+		Processing image 41 of 173
+		Processing image 61 of 173
+		Processing image 81 of 173
+		Processing image 101 of 173
+		Processing image 121 of 173
+		Processing image 141 of 173
+		Processing image 161 of 173
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_56.txt
+First 2 entries of data for Neo4j array:
+[{'img': '5330052101.jpg', 'datasource': 'coco80', 'det': [['person', 95.96], ['person', 97.96], ['person', 99.45], ['person', 99.71], ['diningtable', 74.96], ['cell phone', 90.25]]}, {'img': '5330858932.jpg', 'datasource': 'coco80', 'det': [['bird', 55.38]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 191
+		Processing image 21 of 191
+		Processing image 41 of 191
+		Processing image 61 of 191
+		Processing image 81 of 191
+		Processing image 101 of 191
+		Processing image 121 of 191
+		Processing image 141 of 191
+		Processing image 161 of 191
+		Processing image 181 of 191
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_78.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4433206636.jpg', 'datasource': 'coco80', 'det': [['person', 99.87], ['person', 80.02], ['person', 97.61], ['backpack', 51.1], ['backpack', 89.81], ['person', 96.28], ['person', 52.83], ['person', 98.55], ['person', 93.19], ['person', 50.57], ['person', 65.2]]}, {'img': '4433290741.jpg', 'datasource': 'coco80', 'det': [['person', 97.29], ['person', 72.94], ['person', 92.9]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 201
+		Processing image 21 of 201
+		Processing image 41 of 201
+		Processing image 61 of 201
+		Processing image 81 of 201
+		Processing image 101 of 201
+		Processing image 121 of 201
+		Processing image 141 of 201
+		Processing image 161 of 201
+		Processing image 181 of 201
+		Processing image 201 of 201
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_82.txt
+First 2 entries of data for Neo4j array:
+[{'img': '363847768.jpg', 'datasource': 'coco80', 'det': [['person', 99.94], ['person', 99.96], ['person', 99.92], ['person', 93.81], ['person', 99.81], ['person', 99.67]]}, {'img': '3638577494.jpg', 'datasource': 'coco80', 'det': [['dog', 92.82], ['dog', 97.19]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 204
+		Processing image 21 of 204
+		Processing image 41 of 204
+		Processing image 61 of 204
+		Processing image 81 of 204
+		Processing image 101 of 204
+		Processing image 121 of 204
+		Processing image 141 of 204
+		Processing image 161 of 204
+		Processing image 181 of 204
+		Processing image 201 of 204
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_68.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3250604628.jpg', 'datasource': 'coco80', 'det': [['car', 99.12], ['person', 97.82], ['car', 98.41], ['person', 99.11], ['person', 99.01], ['person', 98.28]]}, {'img': '3250695024.jpg', 'datasource': 'coco80', 'det': [['person', 99.8], ['person', 99.59], ['person', 99.95], ['backpack', 61.49], ['person', 95.66]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 205
+		Processing image 21 of 205
+		Processing image 41 of 205
+		Processing image 61 of 205
+		Processing image 81 of 205
+		Processing image 101 of 205
+		Processing image 121 of 205
+		Processing image 141 of 205
+		Processing image 161 of 205
+		Processing image 181 of 205
+		Processing image 201 of 205
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_51.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2165724565.jpg', 'datasource': 'coco80', 'det': [['person', 99.57], ['person', 97.29]]}, {'img': '2173362914.jpg', 'datasource': 'coco80', 'det': []}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 198
+		Processing image 21 of 198
+		Processing image 41 of 198
+		Processing image 61 of 198
+		Processing image 81 of 198
+		Processing image 101 of 198
+		Processing image 121 of 198
+		Processing image 141 of 198
+		Processing image 161 of 198
+		Processing image 181 of 198
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_127.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4093458757.jpg', 'datasource': 'coco80', 'det': [['person', 99.97], ['book', 62.93], ['book', 61.22], ['book', 91.66], ['chair', 91.15], ['book', 56.88]]}, {'img': '4093460759.jpg', 'datasource': 'coco80', 'det': [['person', 93.34], ['person', 60.86], ['person', 98.45], ['sofa', 95.72], ['chair', 71.83], ['sofa', 64.02], ['pottedplant', 99.78], ['chair', 78.88], ['chair', 52.65], ['person', 82.47], ['chair', 73.33], ['chair', 91.41]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 185
+		Processing image 21 of 185
+		Processing image 41 of 185
+		Processing image 61 of 185
+		Processing image 81 of 185
+		Processing image 101 of 185
+		Processing image 121 of 185
+		Processing image 141 of 185
+		Processing image 161 of 185
+		Processing image 181 of 185
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_116.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3559357704.jpg', 'datasource': 'coco80', 'det': [['truck', 95.4], ['person', 67.3], ['person', 94.16], ['person', 99.59], ['person', 98.57], ['backpack', 54.86], ['person', 60.37]]}, {'img': '3561543598.jpg', 'datasource': 'coco80', 'det': [['person', 99.83], ['person', 99.98], ['tie', 94.19], ['person', 60.55], ['person', 95.42], ['person', 85.36], ['person', 99.79], ['person', 99.62], ['tie', 82.94], ['tie', 51.56]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 195
+		Processing image 21 of 195
+		Processing image 41 of 195
+		Processing image 61 of 195
+		Processing image 81 of 195
+		Processing image 101 of 195
+		Processing image 121 of 195
+		Processing image 141 of 195
+		Processing image 161 of 195
+		Processing image 181 of 195
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_75.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3560771491.jpg', 'datasource': 'coco80', 'det': [['person', 99.9]]}, {'img': '3560891822.jpg', 'datasource': 'coco80', 'det': [['person', 99.98], ['person', 84.64], ['skateboard', 99.4]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 190
+		Processing image 21 of 190
+		Processing image 41 of 190
+		Processing image 61 of 190
+		Processing image 81 of 190
+		Processing image 101 of 190
+		Processing image 121 of 190
+		Processing image 141 of 190
+		Processing image 161 of 190
+		Processing image 181 of 190
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_120.txt
+First 2 entries of data for Neo4j array:
+[{'img': '5067989433.jpg', 'datasource': 'coco80', 'det': [['person', 84.65]]}, {'img': '5076224694.jpg', 'datasource': 'coco80', 'det': [['person', 99.97], ['person', 91.0], ['car', 97.03], ['person', 79.22], ['person', 94.05], ['person', 98.09], ['person', 97.56], ['person', 99.01], ['person', 99.26]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 197
+		Processing image 21 of 197
+		Processing image 41 of 197
+		Processing image 61 of 197
+		Processing image 81 of 197
+		Processing image 101 of 197
+		Processing image 121 of 197
+		Processing image 141 of 197
+		Processing image 161 of 197
+		Processing image 181 of 197
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_22.txt
+First 2 entries of data for Neo4j array:
+[{'img': '515755283.jpg', 'datasource': 'coco80', 'det': [['motorbike', 99.86], ['person', 99.58], ['person', 99.81], ['person', 98.91], ['person', 99.85], ['person', 98.14], ['person', 66.3], ['person', 66.16], ['person', 65.68]]}, {'img': '5157924597.jpg', 'datasource': 'coco80', 'det': [['person', 51.83], ['umbrella', 51.43], ['person', 61.55], ['person', 99.75], ['person', 86.94], ['person', 97.43], ['person', 67.11], ['person', 59.4], ['person', 52.72], ['person', 60.12], ['person', 71.27], ['person', 66.91]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 207
+		Processing image 21 of 207
+		Processing image 41 of 207
+		Processing image 61 of 207
+		Processing image 81 of 207
+		Processing image 101 of 207
+		Processing image 121 of 207
+		Processing image 141 of 207
+		Processing image 161 of 207
+		Processing image 181 of 207
+		Processing image 201 of 207
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_81.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2109280562.jpg', 'datasource': 'coco80', 'det': [['person', 99.64], ['bird', 56.92]]}, {'img': '2109479807.jpg', 'datasource': 'coco80', 'det': [['person', 99.96], ['person', 97.9], ['motorbike', 68.63], ['person', 63.19], ['person', 99.88]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 196
+		Processing image 21 of 196
+		Processing image 41 of 196
+		Processing image 61 of 196
+		Processing image 81 of 196
+		Processing image 101 of 196
+		Processing image 121 of 196
+		Processing image 141 of 196
+		Processing image 161 of 196
+		Processing image 181 of 196
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_118.txt
+First 2 entries of data for Neo4j array:
+[{'img': '8002838345.jpg', 'datasource': 'coco80', 'det': [['person', 99.69], ['boat', 50.51]]}, {'img': '8003613232.jpg', 'datasource': 'coco80', 'det': [['person', 99.97]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 184
+		Processing image 21 of 184
+		Processing image 41 of 184
+		Processing image 61 of 184
+		Processing image 81 of 184
+		Processing image 101 of 184
+		Processing image 121 of 184
+		Processing image 141 of 184
+		Processing image 161 of 184
+		Processing image 181 of 184
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_60.txt
+First 2 entries of data for Neo4j array:
+[{'img': '1238084765.jpg', 'datasource': 'coco80', 'det': [['person', 99.11], ['person', 99.79], ['bottle', 52.97]]}, {'img': '123866385.jpg', 'datasource': 'coco80', 'det': [['person', 99.88], ['chair', 61.75]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 204
+		Processing image 21 of 204
+		Processing image 41 of 204
+		Processing image 61 of 204
+		Processing image 81 of 204
+		Processing image 101 of 204
+		Processing image 121 of 204
+		Processing image 141 of 204
+		Processing image 161 of 204
+		Processing image 181 of 204
+		Processing image 201 of 204
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_36.txt
+First 2 entries of data for Neo4j array:
+[{'img': '5831085623.jpg', 'datasource': 'coco80', 'det': [['dog', 97.07], ['person', 99.7], ['frisbee', 99.3], ['frisbee', 99.81], ['frisbee', 99.55], ['frisbee', 83.48]]}, {'img': '583174725.jpg', 'datasource': 'coco80', 'det': [['car', 98.34], ['car', 68.42], ['person', 99.83]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 197
+		Processing image 21 of 197
+		Processing image 41 of 197
+		Processing image 61 of 197
+		Processing image 81 of 197
+		Processing image 101 of 197
+		Processing image 121 of 197
+		Processing image 141 of 197
+		Processing image 161 of 197
+		Processing image 181 of 197
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_4.txt
+First 2 entries of data for Neo4j array:
+[{'img': '394867665.jpg', 'datasource': 'coco80', 'det': [['umbrella', 83.65], ['umbrella', 90.39], ['umbrella', 98.79], ['person', 65.7], ['person', 85.54], ['person', 99.07], ['person', 99.37], ['person', 99.12], ['person', 77.7], ['person', 99.51], ['person', 76.11], ['person', 64.55], ['person', 97.16], ['person', 96.33], ['person', 98.73], ['person', 99.63], ['person', 60.98], ['umbrella', 98.18], ['umbrella', 72.22], ['umbrella', 95.95], ['umbrella', 55.32], ['umbrella', 95.13], ['umbrella', 55.75], ['umbrella', 85.97], ['umbrella', 98.61], ['umbrella', 93.25], ['umbrella', 97.14], ['umbrella', 91.73], ['handbag', 68.48]]}, {'img': '39490282.jpg', 'datasource': 'coco80', 'det': [['truck', 67.49], ['person', 99.98], ['bicycle', 99.95]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 197
+		Processing image 21 of 197
+		Processing image 41 of 197
+		Processing image 61 of 197
+		Processing image 81 of 197
+		Processing image 101 of 197
+		Processing image 121 of 197
+		Processing image 141 of 197
+		Processing image 161 of 197
+		Processing image 181 of 197
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_37.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4544641137.jpg', 'datasource': 'coco80', 'det': [['person', 93.71], ['person', 88.01], ['person', 94.13], ['person', 70.76], ['person', 94.82], ['person', 91.94], ['person', 65.82], ['person', 77.22], ['person', 89.31], ['person', 95.52], ['person', 98.32], ['person', 89.57], ['person', 93.5], ['person', 67.59], ['person', 90.1], ['person', 82.15], ['person', 91.45], ['person', 69.68], ['person', 57.56], ['person', 57.27], ['person', 85.56], ['person', 64.42], ['person', 64.72], ['person', 68.1], ['person', 62.96], ['person', 85.11], ['person', 87.32], ['chair', 51.55], ['chair', 66.42], ['person', 51.4], ['person', 50.89]]}, {'img': '4544881698.jpg', 'datasource': 'coco80', 'det': [['person', 98.07]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 199
+		Processing image 21 of 199
+		Processing image 41 of 199
+		Processing image 61 of 199
+		Processing image 81 of 199
+		Processing image 101 of 199
+		Processing image 121 of 199
+		Processing image 141 of 199
+		Processing image 161 of 199
+		Processing image 181 of 199
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_52.txt
+First 2 entries of data for Neo4j array:
+[{'img': '140407961.jpg', 'datasource': 'coco80', 'det': [['person', 99.58], ['person', 82.12], ['person', 81.84]]}, {'img': '1409969752.jpg', 'datasource': 'coco80', 'det': [['oven', 92.48], ['person', 99.4], ['person', 99.84], ['oven', 58.35], ['bowl', 62.86], ['cup', 53.94]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 203
+		Processing image 21 of 203
+		Processing image 41 of 203
+		Processing image 61 of 203
+		Processing image 81 of 203
+		Processing image 101 of 203
+		Processing image 121 of 203
+		Processing image 141 of 203
+		Processing image 161 of 203
+		Processing image 181 of 203
+		Processing image 201 of 203
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_24.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4473562541.jpg', 'datasource': 'coco80', 'det': [['person', 99.8], ['person', 99.78], ['chair', 99.71], ['person', 83.77], ['person', 77.62], ['person', 61.93], ['person', 78.2], ['chair', 66.66], ['person', 70.26], ['chair', 95.57], ['person', 71.7], ['chair', 55.72], ['chair', 59.94], ['person', 99.18], ['chair', 97.35], ['person', 57.61], ['person', 61.4], ['person', 85.24], ['chair', 57.85], ['chair', 79.22]]}, {'img': '447357501.jpg', 'datasource': 'coco80', 'det': [['person', 92.57], ['bird', 88.32], ['bird', 96.7], ['bird', 73.84], ['bird', 98.34], ['bird', 88.22], ['bird', 94.65], ['bird', 96.56], ['bird', 56.95], ['bird', 54.04], ['bird', 94.18], ['bird', 86.16], ['bird', 51.88], ['bird', 65.55], ['bird', 78.72], ['bird', 54.22], ['bird', 66.16], ['bird', 96.83], ['bird', 57.18]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 194
+		Processing image 21 of 194
+		Processing image 41 of 194
+		Processing image 61 of 194
+		Processing image 81 of 194
+		Processing image 101 of 194
+		Processing image 121 of 194
+		Processing image 141 of 194
+		Processing image 161 of 194
+		Processing image 181 of 194
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_111.txt
+First 2 entries of data for Neo4j array:
+[{'img': '478415357.jpg', 'datasource': 'coco80', 'det': [['umbrella', 99.77], ['person', 99.78], ['handbag', 67.0]]}, {'img': '4784190702.jpg', 'datasource': 'coco80', 'det': [['person', 99.66], ['diningtable', 50.09], ['chair', 85.53]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 202
+		Processing image 21 of 202
+		Processing image 41 of 202
+		Processing image 61 of 202
+		Processing image 81 of 202
+		Processing image 101 of 202
+		Processing image 121 of 202
+		Processing image 141 of 202
+		Processing image 161 of 202
+		Processing image 181 of 202
+		Processing image 201 of 202
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_99.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4857561027.jpg', 'datasource': 'coco80', 'det': [['person', 99.42], ['chair', 72.23]]}, {'img': '4857569615.jpg', 'datasource': 'coco80', 'det': [['person', 99.09], ['person', 65.73]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 191
+		Processing image 21 of 191
+		Processing image 41 of 191
+		Processing image 61 of 191
+		Processing image 81 of 191
+		Processing image 101 of 191
+		Processing image 121 of 191
+		Processing image 141 of 191
+		Processing image 161 of 191
+		Processing image 181 of 191
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_79.txt
+First 2 entries of data for Neo4j array:
+[{'img': '457875937.jpg', 'datasource': 'coco80', 'det': [['dog', 99.64], ['dog', 98.45]]}, {'img': '4578792667.jpg', 'datasource': 'coco80', 'det': [['person', 52.22], ['person', 58.71], ['person', 56.27], ['person', 82.93]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 206
+		Processing image 21 of 206
+		Processing image 41 of 206
+		Processing image 61 of 206
+		Processing image 81 of 206
+		Processing image 101 of 206
+		Processing image 121 of 206
+		Processing image 141 of 206
+		Processing image 161 of 206
+		Processing image 181 of 206
+		Processing image 201 of 206
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_30.txt
+First 2 entries of data for Neo4j array:
+[{'img': '656260720.jpg', 'datasource': 'coco80', 'det': [['person', 99.91]]}, {'img': '6562993653.jpg', 'datasource': 'coco80', 'det': [['person', 97.06], ['person', 93.27], ['person', 98.67], ['person', 96.58], ['person', 50.44]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 191
+		Processing image 21 of 191
+		Processing image 41 of 191
+		Processing image 61 of 191
+		Processing image 81 of 191
+		Processing image 101 of 191
+		Processing image 121 of 191
+		Processing image 141 of 191
+		Processing image 161 of 191
+		Processing image 181 of 191
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_5.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4484418942.jpg', 'datasource': 'coco80', 'det': [['person', 99.98], ['bench', 99.06]]}, {'img': '4484420794.jpg', 'datasource': 'coco80', 'det': [['person', 99.99], ['diningtable', 61.42], ['person', 73.98]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 207
+		Processing image 21 of 207
+		Processing image 41 of 207
+		Processing image 61 of 207
+		Processing image 81 of 207
+		Processing image 101 of 207
+		Processing image 121 of 207
+		Processing image 141 of 207
+		Processing image 161 of 207
+		Processing image 181 of 207
+		Processing image 201 of 207
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_62.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3266151633.jpg', 'datasource': 'coco80', 'det': [['person', 53.04], ['person', 56.7], ['person', 51.86], ['person', 82.54], ['person', 64.44], ['person', 79.02]]}, {'img': '3266399073.jpg', 'datasource': 'coco80', 'det': [['person', 91.71], ['person', 99.09], ['person', 98.76], ['person', 78.27], ['cup', 56.67], ['cup', 91.41]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 201
+		Processing image 21 of 201
+		Processing image 41 of 201
+		Processing image 61 of 201
+		Processing image 81 of 201
+		Processing image 101 of 201
+		Processing image 121 of 201
+		Processing image 141 of 201
+		Processing image 161 of 201
+		Processing image 181 of 201
+		Processing image 201 of 201
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_45.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3689975998.jpg', 'datasource': 'coco80', 'det': [['person', 99.01]]}, {'img': '3690107455.jpg', 'datasource': 'coco80', 'det': [['person', 99.99]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 211
+		Processing image 21 of 211
+		Processing image 41 of 211
+		Processing image 61 of 211
+		Processing image 81 of 211
+		Processing image 101 of 211
+		Processing image 121 of 211
+		Processing image 141 of 211
+		Processing image 161 of 211
+		Processing image 181 of 211
+		Processing image 201 of 211
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_86.txt
+First 2 entries of data for Neo4j array:
+[{'img': '120394296.jpg', 'datasource': 'coco80', 'det': [['person', 75.8], ['person', 99.45], ['person', 85.09], ['person', 99.67], ['person', 63.6], ['person', 59.7], ['person', 90.95], ['person', 69.77], ['person', 86.16], ['person', 94.43], ['person', 93.81], ['person', 92.56], ['person', 92.87], ['person', 66.61], ['person', 78.38], ['person', 95.52], ['person', 96.33], ['person', 99.71], ['person', 99.12], ['handbag', 80.26], ['person', 58.08]]}, {'img': '1204996216.jpg', 'datasource': 'coco80', 'det': [['person', 98.49]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 187
+		Processing image 21 of 187
+		Processing image 41 of 187
+		Processing image 61 of 187
+		Processing image 81 of 187
+		Processing image 101 of 187
+		Processing image 121 of 187
+		Processing image 141 of 187
+		Processing image 161 of 187
+		Processing image 181 of 187
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_102.txt
+First 2 entries of data for Neo4j array:
+[{'img': '1435242484.jpg', 'datasource': 'coco80', 'det': [['person', 97.38], ['bed', 63.52]]}, {'img': '143552697.jpg', 'datasource': 'coco80', 'det': [['motorbike', 98.48], ['person', 99.95]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 195
+		Processing image 21 of 195
+		Processing image 41 of 195
+		Processing image 61 of 195
+		Processing image 81 of 195
+		Processing image 101 of 195
+		Processing image 121 of 195
+		Processing image 141 of 195
+		Processing image 161 of 195
+		Processing image 181 of 195
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_90.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2607861348.jpg', 'datasource': 'coco80', 'det': [['person', 94.78], ['person', 89.56], ['person', 98.94], ['person', 98.03]]}, {'img': '2608116127.jpg', 'datasource': 'coco80', 'det': [['person', 99.85], ['cat', 98.64], ['dog', 99.26]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 201
+		Processing image 21 of 201
+		Processing image 41 of 201
+		Processing image 61 of 201
+		Processing image 81 of 201
+		Processing image 101 of 201
+		Processing image 121 of 201
+		Processing image 141 of 201
+		Processing image 161 of 201
+		Processing image 181 of 201
+		Processing image 201 of 201
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_119.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2119660490.jpg', 'datasource': 'coco80', 'det': []}, {'img': '2119793019.jpg', 'datasource': 'coco80', 'det': [['person', 99.03], ['person', 99.36]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 193
+		Processing image 21 of 193
+		Processing image 41 of 193
+		Processing image 61 of 193
+		Processing image 81 of 193
+		Processing image 101 of 193
+		Processing image 121 of 193
+		Processing image 141 of 193
+		Processing image 161 of 193
+		Processing image 181 of 193
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_44.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4759529945.jpg', 'datasource': 'coco80', 'det': [['person', 98.14], ['person', 71.04], ['person', 99.42], ['person', 98.06], ['person', 99.8], ['person', 96.06], ['person', 96.51], ['person', 76.14], ['person', 90.46], ['person', 93.37], ['handbag', 93.63]]}, {'img': '4759622514.jpg', 'datasource': 'coco80', 'det': [['person', 76.14], ['person', 86.12], ['motorbike', 99.7], ['car', 78.68], ['car', 91.82], ['car', 84.59]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 205
+		Processing image 21 of 205
+		Processing image 41 of 205
+		Processing image 61 of 205
+		Processing image 81 of 205
+		Processing image 101 of 205
+		Processing image 121 of 205
+		Processing image 141 of 205
+		Processing image 161 of 205
+		Processing image 181 of 205
+		Processing image 201 of 205
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_31.txt
+First 2 entries of data for Neo4j array:
+[{'img': '688940111.jpg', 'datasource': 'coco80', 'det': [['person', 99.91], ['cup', 98.75]]}, {'img': '68897277.jpg', 'datasource': 'coco80', 'det': [['person', 99.95], ['person', 98.91]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 206
+		Processing image 21 of 206
+		Processing image 41 of 206
+		Processing image 61 of 206
+		Processing image 81 of 206
+		Processing image 101 of 206
+		Processing image 121 of 206
+		Processing image 141 of 206
+		Processing image 161 of 206
+		Processing image 181 of 206
+		Processing image 201 of 206
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_58.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4785739399.jpg', 'datasource': 'coco80', 'det': [['person', 99.64], ['boat', 94.08], ['person', 92.71], ['person', 99.53]]}, {'img': '4785852807.jpg', 'datasource': 'coco80', 'det': [['person', 99.38], ['person', 77.56], ['chair', 65.27], ['person', 81.87], ['person', 90.61]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 174
+		Processing image 21 of 174
+		Processing image 41 of 174
+		Processing image 61 of 174
+		Processing image 81 of 174
+		Processing image 101 of 174
+		Processing image 121 of 174
+		Processing image 141 of 174
+		Processing image 161 of 174
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_77.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2846843520.jpg', 'datasource': 'coco80', 'det': [['dog', 98.48]]}, {'img': '2846853277.jpg', 'datasource': 'coco80', 'det': [['person', 87.02], ['motorbike', 59.72]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 205
+		Processing image 21 of 205
+		Processing image 41 of 205
+		Processing image 61 of 205
+		Processing image 81 of 205
+		Processing image 101 of 205
+		Processing image 121 of 205
+		Processing image 141 of 205
+		Processing image 161 of 205
+		Processing image 181 of 205
+		Processing image 201 of 205
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_47.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4857156237.jpg', 'datasource': 'coco80', 'det': [['person', 99.91], ['car', 55.64]]}, {'img': '4857157703.jpg', 'datasource': 'coco80', 'det': [['person', 99.7]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 201
+		Processing image 21 of 201
+		Processing image 41 of 201
+		Processing image 61 of 201
+		Processing image 81 of 201
+		Processing image 101 of 201
+		Processing image 121 of 201
+		Processing image 141 of 201
+		Processing image 161 of 201
+		Processing image 181 of 201
+		Processing image 201 of 201
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_71.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4648460722.jpg', 'datasource': 'coco80', 'det': [['person', 62.26], ['person', 99.65], ['person', 98.63], ['person', 76.37], ['person', 98.12], ['person', 99.77], ['person', 54.2], ['person', 62.53], ['person', 97.93], ['person', 58.41], ['clock', 71.51], ['cell phone', 61.94]]}, {'img': '4648495016.jpg', 'datasource': 'coco80', 'det': [['person', 92.84], ['person', 93.57], ['person', 98.99], ['person', 74.91], ['person', 98.81], ['person', 94.09], ['person', 58.25]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 208
+		Processing image 21 of 208
+		Processing image 41 of 208
+		Processing image 61 of 208
+		Processing image 81 of 208
+		Processing image 101 of 208
+		Processing image 121 of 208
+		Processing image 141 of 208
+		Processing image 161 of 208
+		Processing image 181 of 208
+		Processing image 201 of 208
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_10.txt
+First 2 entries of data for Neo4j array:
+[{'img': '455914518.jpg', 'datasource': 'coco80', 'det': [['person', 99.92], ['handbag', 74.41]]}, {'img': '4559148111.jpg', 'datasource': 'coco80', 'det': [['person', 99.29], ['person', 99.55], ['person', 98.27], ['person', 99.93], ['person', 99.05], ['person', 99.89], ['cell phone', 51.34], ['person', 95.03]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 203
+		Processing image 21 of 203
+		Processing image 41 of 203
+		Processing image 61 of 203
+		Processing image 81 of 203
+		Processing image 101 of 203
+		Processing image 121 of 203
+		Processing image 141 of 203
+		Processing image 161 of 203
+		Processing image 181 of 203
+		Processing image 201 of 203
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_96.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2698487246.jpg', 'datasource': 'coco80', 'det': [['person', 97.34], ['person', 99.9], ['person', 75.85], ['person', 56.69], ['person', 84.31], ['person', 98.9], ['person', 84.16], ['person', 99.6], ['person', 99.91], ['person', 72.25]]}, {'img': '2698614194.jpg', 'datasource': 'coco80', 'det': [['person', 99.96], ['person', 94.29], ['person', 94.48], ['person', 99.2], ['person', 99.93], ['frisbee', 87.3]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 202
+		Processing image 21 of 202
+		Processing image 41 of 202
+		Processing image 61 of 202
+		Processing image 81 of 202
+		Processing image 101 of 202
+		Processing image 121 of 202
+		Processing image 141 of 202
+		Processing image 161 of 202
+		Processing image 181 of 202
+		Processing image 201 of 202
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_25.txt
+First 2 entries of data for Neo4j array:
+[{'img': '1678256882.jpg', 'datasource': 'coco80', 'det': [['person', 99.76], ['person', 80.35]]}, {'img': '1678345419.jpg', 'datasource': 'coco80', 'det': [['person', 99.97], ['sports ball', 54.37]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 193
+		Processing image 21 of 193
+		Processing image 41 of 193
+		Processing image 61 of 193
+		Processing image 81 of 193
+		Processing image 101 of 193
+		Processing image 121 of 193
+		Processing image 141 of 193
+		Processing image 161 of 193
+		Processing image 181 of 193
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_33.txt
+First 2 entries of data for Neo4j array:
+[{'img': '471094546.jpg', 'datasource': 'coco80', 'det': [['person', 99.73], ['person', 99.91]]}, {'img': '4710990069.jpg', 'datasource': 'coco80', 'det': [['person', 96.28], ['handbag', 74.27]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 199
+		Processing image 21 of 199
+		Processing image 41 of 199
+		Processing image 61 of 199
+		Processing image 81 of 199
+		Processing image 101 of 199
+		Processing image 121 of 199
+		Processing image 141 of 199
+		Processing image 161 of 199
+		Processing image 181 of 199
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_85.txt
+First 2 entries of data for Neo4j array:
+[{'img': '7368081478.jpg', 'datasource': 'coco80', 'det': [['person', 99.98], ['surfboard', 99.31]]}, {'img': '7371279360.jpg', 'datasource': 'coco80', 'det': [['person', 99.91], ['person', 60.53], ['person', 63.06], ['person', 85.64], ['person', 67.51]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 205
+		Processing image 21 of 205
+		Processing image 41 of 205
+		Processing image 61 of 205
+		Processing image 81 of 205
+		Processing image 101 of 205
+		Processing image 121 of 205
+		Processing image 141 of 205
+		Processing image 161 of 205
+		Processing image 181 of 205
+		Processing image 201 of 205
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_11.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2718376488.jpg', 'datasource': 'coco80', 'det': [['person', 97.28], ['person', 87.97], ['person', 97.88], ['person', 91.88], ['cow', 59.99], ['person', 51.18], ['person', 52.45]]}, {'img': '2718495608.jpg', 'datasource': 'coco80', 'det': [['person', 100.0], ['person', 98.91], ['person', 96.43]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 196
+		Processing image 21 of 196
+		Processing image 41 of 196
+		Processing image 61 of 196
+		Processing image 81 of 196
+		Processing image 101 of 196
+		Processing image 121 of 196
+		Processing image 141 of 196
+		Processing image 161 of 196
+		Processing image 181 of 196
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_105.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2513260012.jpg', 'datasource': 'coco80', 'det': [['dog', 95.07], ['dog', 98.4]]}, {'img': '2513740120.jpg', 'datasource': 'coco80', 'det': [['person', 98.64]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 188
+		Processing image 21 of 188
+		Processing image 41 of 188
+		Processing image 61 of 188
+		Processing image 81 of 188
+		Processing image 101 of 188
+		Processing image 121 of 188
+		Processing image 141 of 188
+		Processing image 161 of 188
+		Processing image 181 of 188
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_20.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2110692070.jpg', 'datasource': 'coco80', 'det': [['dog', 90.33]]}, {'img': '2110775531.jpg', 'datasource': 'coco80', 'det': [['person', 99.97], ['person', 99.7], ['person', 98.55], ['person', 99.95], ['person', 99.9], ['person', 99.28], ['person', 95.74], ['person', 65.03]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 205
+		Processing image 21 of 205
+		Processing image 41 of 205
+		Processing image 61 of 205
+		Processing image 81 of 205
+		Processing image 101 of 205
+		Processing image 121 of 205
+		Processing image 141 of 205
+		Processing image 161 of 205
+		Processing image 181 of 205
+		Processing image 201 of 205
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_21.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2038282729.jpg', 'datasource': 'coco80', 'det': [['person', 99.27], ['person', 99.66], ['pottedplant', 80.1], ['person', 69.52], ['person', 76.23], ['person', 80.16], ['person', 83.05], ['person', 94.11], ['person', 84.83], ['person', 99.78], ['person', 91.14], ['person', 98.03], ['person', 97.02], ['person', 96.42], ['person', 95.42], ['person', 96.51], ['person', 70.14]]}, {'img': '2039175551.jpg', 'datasource': 'coco80', 'det': [['person', 98.35]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 190
+		Processing image 21 of 190
+		Processing image 41 of 190
+		Processing image 61 of 190
+		Processing image 81 of 190
+		Processing image 101 of 190
+		Processing image 121 of 190
+		Processing image 141 of 190
+		Processing image 161 of 190
+		Processing image 181 of 190
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_50.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3568673111.jpg', 'datasource': 'coco80', 'det': [['person', 99.84], ['car', 88.89], ['person', 99.46], ['car', 63.5], ['person', 72.62], ['car', 91.57], ['car', 98.22]]}, {'img': '3568918598.jpg', 'datasource': 'coco80', 'det': [['dog', 97.42], ['dog', 52.33], ['car', 93.58]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 192
+		Processing image 21 of 192
+		Processing image 41 of 192
+		Processing image 61 of 192
+		Processing image 81 of 192
+		Processing image 101 of 192
+		Processing image 121 of 192
+		Processing image 141 of 192
+		Processing image 161 of 192
+		Processing image 181 of 192
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_48.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4705885089.jpg', 'datasource': 'coco80', 'det': [['person', 82.74], ['person', 99.33], ['person', 99.53], ['person', 87.97], ['person', 99.3], ['person', 62.21], ['bed', 77.82], ['chair', 52.48]]}, {'img': '2102030040.jpg', 'datasource': 'coco80', 'det': [['person', 99.92]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 202
+		Processing image 21 of 202
+		Processing image 41 of 202
+		Processing image 61 of 202
+		Processing image 81 of 202
+		Processing image 101 of 202
+		Processing image 121 of 202
+		Processing image 141 of 202
+		Processing image 161 of 202
+		Processing image 181 of 202
+		Processing image 201 of 202
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_122.txt
+First 2 entries of data for Neo4j array:
+[{'img': '7185642084.jpg', 'datasource': 'coco80', 'det': [['person', 96.05], ['person', 99.7], ['person', 99.89], ['person', 99.07], ['person', 99.03]]}, {'img': '3086859525.jpg', 'datasource': 'coco80', 'det': [['person', 78.74], ['person', 98.49], ['person', 99.34], ['person', 99.08], ['person', 99.73], ['person', 97.16], ['person', 51.92], ['person', 53.02], ['person', 53.08]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 189
+		Processing image 21 of 189
+		Processing image 41 of 189
+		Processing image 61 of 189
+		Processing image 81 of 189
+		Processing image 101 of 189
+		Processing image 121 of 189
+		Processing image 141 of 189
+		Processing image 161 of 189
+		Processing image 181 of 189
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_87.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3615239961.jpg', 'datasource': 'coco80', 'det': [['person', 94.45]]}, {'img': '361565925.jpg', 'datasource': 'coco80', 'det': [['person', 99.97]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 196
+		Processing image 21 of 196
+		Processing image 41 of 196
+		Processing image 61 of 196
+		Processing image 81 of 196
+		Processing image 101 of 196
+		Processing image 121 of 196
+		Processing image 141 of 196
+		Processing image 161 of 196
+		Processing image 181 of 196
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_1.txt
+First 2 entries of data for Neo4j array:
+[{'img': '1000092795.jpg', 'datasource': 'coco80', 'det': [['person', 99.98]]}, {'img': '10002456.jpg', 'datasource': 'coco80', 'det': [['person', 98.9]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 196
+		Processing image 21 of 196
+		Processing image 41 of 196
+		Processing image 61 of 196
+		Processing image 81 of 196
+		Processing image 101 of 196
+		Processing image 121 of 196
+		Processing image 141 of 196
+		Processing image 161 of 196
+		Processing image 181 of 196
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_40.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4232778834.jpg', 'datasource': 'coco80', 'det': [['chair', 88.38], ['chair', 71.8], ['person', 99.84], ['person', 99.85], ['chair', 54.79], ['book', 57.66]]}, {'img': '4232844448.jpg', 'datasource': 'coco80', 'det': [['person', 99.84], ['person', 99.17], ['chair', 53.38]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 202
+		Processing image 21 of 202
+		Processing image 41 of 202
+		Processing image 61 of 202
+		Processing image 81 of 202
+		Processing image 101 of 202
+		Processing image 121 of 202
+		Processing image 141 of 202
+		Processing image 161 of 202
+		Processing image 181 of 202
+		Processing image 201 of 202
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_29.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4945277384.jpg', 'datasource': 'coco80', 'det': [['person', 99.67], ['person', 79.9], ['person', 92.27]]}, {'img': '4945314566.jpg', 'datasource': 'coco80', 'det': [['person', 99.75]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 201
+		Processing image 21 of 201
+		Processing image 41 of 201
+		Processing image 61 of 201
+		Processing image 81 of 201
+		Processing image 101 of 201
+		Processing image 121 of 201
+		Processing image 141 of 201
+		Processing image 161 of 201
+		Processing image 181 of 201
+		Processing image 201 of 201
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_3.txt
+First 2 entries of data for Neo4j array:
+[{'img': '412082368.jpg', 'datasource': 'coco80', 'det': [['kite', 92.62], ['person', 99.2], ['person', 97.51], ['person', 83.53], ['person', 72.98], ['person', 76.49], ['baseball bat', 77.19]]}, {'img': '412101267.jpg', 'datasource': 'coco80', 'det': [['dog', 99.23], ['dog', 98.65]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 190
+		Processing image 21 of 190
+		Processing image 41 of 190
+		Processing image 61 of 190
+		Processing image 81 of 190
+		Processing image 101 of 190
+		Processing image 121 of 190
+		Processing image 141 of 190
+		Processing image 161 of 190
+		Processing image 181 of 190
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_16.txt
+First 2 entries of data for Neo4j array:
+[{'img': '462509510.jpg', 'datasource': 'coco80', 'det': [['person', 99.83]]}, {'img': '4625152980.jpg', 'datasource': 'coco80', 'det': [['person', 99.97], ['person', 88.31]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 189
+		Processing image 21 of 189
+		Processing image 41 of 189
+		Processing image 61 of 189
+		Processing image 81 of 189
+		Processing image 101 of 189
+		Processing image 121 of 189
+		Processing image 141 of 189
+		Processing image 161 of 189
+		Processing image 181 of 189
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_117.txt
+First 2 entries of data for Neo4j array:
+[{'img': '390901667.jpg', 'datasource': 'coco80', 'det': [['person', 99.8], ['person', 94.03], ['bottle', 66.05], ['bottle', 53.51], ['bottle', 54.62], ['bottle', 75.33], ['bottle', 93.87]]}, {'img': '390902331.jpg', 'datasource': 'coco80', 'det': [['person', 99.97], ['person', 98.38], ['person', 70.0]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 187
+		Processing image 21 of 187
+		Processing image 41 of 187
+		Processing image 61 of 187
+		Processing image 81 of 187
+		Processing image 101 of 187
+		Processing image 121 of 187
+		Processing image 141 of 187
+		Processing image 161 of 187
+		Processing image 181 of 187
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_92.txt
+First 2 entries of data for Neo4j array:
+[{'img': '446908917.jpg', 'datasource': 'coco80', 'det': [['truck', 71.52], ['car', 59.92], ['truck', 79.65], ['person', 99.75]]}, {'img': '4469153514.jpg', 'datasource': 'coco80', 'det': [['person', 58.1], ['person', 55.05], ['person', 99.94], ['person', 99.78], ['person', 98.93]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 185
+		Processing image 21 of 185
+		Processing image 41 of 185
+		Processing image 61 of 185
+		Processing image 81 of 185
+		Processing image 101 of 185
+		Processing image 121 of 185
+		Processing image 141 of 185
+		Processing image 161 of 185
+		Processing image 181 of 185
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_109.txt
+First 2 entries of data for Neo4j array:
+[{'img': '36026845.jpg', 'datasource': 'coco80', 'det': [['person', 77.98], ['person', 99.67]]}, {'img': '360275648.jpg', 'datasource': 'coco80', 'det': [['person', 73.34], ['person', 68.92], ['person', 83.17], ['person', 98.39], ['person', 95.37], ['backpack', 88.16], ['person', 95.88], ['person', 99.73], ['person', 94.19], ['person', 99.55], ['handbag', 64.49], ['person', 60.93]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 203
+		Processing image 21 of 203
+		Processing image 41 of 203
+		Processing image 61 of 203
+		Processing image 81 of 203
+		Processing image 101 of 203
+		Processing image 121 of 203
+		Processing image 141 of 203
+		Processing image 161 of 203
+		Processing image 181 of 203
+		Processing image 201 of 203
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_72.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4772317885.jpg', 'datasource': 'coco80', 'det': [['person', 99.99], ['bench', 98.06], ['skateboard', 63.6]]}, {'img': '477254932.jpg', 'datasource': 'coco80', 'det': [['person', 93.74], ['person', 95.97], ['bench', 73.02], ['person', 98.76], ['diningtable', 51.84], ['person', 56.98], ['person', 85.19], ['person', 97.69], ['chair', 59.7], ['person', 62.61], ['person', 69.04], ['person', 59.61]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 201
+		Processing image 21 of 201
+		Processing image 41 of 201
+		Processing image 61 of 201
+		Processing image 81 of 201
+		Processing image 101 of 201
+		Processing image 121 of 201
+		Processing image 141 of 201
+		Processing image 161 of 201
+		Processing image 181 of 201
+		Processing image 201 of 201
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_32.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3009018821.jpg', 'datasource': 'coco80', 'det': [['person', 99.9], ['baseball bat', 61.99], ['person', 99.75], ['pottedplant', 94.39], ['chair', 95.57], ['chair', 70.73], ['pottedplant', 63.77]]}, {'img': '3009035153.jpg', 'datasource': 'coco80', 'det': [['person', 99.99]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 194
+		Processing image 21 of 194
+		Processing image 41 of 194
+		Processing image 61 of 194
+		Processing image 81 of 194
+		Processing image 101 of 194
+		Processing image 121 of 194
+		Processing image 141 of 194
+		Processing image 161 of 194
+		Processing image 181 of 194
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_57.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4898322279.jpg', 'datasource': 'coco80', 'det': [['person', 99.8], ['person', 92.65]]}, {'img': '4900222239.jpg', 'datasource': 'coco80', 'det': [['person', 99.72], ['bicycle', 95.94]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 199
+		Processing image 21 of 199
+		Processing image 41 of 199
+		Processing image 61 of 199
+		Processing image 81 of 199
+		Processing image 101 of 199
+		Processing image 121 of 199
+		Processing image 141 of 199
+		Processing image 161 of 199
+		Processing image 181 of 199
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_97.txt
+First 2 entries of data for Neo4j array:
+[{'img': '1154930578.jpg', 'datasource': 'coco80', 'det': [['person', 99.72], ['person', 99.9], ['diningtable', 91.54], ['person', 83.77], ['wine glass', 99.24]]}, {'img': '11551286.jpg', 'datasource': 'coco80', 'det': [['person', 99.98]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 189
+		Processing image 21 of 189
+		Processing image 41 of 189
+		Processing image 61 of 189
+		Processing image 81 of 189
+		Processing image 101 of 189
+		Processing image 121 of 189
+		Processing image 141 of 189
+		Processing image 161 of 189
+		Processing image 181 of 189
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_74.txt
+First 2 entries of data for Neo4j array:
+[{'img': '4091782118.jpg', 'datasource': 'coco80', 'det': [['person', 97.49]]}, {'img': '409198440.jpg', 'datasource': 'coco80', 'det': [['person', 99.37], ['person', 99.92], ['person', 99.61], ['diningtable', 97.79], ['person', 95.64], ['bottle', 96.51], ['bottle', 52.72], ['chair', 93.6], ['wine glass', 87.54], ['wine glass', 96.56], ['wine glass', 97.21], ['cup', 86.54], ['wine glass', 90.63], ['bottle', 82.22], ['bottle', 87.6], ['vase', 58.51], ['wine glass', 52.03], ['wine glass', 66.53], ['cup', 97.63], ['cup', 95.84], ['fork', 61.5]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 187
+		Processing image 21 of 187
+		Processing image 41 of 187
+		Processing image 61 of 187
+		Processing image 81 of 187
+		Processing image 101 of 187
+		Processing image 121 of 187
+		Processing image 141 of 187
+		Processing image 161 of 187
+		Processing image 181 of 187
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_94.txt
+First 2 entries of data for Neo4j array:
+[{'img': '2408224709.jpg', 'datasource': 'coco80', 'det': [['person', 99.97]]}, {'img': '2408570692.jpg', 'datasource': 'coco80', 'det': [['train', 54.06], ['person', 95.69], ['person', 99.94], ['person', 98.09], ['person', 52.09], ['person', 65.51], ['person', 83.03], ['person', 83.54], ['person', 82.93], ['person', 76.11], ['person', 79.85]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 190
+		Processing image 21 of 190
+		Processing image 41 of 190
+		Processing image 61 of 190
+		Processing image 81 of 190
+		Processing image 101 of 190
+		Processing image 121 of 190
+		Processing image 141 of 190
+		Processing image 161 of 190
+		Processing image 181 of 190
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo/job_83.txt
+First 2 entries of data for Neo4j array:
+[{'img': '3371919733.jpg', 'datasource': 'coco80', 'det': [['person', 99.83], ['car', 96.27], ['person', 68.66], ['person', 78.36], ['person', 83.6], ['person', 99.83], ['person', 99.91], ['person', 99.96], ['person', 92.86], ['person', 90.07], ['person', 83.09], ['sports ball', 81.62]]}, {'img': '3372022051.jpg', 'datasource': 'coco80', 'det': [['person', 99.02], ['bicycle', 94.86], ['pottedplant', 98.18]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 202
+		Processing image 21 of 202
+		Processing image 41 of 202
+		Processing image 61 of 202
+		Processing image 81 of 202
+		Processing image 101 of 202
+		Processing image 121 of 202
+		Processing image 141 of 202
+		Processing image 161 of 202
+		Processing image 181 of 202
+		Processing image 201 of 202
+Status Neo4j db updates: SUCCESS
+
+
+Normal exit from program.
+
+((ce3th1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$

@@ -1,0 +1,567 @@
+(ce3th1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ python3 detection_update_neo_1.py -sf 20 -iploc /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_6.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000384670.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 97.82], ['person', 99.78], ['tennis racket', 97.76]]}, {'img': '000000384808.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.55], ['toilet', 94.65], ['sink', 80.51], ['sink', 90.94], ['bottle', 74.47], ['cell phone', 90.03]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 101
+		Processing image 21 of 101
+		Processing image 41 of 101
+		Processing image 61 of 101
+		Processing image 81 of 101
+		Processing image 101 of 101
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_23.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000525600.jpg', 'datasource': 'coco_val_2017', 'det': [['giraffe', 89.48], ['giraffe', 55.24], ['giraffe', 69.77], ['giraffe', 67.04], ['giraffe', 63.44], ['giraffe', 98.24]]}, {'img': '000000526103.jpg', 'datasource': 'coco_val_2017', 'det': [['elephant', 85.5], ['elephant', 81.68]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 90
+		Processing image 21 of 90
+		Processing image 41 of 90
+		Processing image 61 of 90
+		Processing image 81 of 90
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_2.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000233771.jpg', 'datasource': 'coco_val_2017', 'det': [['bus', 84.37], ['umbrella', 92.15], ['person', 99.86], ['person', 77.24], ['bus', 65.09], ['person', 88.6], ['person', 96.07], ['person', 99.53], ['handbag', 90.04], ['person', 99.96], ['person', 60.24]]}, {'img': '000000233825.jpg', 'datasource': 'coco_val_2017', 'det': [['tvmonitor', 99.35], ['sofa', 62.69], ['diningtable', 93.01], ['book', 63.22], ['book', 53.23], ['book', 51.64], ['book', 60.43], ['book', 55.05], ['book', 50.18], ['vase', 80.65], ['book', 71.01], ['book', 62.96], ['book', 55.24], ['book', 50.22], ['remote', 54.89]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 92
+		Processing image 21 of 92
+		Processing image 41 of 92
+		Processing image 61 of 92
+		Processing image 81 of 92
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_26.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000150930.jpg', 'datasource': 'coco_val_2017', 'det': [['clock', 65.58]]}, {'img': '000000151480.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 58.32], ['person', 68.97], ['person', 84.62], ['person', 53.87], ['person', 99.53], ['person', 99.54], ['person', 95.67], ['person', 92.67], ['person', 99.68], ['person', 63.14], ['person', 73.12], ['person', 71.11], ['person', 62.47], ['person', 68.52], ['person', 60.37], ['person', 88.93], ['person', 95.29], ['person', 80.85], ['backpack', 71.36], ['baseball glove', 87.08]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 84
+		Processing image 21 of 84
+		Processing image 41 of 84
+		Processing image 61 of 84
+		Processing image 81 of 84
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_39.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000519611.jpg', 'datasource': 'coco_val_2017', 'det': [['bear', 99.97]]}, {'img': '000000061584.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.3], ['chair', 87.24], ['chair', 69.11], ['chair', 97.52], ['dog', 64.33], ['horse', 53.15]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 84
+		Processing image 21 of 84
+		Processing image 41 of 84
+		Processing image 61 of 84
+		Processing image 81 of 84
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_7.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000271457.jpg', 'datasource': 'coco_val_2017', 'det': [['bench', 99.64]]}, {'img': '000000271728.jpg', 'datasource': 'coco_val_2017', 'det': [['sofa', 77.18], ['sofa', 98.48], ['laptop', 99.64], ['cat', 98.45], ['book', 67.65], ['cup', 96.7], ['book', 63.61], ['remote', 98.52]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 85
+		Processing image 21 of 85
+		Processing image 41 of 85
+		Processing image 61 of 85
+		Processing image 81 of 85
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_14.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000376307.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.43], ['person', 99.26], ['chair', 68.36], ['apple', 56.88], ['bowl', 68.72]]}, {'img': '000000376310.jpg', 'datasource': 'coco_val_2017', 'det': [['sink', 96.34], ['sink', 98.62], ['sink', 93.99]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 91
+		Processing image 21 of 91
+		Processing image 41 of 91
+		Processing image 61 of 91
+		Processing image 81 of 91
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_18.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000473974.jpg', 'datasource': 'coco_val_2017', 'det': [['zebra', 99.62], ['zebra', 74.23], ['zebra', 72.05], ['zebra', 99.5], ['zebra', 95.23]]}, {'img': '000000474021.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 94.46], ['person', 99.97], ['sofa', 73.38], ['person', 89.74], ['remote', 80.01], ['book', 50.75], ['book', 52.74], ['remote', 63.59]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 95
+		Processing image 21 of 95
+		Processing image 41 of 95
+		Processing image 61 of 95
+		Processing image 81 of 95
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_17.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000229111.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.95], ['remote', 70.93], ['remote', 93.15]]}, {'img': '000000229221.jpg', 'datasource': 'coco_val_2017', 'det': [['cow', 99.93], ['cow', 73.93]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 90
+		Processing image 21 of 90
+		Processing image 41 of 90
+		Processing image 61 of 90
+		Processing image 81 of 90
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_38.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000570782.jpg', 'datasource': 'coco_val_2017', 'det': [['laptop', 90.42], ['laptop', 99.19], ['chair', 96.4], ['keyboard', 56.92], ['keyboard', 70.31], ['mouse', 99.12], ['remote', 56.92]]}, {'img': '000000570834.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.67], ['bicycle', 71.91], ['bicycle', 55.63], ['bicycle', 98.61], ['bicycle', 91.02], ['bicycle', 96.84], ['bicycle', 52.85]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 93
+		Processing image 21 of 93
+		Processing image 41 of 93
+		Processing image 61 of 93
+		Processing image 81 of 93
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_8.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000008762.jpg', 'datasource': 'coco_val_2017', 'det': [['traffic light', 93.44], ['traffic light', 97.27], ['traffic light', 59.02]]}, {'img': '000000009378.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.43], ['frisbee', 99.55], ['person', 87.8], ['person', 69.16], ['person', 63.81], ['person', 55.9]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 89
+		Processing image 21 of 89
+		Processing image 41 of 89
+		Processing image 61 of 89
+		Processing image 81 of 89
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_27.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000244181.jpg', 'datasource': 'coco_val_2017', 'det': [['bottle', 72.55], ['sandwich', 99.45], ['sandwich', 94.74]]}, {'img': '000000244379.jpg', 'datasource': 'coco_val_2017', 'det': [['traffic light', 99.67], ['traffic light', 99.54], ['car', 74.67]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 92
+		Processing image 21 of 92
+		Processing image 41 of 92
+		Processing image 61 of 92
+		Processing image 81 of 92
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_28.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000213445.jpg', 'datasource': 'coco_val_2017', 'det': [['chair', 90.38], ['chair', 77.25], ['sofa', 70.29], ['cat', 99.78], ['bowl', 89.72], ['book', 56.94], ['book', 87.25], ['book', 53.19], ['book', 69.49], ['book', 73.66], ['book', 54.09], ['book', 51.75]]}, {'img': '000000213547.jpg', 'datasource': 'coco_val_2017', 'det': [['refrigerator', 93.65], ['person', 99.85], ['person', 98.4], ['horse', 92.76], ['bottle', 64.46], ['bottle', 79.18], ['cake', 63.08], ['bottle', 61.21]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 96
+		Processing image 21 of 96
+		Processing image 41 of 96
+		Processing image 61 of 96
+		Processing image 81 of 96
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_15.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000486104.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 55.66], ['person', 88.24], ['person', 99.58], ['person', 98.39], ['person', 99.49], ['person', 60.41], ['person', 66.74], ['person', 60.5], ['person', 56.17], ['person', 69.02], ['person', 54.11], ['person', 66.59], ['person', 54.38], ['person', 71.34], ['person', 70.71], ['person', 51.68], ['person', 67.62], ['person', 80.43]]}, {'img': '000000490470.jpg', 'datasource': 'coco_val_2017', 'det': [['boat', 52.82], ['boat', 59.9]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 87
+		Processing image 21 of 87
+		Processing image 41 of 87
+		Processing image 61 of 87
+		Processing image 81 of 87
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_12.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000331569.jpg', 'datasource': 'coco_val_2017', 'det': [['cup', 97.78]]}, {'img': '000000331604.jpg', 'datasource': 'coco_val_2017', 'det': [['surfboard', 99.23], ['person', 98.39]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 80
+		Processing image 21 of 80
+		Processing image 41 of 80
+		Processing image 61 of 80
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_35.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000263463.jpg', 'datasource': 'coco_val_2017', 'det': [['car', 66.03], ['dog', 88.63]]}, {'img': '000000263474.jpg', 'datasource': 'coco_val_2017', 'det': [['toilet', 91.69]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 94
+		Processing image 21 of 94
+		Processing image 41 of 94
+		Processing image 61 of 94
+		Processing image 81 of 94
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_34.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000032570.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.93], ['surfboard', 93.87]]}, {'img': '000000032610.jpg', 'datasource': 'coco_val_2017', 'det': [['laptop', 99.79], ['laptop', 99.71], ['backpack', 96.71], ['laptop', 85.81]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 93
+		Processing image 21 of 93
+		Processing image 41 of 93
+		Processing image 61 of 93
+		Processing image 81 of 93
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_9.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000542856.jpg', 'datasource': 'coco_val_2017', 'det': [['bus', 99.87], ['traffic light', 65.91], ['person', 95.81], ['person', 89.86], ['person', 82.16]]}, {'img': '000000543043.jpg', 'datasource': 'coco_val_2017', 'det': [['boat', 50.53], ['bus', 63.92], ['car', 90.97]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 93
+		Processing image 21 of 93
+		Processing image 41 of 93
+		Processing image 61 of 93
+		Processing image 81 of 93
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_19.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000139077.jpg', 'datasource': 'coco_val_2017', 'det': [['tvmonitor', 99.6], ['person', 99.19], ['book', 53.6], ['remote', 93.66]]}, {'img': '000000139684.jpg', 'datasource': 'coco_val_2017', 'det': [['chair', 97.74], ['chair', 98.17], ['sofa', 98.22], ['tvmonitor', 99.9], ['dog', 61.51], ['book', 61.96], ['book', 59.04]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 86
+		Processing image 21 of 86
+		Processing image 41 of 86
+		Processing image 61 of 86
+		Processing image 81 of 86
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_13.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000561256.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.93], ['sink', 68.33]]}, {'img': '000000561366.jpg', 'datasource': 'coco_val_2017', 'det': [['keyboard', 83.24], ['cell phone', 75.74]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 103
+		Processing image 21 of 103
+		Processing image 41 of 103
+		Processing image 61 of 103
+		Processing image 81 of 103
+		Processing image 101 of 103
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_22.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000097230.jpg', 'datasource': 'coco_val_2017', 'det': [['elephant', 99.29], ['elephant', 96.29]]}, {'img': '000000097278.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.99], ['snowboard', 88.63]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 98
+		Processing image 21 of 98
+		Processing image 41 of 98
+		Processing image 61 of 98
+		Processing image 81 of 98
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_36.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000438226.jpg', 'datasource': 'coco_val_2017', 'det': [['sandwich', 88.92], ['sandwich', 87.07], ['diningtable', 99.79], ['fork', 99.21], ['wine glass', 84.6]]}, {'img': '000000544306.jpg', 'datasource': 'coco_val_2017', 'det': [['clock', 99.8], ['clock', 99.11]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 87
+		Processing image 21 of 87
+		Processing image 41 of 87
+		Processing image 61 of 87
+		Processing image 81 of 87
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_4.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000261318.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.57], ['chair', 96.52], ['suitcase', 96.8]]}, {'img': '000000261535.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.66], ['person', 71.65], ['tennis racket', 99.7], ['sports ball', 97.37], ['sports ball', 66.31], ['sports ball', 69.96], ['sports ball', 98.37]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 97
+		Processing image 21 of 97
+		Processing image 41 of 97
+		Processing image 61 of 97
+		Processing image 81 of 97
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_37.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000082696.jpg', 'datasource': 'coco_val_2017', 'det': [['chair', 97.81], ['diningtable', 82.45], ['person', 87.78], ['chair', 99.2], ['chair', 69.06], ['chair', 98.1], ['bird', 99.5]]}, {'img': '000000082715.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 97.73], ['surfboard', 85.73], ['surfboard', 95.25]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 86
+		Processing image 21 of 86
+		Processing image 41 of 86
+		Processing image 61 of 86
+		Processing image 81 of 86
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_24.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000298396.jpg', 'datasource': 'coco_val_2017', 'det': [['diningtable', 99.81], ['oven', 79.53], ['chair', 97.92], ['bowl', 96.63], ['chair', 58.29], ['clock', 94.29], ['knife', 67.16], ['knife', 57.16], ['knife', 86.88], ['knife', 79.36], ['knife', 65.36], ['knife', 55.78], ['sink', 68.74]]}, {'img': '000000298697.jpg', 'datasource': 'coco_val_2017', 'det': []}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 93
+		Processing image 21 of 93
+		Processing image 41 of 93
+		Processing image 61 of 93
+		Processing image 81 of 93
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_30.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000194724.jpg', 'datasource': 'coco_val_2017', 'det': [['chair', 70.42], ['diningtable', 97.91], ['pizza', 87.51], ['bottle', 99.64], ['cup', 99.84], ['cell phone', 89.6], ['bottle', 78.92], ['bottle', 76.1], ['bottle', 90.83], ['bottle', 92.36], ['bottle', 80.09], ['bottle', 59.36], ['bottle', 89.33], ['bottle', 93.97], ['bottle', 83.41]]}, {'img': '000000194746.jpg', 'datasource': 'coco_val_2017', 'det': [['pizza', 56.21], ['oven', 99.77], ['pizza', 65.26]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 93
+		Processing image 21 of 93
+		Processing image 41 of 93
+		Processing image 61 of 93
+		Processing image 81 of 93
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_5.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000064868.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.97], ['oven', 99.07], ['bottle', 88.07]]}, {'img': '000000064898.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 90.47], ['person', 98.83], ['surfboard', 98.56]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 95
+		Processing image 21 of 95
+		Processing image 41 of 95
+		Processing image 61 of 95
+		Processing image 81 of 95
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_31.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000513283.jpg', 'datasource': 'coco_val_2017', 'det': [['pizza', 74.11], ['knife', 55.04], ['bottle', 50.68], ['bottle', 82.72]]}, {'img': '000000513567.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 100.0], ['person', 99.95], ['person', 94.11], ['person', 52.54], ['person', 80.43], ['hot dog', 91.32], ['person', 97.96], ['person', 99.19], ['hot dog', 89.41], ['backpack', 78.79]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 89
+		Processing image 21 of 89
+		Processing image 41 of 89
+		Processing image 61 of 89
+		Processing image 81 of 89
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_10.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000500663.jpg', 'datasource': 'coco_val_2017', 'det': [['cow', 91.75]]}, {'img': '000000501005.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.91], ['person', 95.68], ['person', 99.11], ['baseball bat', 99.57], ['baseball glove', 99.55]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 90
+		Processing image 21 of 90
+		Processing image 41 of 90
+		Processing image 61 of 90
+		Processing image 81 of 90
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_25.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000530146.jpg', 'datasource': 'coco_val_2017', 'det': [['diningtable', 68.17], ['cup', 96.38], ['cup', 81.37], ['bowl', 90.99], ['fork', 80.46], ['knife', 70.92]]}, {'img': '000000530162.jpg', 'datasource': 'coco_val_2017', 'det': [['umbrella', 94.34], ['person', 98.54], ['person', 99.51], ['person', 98.95], ['person', 99.75], ['person', 99.75], ['person', 99.82], ['person', 98.91], ['person', 98.7]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 93
+		Processing image 21 of 93
+		Processing image 41 of 93
+		Processing image 61 of 93
+		Processing image 81 of 93
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_33.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000053529.jpg', 'datasource': 'coco_val_2017', 'det': [['truck', 50.97], ['dog', 98.04], ['person', 90.17]]}, {'img': '000000053624.jpg', 'datasource': 'coco_val_2017', 'det': [['elephant', 97.34], ['person', 79.17], ['person', 81.36]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 92
+		Processing image 21 of 92
+		Processing image 41 of 92
+		Processing image 61 of 92
+		Processing image 81 of 92
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_11.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000315001.jpg', 'datasource': 'coco_val_2017', 'det': [['bird', 85.88], ['bird', 59.3], ['bird', 57.44], ['bird', 51.64], ['bird', 83.99], ['bird', 69.01], ['bird', 76.37], ['bird', 63.12], ['bird', 79.79], ['bird', 88.05], ['bird', 56.52], ['bird', 95.58]]}, {'img': '000000315187.jpg', 'datasource': 'coco_val_2017', 'det': [['bus', 99.74], ['car', 98.27], ['traffic light', 84.76], ['car', 89.02], ['person', 62.04]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 97
+		Processing image 21 of 97
+		Processing image 41 of 97
+		Processing image 61 of 97
+		Processing image 81 of 97
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_20.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000429109.jpg', 'datasource': 'coco_val_2017', 'det': [['train', 82.76], ['bus', 64.74], ['bus', 67.62], ['person', 75.78], ['person', 55.71], ['bicycle', 93.77]]}, {'img': '000000429281.jpg', 'datasource': 'coco_val_2017', 'det': [['banana', 51.43], ['banana', 95.03]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 87
+		Processing image 21 of 87
+		Processing image 41 of 87
+		Processing image 61 of 87
+		Processing image 81 of 87
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_21.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000396903.jpg', 'datasource': 'coco_val_2017', 'det': [['aeroplane', 99.64]]}, {'img': '000000397133.jpg', 'datasource': 'coco_val_2017', 'det': [['diningtable', 63.1], ['person', 96.64], ['bowl', 82.01], ['spoon', 56.84], ['cup', 51.6], ['bowl', 97.16]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 90
+		Processing image 21 of 90
+		Processing image 41 of 90
+		Processing image 61 of 90
+		Processing image 81 of 90
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_1.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000000632.jpg', 'datasource': 'coco_val_2017', 'det': [['book', 81.02], ['bed', 99.64], ['pottedplant', 93.05], ['chair', 98.69], ['pottedplant', 99.86], ['book', 50.4], ['book', 55.8], ['book', 62.64], ['book', 62.28], ['bottle', 80.13], ['book', 58.13], ['book', 53.87], ['book', 60.37], ['book', 70.59], ['book', 70.45], ['book', 76.41], ['book', 65.21], ['book', 55.78]]}, {'img': '000000000724.jpg', 'datasource': 'coco_val_2017', 'det': [['stop sign', 99.92], ['stop sign', 87.08]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 88
+		Processing image 21 of 88
+		Processing image 41 of 88
+		Processing image 61 of 88
+		Processing image 81 of 88
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_40.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000094871.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.98], ['sheep', 88.08], ['person', 99.06], ['person', 97.21], ['person', 99.75], ['sheep', 59.85], ['sheep', 91.5]]}, {'img': '000000094944.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 98.85], ['person', 83.69], ['person', 99.66], ['snowboard', 94.62]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 84
+		Processing image 21 of 84
+		Processing image 41 of 84
+		Processing image 61 of 84
+		Processing image 81 of 84
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_29.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000456292.jpg', 'datasource': 'coco_val_2017', 'det': [['cat', 97.97]]}, {'img': '000000456303.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 87.47]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 91
+		Processing image 21 of 91
+		Processing image 41 of 91
+		Processing image 61 of 91
+		Processing image 81 of 91
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_3.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000462728.jpg', 'datasource': 'coco_val_2017', 'det': [['surfboard', 76.25], ['person', 85.33]]}, {'img': '000000462904.jpg', 'datasource': 'coco_val_2017', 'det': [['umbrella', 84.16], ['chair', 90.69], ['chair', 98.36], ['chair', 95.73], ['person', 79.0], ['person', 89.65], ['person', 82.22], ['person', 66.76], ['person', 93.16], ['person', 89.81]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 91
+		Processing image 21 of 91
+		Processing image 41 of 91
+		Processing image 61 of 91
+		Processing image 81 of 91
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_16.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000343803.jpg', 'datasource': 'coco_val_2017', 'det': [['person', 99.99], ['frisbee', 99.61]]}, {'img': '000000343934.jpg', 'datasource': 'coco_val_2017', 'det': [['motorbike', 99.91]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 84
+		Processing image 21 of 84
+		Processing image 41 of 84
+		Processing image 61 of 84
+		Processing image 81 of 84
+Status Neo4j db updates: SUCCESS
+
+
+Reloaded array from saved file: /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo/job_32.txt
+First 2 entries of data for Neo4j array:
+[{'img': '000000460841.jpg', 'datasource': 'coco_val_2017', 'det': [['cat', 91.56], ['bottle', 79.73]]}, {'img': '000000460927.jpg', 'datasource': 'coco_val_2017', 'det': [['bear', 99.89]]}]
+
+Attempting Neo4j db updates....
+
+		Processing image 1 of 88
+		Processing image 21 of 88
+		Processing image 41 of 88
+		Processing image 61 of 88
+		Processing image 81 of 88
+Status Neo4j db updates: SUCCESS
+
+
+Normal exit from program.
+
+(ce3th1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$
