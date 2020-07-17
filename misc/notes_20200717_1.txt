@@ -1,0 +1,939 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+multiprocessing package check:
+RQ: https://pypi.org/project/multi-rq/
+workflows
+celery
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		UPLOAD TO GOOGLE DRIVE
+		
+		40670 in /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017
+
+python3 test_gdrive_upload_1.py
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		SIDDY notebook
+%cd "/content/gdrive/My Drive/ThesisStoryGen/Data"
+import os
+os.mkdir('coco_val_2017')
+%cd "coco_val_2017"
+!sudo wget http://images.cocodataset.org/zips/val2017.zip
+!ls
+!unzip val2017.zip
+!ls
+%cd val2017/
+len(os.listdir(os.getcwd()))
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		STT USING DEEPSPEECH
+
+	version 0.7.3
+https://deepspeech.readthedocs.io/en/v0.7.3/?badge=latest
+
+# Create anaconda env
+conda create -n ce4ds1 python=3.7
+	# Create and activate a virtualenv
+	virtualenv -p python3 $HOME/tmp/deepspeech-venv/
+	source $HOME/tmp/deepspeech-venv/bin/activate
+			
+conda install jupyter
+(ce4ds1) rohit@rohitu2004lts:~$ pip install deepspeech
+Collecting deepspeech
+  Downloading deepspeech-0.7.3-cp37-cp37m-manylinux1_x86_64.whl (9.7 MB)
+     |████████████████████████████████| 9.7 MB 7.7 MB/s 
+Collecting numpy>=1.14.5
+  Downloading numpy-1.18.5-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+     |████████████████████████████████| 20.1 MB 282 kB/s 
+Installing collected packages: numpy, deepspeech
+Successfully installed deepspeech-0.7.3 numpy-1.18.5
+(ce4ds1) rohit@rohitu2004lts:~$
+# Download pre-trained English model files
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.scorer
+
+		INFERENCE comamnd
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/input1.wav
+
+input1.wav
+Make me a story about persons sitting at a table. They are playing cards.
+INFERENCE: me me a tory about persons sitting at table the blanchards
+
+input2.wav
+I want a story about a car on the road. A child plays with a toy.
+INFERENCE: i want a story about a car on the road a child plays with a toy
+
+input3.wav
+Generate a story about persons walking on the street. A truck is on the road.
+INFERENCE: generate a story about persons walking on the street a truck is on the road
+
+
+			stt_wav_files_loc_1.txt  contents
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input1.wav
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input2.wav
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input3.wav
+
+python3 stt_transcribe_1.py -wavlocfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_wav_files_loc_1.txt" -opfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt"
+
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		OBJECT DETECTION WITH YOLOV3
+
+https://medium.com/data-science-in-your-pocket/all-about-yolo-object-detection-and-its-3-versions-paper-summary-and-codes-2742d24f56e
+
+Different Versions
+								VERSION 1
+YOLO requires a Neural Network framework for training and for this we have used DarkNet.The first version has 26 layers in total, with 24 Convolution Layers followed by 2 Fully Connected layers. The major problem with YOLOv1 is its inability to detect very small objects.
+
+After the first version, 2 more versions for YOLO released that are:
+
+YOLO9000 / YOLOv2:				VERSION 2
+Inclusion of batch Normalization layers after each Conv Layer
+It has 30 layers in comparison to YOLO v1 26 layers.
+Anchor Boxes were introduced.
+Anchor boxes are predefined boxes provided by the user to Darknet which gives the network an idea about the relative position and dimensions of the objects to be detected. It has to be calculated using the training set Objects.
+No fully connected layer present
+Random dimensions were taken for training images ranging from 320–608
+Multiple labels might be provided to the same objects, but still a multiclass problem(WordTree concept) i.e either the parent or child be the final label and not both.
+Still bad with small objects
+
+								VERSION 3
+YOLOv3:
+106 layers neural network
+Detection on 3 scales for detecting objects of small to very large size
+9 anchor boxes taken; 3 per scale. Hence more bounding boxes are predicted than YOLO9000 & YOLOv1
+MultiClass problem turned in MultiLabel problem
+Certain changes in the Error function.
+Quite good with small objects
+
+
+https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/
+
+The “You Only Look Once,” or YOLO, family of models are a series of end-to-end deep learning models designed for fast object detection, developed by Joseph Redmon, et al. and first described in the 2015 paper titled “You Only Look Once: Unified, Real-Time Object Detection.”
+
+The approach involves a single deep convolutional neural network (originally a version of GoogLeNet, later updated and called DarkNet based on VGG) that splits the input into a grid of cells and each cell directly predicts a bounding box and object classification. The result is a large number of candidate bounding boxes that are consolidated into a final prediction by a post-processing step.
+
+There are three main variations of the approach, at the time of writing; they are YOLOv1, YOLOv2, and YOLOv3. The first version proposed the general architecture, whereas the second version refined the design and made use of predefined anchor boxes to improve bounding box proposal, and version three further refined the model architecture and training process.
+
+Although the accuracy of the models is close but not as good as Region-Based Convolutional Neural Networks (R-CNNs), they are popular for object detection because of their detection speed, often demonstrated in real-time on video or with camera feed input.
+
+			using KERAS for YOLOv3
+
+Instead of developing this code from scratch, we can use a third-party implementation. There are many third-party implementations designed for using YOLO with Keras, and none appear to be standardized and designed to be used as a library.
+
+The YAD2K project was a de facto standard for YOLOv2 and provided scripts to convert the pre-trained weights into Keras format, use the pre-trained model to make predictions, and provided the code required to distill interpret the predicted bounding boxes. Many other third-party developers have used this code as a starting point and updated it to support YOLOv3.
+
+Perhaps the most widely used project for using pre-trained the YOLO models is called “keras-yolo3: Training and Detecting Objects with YOLO3” by Huynh Ngoc Anh or experiencor. The code in the project has been made available under a permissive MIT open source license. Like YAD2K, it provides scripts to both load and use pre-trained YOLO models as well as transfer learning for developing YOLOv3 models on new datasets.
+
+He also has a keras-yolo2 project that provides similar code for YOLOv2 as well as detailed tutorials on how to use the code in the repository. The keras-yolo3 project appears to be an updated version of that project.
+
+We will use experiencor’s keras-yolo3 project as the basis for performing object detection with a YOLOv3 model in this tutorial.
+
+
+			yolo3_one_file_to_detect_them_all.py           - directly create a model and use it
+In this section, we will use a pre-trained model to perform object detection on an unseen photograph. This capability is available in a single Python file in the repository called “yolo3_one_file_to_detect_them_all.py” that has about 435 lines. This script is, in fact, a program that will use pre-trained weights to prepare a model and use that model to perform object detection and output a model. It also depends upon OpenCV.
+
+
+
+			get the pre-trained weights file for YOLOv3
+From this link: https://pjreddie.com/media/files/yolov3.weights
+/home/rohit/PyWDUbuntu/DA4_1/keras-yolo3-master/yoloWeights/yolov3.weights
+
+Images to detect are here:
+/home/rohit/PyWDUbuntu/DA4_1/Imgs2Detect/
+
+
+			ENVIRONMENT SETUP - ANACONDA - for only neo4j db writing
+conda create -n ce2da41 python=3.7
+conda install jupyter
+conda install pandas
+pip install neo4j
+conda install pytz
+conda install -c conda-forge opencv   ## used opencv 3.4.2
+conda install keras
+conda install pydot
+
+			env yml file using conda tool
+Output of: conda env export
+
+			MULTI processing		MULTI processing		MULTI processing		MULTI processing		MULTI processing
+
+
+python3 TEST_yolo3_process_coco_py2neo_multiproc_1.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 2 -nipt 2 -opfilelocneo home/rohit/PyWDUbuntu/thesis/Imgs2Detect_op4neo
+
+python3 TEST_yolo3_process_coco_py2neo_multiproc_3.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 2 -nipt 4 -opfilelocneo home/rohit/PyWDUbuntu/thesis/Imgs2Detect_op4neo
+
+		use version 4 to only save the model
+python3 TEST_yolo3_process_coco_py2neo_multiproc_4.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3.saved.model
+
+		use version 5 as multiprocessing using reloaded model
+python3 TEST_yolo3_process_coco_py2neo_multiproc_5.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3.saved.model -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 5 -nipt 4 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_op4neo
+---------------------------------------------------------------------------------------------------------------------------------------------
+	
+		BUILD AND SAVE MODEL
+python3 detection_yolov3_build_save_model_1.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3.saved.model
+
+		MULTIPROCESSING PROCESS IMAGES AND SAVE JOB NEO ARRAYS
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3.saved.model -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more -isrc coco80 -sf 3 -nipt 20 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more_op4neo
+
+		PICK SAVED NEO ARRAYS OF JOBS AND UPDATE NEO4J GRAPH DB
+python3 detection_update_neo_1.py -sf 3 -iploc /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more_op4neo
+
+python3 detection_update_neo_1.py -sf 20 -iploc /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+
+python3 detection_update_neo_1.py -sf 20 -iploc /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo
+
+
+/home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more
+
+    savedmodelpath = args.savedmodelpath       # -smp parameter, location of the saved kears model for pre-trained yolov3 model
+    image_path     = args.imagefolder          # -if parameter, where to pick the images from to process
+    img_dataset    = args.imgsource            # -isrc parameter, image node property value for dataset
+    status_freq    = args.statusfrequency      # -sf parameter, after how many images info is processed for neo4j inserts should a status message be shown
+    nipt           = args.numberimagespertask  # -nipt parameter, how many images files to be processed in each task
+    opfilelocneo   = args.ouputfilelocationneo # -opfileneo parameter, location where dump of neo4j array of each task should be written to file
+---------------------------------------------------------------------------------------------------------------------------------------------
+			TEST on small set of 127 images
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more" -isrc coco80 -sf 2 -nipt 5 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more_op4neo
+
+
+			FLICKR data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/flickr30k_images/flickr30k_images" : 31783 images
+			CHANGE THE dataset property to flickr30k
+			/home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/flickr30k_images/flickr30k_images" -isrc flickr30k -sf 25 -nipt 250 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo
+
+
+			COCO VAL 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_val2017_5k/val2017" : 5000 images
+			/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_val2017_5k/val2017" -isrc coco_val_2017 -sf 25 -nipt 125 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+
+
+			COCO VAL 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 40670 images
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/COCO_test2017_40k_images_op4neo
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf x -nipt x -opfilelocneo /home/rohit/PyWDUbuntu/thesis/COCO_test2017_40k_images_op4neo
+
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			10k to 15k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_10k_15k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_10k_15k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_10k_15k
+
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			15k to 20k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_15k_20k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_15k_20k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_15k_20k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			20k to 25k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_20k_25k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_20k_25k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_20k_25k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 10000 images
+			25k to 35k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_25k_35k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_25k_35k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_25k_35k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			5k to 10k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_5k_10k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_20k_25k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_5k_10k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 10000 images
+			1 to 10k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_1_10k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_1_10k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_1_10k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			35k to 40k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_1_10k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_35k_40k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_35k_40k
+
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 10000 images
+			1 to 10k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_1_10k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_1_20k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_1_10k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 10000 images
+			10k to 20k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_10k_20k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_10k_20k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_10k_20k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 5000 images
+			20k to 25k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_20k_25k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_25k_35k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_20k_25k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 5000 images
+			25k to 30k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_25k_30k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_25k_30k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_25k_30k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 5000 images
+			30k to 35k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_30k_35k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_30k_35k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_30k_35k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 5000 images
+			35k to 40k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_35k_40k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_35k_40k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_35k_40k
+
+
+		on Google COLAB
+			/home/rohit/PyWDUbuntu/thesis/COCO_test2017_40k_images_op4neo
+-smp r"/content/gdrive/My Drive/ThesisStoryGen/Data/saved_keras_model/yolov3_coco80.saved.model"
+-if r"/content/gdrive/My Drive/ThesisStoryGen/Data/coco_test2017_wget_1/test2017"
+-isrc r"coco_test_2017"
+-if r"/content/gdrive/My Drive/ThesisStoryGen/Data/Imgs2Detect"
+-isrc r"testrun"
+-sf 10
+-nipt 100
+-opfilelocneo r"/content/gdrive/My Drive/ThesisStoryGen/Data/coco_test_2017_40k_images_op4neo"
+-opfilelocneo r"/content/gdrive/My Drive/ThesisStoryGen/Data/Imgs2Detect_op4neo"
+
+
+					INSERT TO Neo4j
+		FLICKR30K
+python3 detection_update_neo_2.py -sf 25 -iploc /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo_corrected
+
+		COCO VAL 5K
+python3 detection_update_neo_2.py -sf 25 -iploc /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+
+
+		COCO TEST 41K
+	coco_test_2017_40k_images_op4neo_1_1_10k
+	coco_test_2017_40k_images_op4neo_1_10k_15k
+	coco_test_2017_40k_images_op4neo_1_15k_20k
+	coco_test_2017_40k_images_op4neo_1_20k_25k
+	coco_test_2017_40k_images_op4neo_1_25k_35k
+	coco_test_2017_40k_images_op4neo_1_35k_40k
+python3 detection_update_neo_2.py -sf 25 -iploc coco_test_2017_40k_images_op4neo_1_15k_20k
+
+
+
+			SINGLE processing		SINGLE processing		SINGLE processing		SINGLE processing		SINGLE processing
+python3 TEST_yolo3_process_coco_py2neo_2.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 2
+
+python3 TEST_yolo3_process_coco_py2neo_2.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more -isrc coco80 -sf 5
+	Yolo processing stats:
+	Total images = 127
+	Success = 111
+	Failed = 16
+	After inserting 111 images info in Neo: Image nodes = 111, Object nodes = 37, HAS = 596
+
+Yolo inference and Neo4j inserts
+Inference on images with Yolo v3
+All images in specified input folder processed.
+May fail during pre-process step due to image size issued and such images will be rejected.
+Successfully processed image results inserted to Neo4j db
+
+
+python3 TEST_yolo3_process_coco_py2neo_3.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 2
+
+		my model visualize script    my_yolo3_model_stats_1.py
+python3 my_yolo3_model_stats_1.py -w /home/rohit/PyWDUbuntu/DA4_1/keras-yolo3-master/yoloWeights/yolov3.weights
+
+
+Visualize model with Keras tools.
+Using functions:
+plot_model() to save as png image file.
+model.summary() for textual description (to console and to a file).
+
+
+		Output of plot_model function
+Output of plot_model function
+
+		Output of model.summary function
+Output of model.summary function captured to file.
+
+
+		data structure to hold info for neo4j
+# Info about objects detected to be stored in a multi-dimensional array.
+# E.g. suppose two images, each image with two objects detected will be stored as:
+# [{"img_name": "img1.jpg", "detections": [["label1", "label1_score"], ["label2", "label2_score"] ] } ,
+#  {"img_name": "img2.jpg", "detections": [["label3", "label3_score"], ["label4", "label4_score"] ] } ]
+[{"img_name": "img1.jpg", "detections": [["label1", "label1_score"], ["label2", "label2_score"] ] } , {"img_name": "img2.jpg", "detections": [["label3", "label3_score"], ["label4", "label4_score"] ] } ]
+
+
+[{'img_name': '65567.jpg', 'detections': [['person', 96.35], ['person', 99.99], ['person', 99.65], ['person', 56.89], ['tie', 58.39], ['person', 61.28], ['tie', 91.13]]}, {'img_name': '36979.jpg', 'detections': [['person', 99.46], ['person', 98.9], ['person', 99.7], ['person', 99.91], ['person', 89.37], ['cup', 54.63]]}]
+
+def make_db_entry(tx, imgFile, objDetected):
+    tx.run("MATCH (i:Image{name: $imgFile}) "
+	       "MATCH (o:Object{name: $objDetected}) "
+	       "MERGE (i)-[:HAS_OBJECT{score:'95.34'}]->(o) ")
+
+
+			Github description notes for the python script
+Yolo inference and Neo4j inserts
+Inference on images with Yolo v3
+All images in specified input folder processed.
+May fail during pre-process step due to image size issued and such images will be rejected.
+Successfully processed image results inserted to Neo4j db
+
+			Github project Readme.md
+# DataAnalytics4_Project
+1) Masters program coursework for Data Analytics 4 module.
+
+2) Topic assigned: YOLO
+
+3) Use case is to present new images to pre-trained YOLO v3 model. Capture the inference (class names and confidence score) for all image, and then put into a Neo4j database. Using Neo4j Desktop v1.2.8.
+
+4) Anaconda environment setup notes. Below are the commands entered manually in the order specified.
+Create Python 3.7 environment (e.g. conda create -n ce2da41 python=3.7)
+conda install jupyter
+pip install neo4j
+conda instlall pytz
+conda install keras
+-- Refer environment.yml file for output of command: conda env export > environment.yml
+
+5) References used in the project:
+Webiste: https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/
+Github: On 05.06.2020, forked from https://github.com/jbrownlee/keras-yolo3 to https://github.com/rbewoor/keras-yolo3
+Yolo weights link: link: https://pjreddie.com/media/files/yolov3.weights
+
+6) Script: my_yolo3_one_file_to_detect_them_all_6.py
+Action: Uses pre-trained Yolo v3 model for inference on images. The inference data is stored in a Neo4j database in the form of (:Image)-[:HAS]->(:Object). User provides a folder which contains all the images to process. Note: some images cannot be processed due to resizing issues and will be skipped.
+
+7) Script: my_yolo3_model_stats_1.py
+Action: Uses the model.summary and plot_model functionality of Keras to output a textual and visual description of the YOLO v3 model.
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+			ENVIRONMENT SETUP - ANACONDA - for only neo4j db writing
+conda create -n conenv2da41 python=3.8
+conda install jupyter
+conda install pandas
+
+	pip install neo4j
+		OR
+	pip install py2neo
+conda install pytz
+
+
+
+from neo4j import GraphDatabase
+print("Yes")
+
+
+
+https://sharing.luminis.eu/blog/neo4j-for-python-users-and-broken-pipe-error/
+from neo4j import GraphDatabase
+uri = "bolt://localhost:7687", user="neo4j", password="abc"
+driver = GraphDatabase.driver(uri, auth=(user, password))
+with driver.session() as session:
+	session.run("CREATE (w:MyNode {Name : 'John', Title : 'President', Age : 22}) RETURN id(w)")
+	session.close()
+
+
+
+
+https://github.com/neo4j-examples/movies-python-bolt/blob/master/movies.py
+import os
+from neo4j import GraphDatabase, basic_auth
+url = os.getenv("NEO4J_URL","bolt://localhost")
+password = os.getenv("NEO4J_PASSWORD","test")
+driver = GraphDatabase.driver(url,auth=basic_auth("neo4j", password),encrypted=False)
+
+
+
+
+
+from neo4j import GraphDatabase
+
+uri = "neo4j://localhost:7687"
+driver = GraphDatabase.driver(uri, auth=("neo4j", "abc"))
+
+def create_friend_of(tx, name, friend):
+    tx.run("CREATE (a:Person)-[:KNOWS]->(f:Person {name: $friend}) "
+           "WHERE a.name = $name "
+           "RETURN f.name AS friend", name=name, friend=friend)"
+
+with driver.session() as session:
+    session.write_transaction(create_friend_of, "Alice", "Bob")
+
+with driver.session() as session:
+    session.write_transaction(create_friend_of, "Alice", "Carl")
+
+driver.close()
+
+
+
+MERGE (:Image {name: "1.jpg"})
+MERGE (:Object {name: "person"})
+
+MATCH (i1:Image{name: "1.jpg"}), (o1:Object{name: "person"})
+CREATE (i1)-[:HAS{score: 98.45}]->(o1)
+
+MATCH (i1:Image), (o1:Object)
+WHERE i1.name = "1.jpg" AND o1.name = "person"
+CREATE (i1)-[:HAS{score: 98.45}]->(o1)
+
+'MATCH (i1:Image{name: ' + in_imgFile + '}), (o1:Object{name: ' + str(in_objDetected) + '}) CREATE (i1)-[:HAS{score: ' + in_detScore1 + '}]->(o1)'
+
+MATCH (n)
+DETACH DELETE n
+
+MATCH (n)
+RETURN (n)
+
+
+
+KARAM inputs:
+in a chrome browser run     http://localhost:7474/browser/
+
+
+check service running ?
+
+sudo service neo4j-service status
+sudo service neo4j status
+
+systemctl {start|stop|restart} neo4j
+systemctl start neo4j
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+		CHANGES TO PROPOSAL
+
+1) Database only consists of images tagged with the COCO 80 classes. So the user input must only cover these specific classes.
+2) Add motivation
+3) Voice input simulated using wav files to represent each of the three sentences. These need to be recorded separately and then presented to the transcription model.
+4) Each sentence to include maximum three classes. This will increase chance of finding a suitable image with all the objects present. Better will be to include only two classes per sentence.
+5) Sentence to consist of active voice and not passive voice (person is walking his dog, NOT dog is being walked by a person)
+6) 
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+							QUERYING THE NEO4J GRAPH DB
+
+labels = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", \
+		"boat", "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", \
+		"bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", \
+		"backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", \
+		"sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard", \
+		"tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana", \
+		"apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", \
+		"chair", "sofa", "pottedplant", "bed", "diningtable", "toilet", "tvmonitor", "laptop", "mouse", \
+		"remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", \
+		"book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
+
+
+	image 000000548113.jpg of coco test has all three objects 'cat' 'dog' 'person'
+MATCH (o1:Object)--(i:Image)--(o2:Object)--(i)--(o3:Object)
+WHERE o1.name = 'dog' AND o2.name = 'cat' AND o3.name = 'person'
+RETURN i.name, i.dataset
+LIMIT 20
+
+
+[ ["clock", "book"], ["person", "bird", "clock"]]
+[ ["dog", "cat"], ["person", "book"], ["person", "car"] ]
+
+python3 query_neo_2.py -objarrfile "/home/rohit/PyWDUbuntu/thesis/queryDb/query_db_input_test_3_dblquote.txt"
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+							IDENTIFY KEY ELEMENTS
+	SPACY better than NLTK. Even better is BERT from google. Twitter HUGGING FACES join the group have their own tool.
+	
+	
+	Another option may be as per this link: DeepCorrection 1: Sentence Segmentation of unpunctuated text.
+https://medium.com/@praneethbedapudi/deepcorrection-1-sentence-segmentation-of-unpunctuated-text-a1dbc0db4e98
+
+python3 id_elements_1.py -ipfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/IdElements/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/IdElements/key_elements_1.txt"
+
+python3 id_elements_2.py -ipfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/IdElements/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/IdElements/key_elements_1.txt"
+
+python3 id_elements_3.py -ipfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/IdElements/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/IdElements/key_elements_1.txt"
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+			USING NLTK
+
+conda create -n ce6idelements1 python=3.7
+conda activate ce6idelements1
+conda install jupyter
+conda install nltk
+conda install -c conda-forge spacy
+		one time		https://spacy.io/models/en
+python3 -m spacy download en_core_web_lg
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+			SETUP NLTK DATA MANUALLY
+	https://www.nltk.org/data.html
+Manual installation
+Create a folder nltk_data, e.g. C:\nltk_data, or /usr/local/share/nltk_data, and subfolders chunkers, grammars, misc, sentiment, taggers, corpora, help, models, stemmers, tokenizers.
+
+Download individual packages from http://nltk.org/nltk_data/ (see the “download” links). Unzip them to the appropriate subfolder. For example, the Brown Corpus, found at: https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/brown.zip is to be unzipped to nltk_data/corpora/brown.
+
+Set your NLTK_DATA environment variable to point to your top level nltk_data folder.
+
+--------------------------------------------
+
+			DOWNLOAD DATA LINK
+http://www.nltk.org/nltk_data/
+/home/rohit/nltk_data
+
+5. Porter Stemmer Test Files [ download | source ]
+id: porter_test; size: 200510; author: ; copyright: ; license: ;
+
+18. Averaged Perceptron Tagger [ download | source ]
+id: averaged_perceptron_tagger; size: 2526731; author: ; copyright: ; license: ;
+
+20. Mappings to the Universal Part-of-Speech Tagset [ download | source ]
+id: universal_tagset; size: 19095; author: ; copyright: ; license: ;
+
+37. Project Gutenberg Selections [ download | source ]
+id: gutenberg; size: 4251829; author: ; copyright: public domain; license: public domain;
+
+70. Stopwords Corpus [ download | source ]
+id: stopwords; size: 23047; author: ; copyright: ; license: ;
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+			Tokenization
+Tokenization is the first step in text analytics. The process of breaking down a text paragraph into smaller chunks such as words or sentence is called Tokenization. Token is a single entity that is building blocks for sentence or paragraph.
+
+	Sentence Tokenization
+Sentence tokenizer breaks text paragraph into sentences.
+
+	Word Tokenization
+Word tokenizer breaks text paragraph into words.
+
+			Stopwords
+Stopwords considered as noise in the text. Text may contain stop words such as is, am, are, this, a, an, the, etc.
+In NLTK for removing stopwords, you need to create a list of stopwords and filter out your list of tokens from these words.
+
+			Lexicon Normalization
+Lexicon normalization considers another type of noise in the text. For example, connection, connected, connecting word reduce to a common word "connect". It reduces derivationally related forms of a word to a common root word.
+
+	Stemming
+Stemming is a process of linguistic normalization, which reduces words to their word root word or chops off the derivational affixes. For example, connection, connected, connecting word reduce to a common word "connect".
+
+	Lemmatization
+Lemmatization reduces words to their base word, which is linguistically correct lemmas. It transforms root word with the use of vocabulary and morphological analysis. Lemmatization is usually more sophisticated than stemming. Stemmer works on an individual word without knowledge of the context. For example, The word "better" has "good" as its lemma. This thing will miss by stemming because it requires a dictionary look-up.
+
+
+			POS Tagging
+The primary target of Part-of-Speech(POS) tagging is to identify the grammatical group of a given word. Whether it is a NOUN, PRONOUN, ADJECTIVE, VERB, ADVERBS, etc. based on the context. POS Tagging looks for relationships within the sentence and assigns a corresponding tag to the word.
+
+
+			Sentiment Analysis
+Sentiments are combination words, tone, and writing style. As a data analyst, It is more important to understand our sentiments, what it really means?
+There are mainly two approaches for performing sentiment analysis.
+Lexicon-based: count number of positive and negative words in given text and the larger count will be the sentiment of text.
+Machine learning based approach: Develop a classification model, which is trained using the pre-labeled dataset of positive, negative, and neutral.
+In this Tutorial, you will use the second approach(Machine learning based approach). This is how you learn sentiment and text classification with a single example.
+
+
+			Text Classification
+Text classification is one of the important tasks of text mining. It is a supervised approach. Identifying category or class of given text such as a blog, book, web page, news articles, and tweets. It has various application in today's computer world such as spam detection, task categorization in CRM services, categorizing products on E-retailer websites, classifying the content of websites for a search engine, sentiments of customer feedback, etc. In the next section, you will learn how you can do text classification in python.
+
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+			pdf extraction code snippets
+
+from nltk import sent_tokenize, word_tokenize
+# https://www.datacamp.com/community/tutorials/text-analytics-beginners-nltk
+# https://medium.com/analytics-vidhya/sentence-extraction-using-textrank-algorithm-7f5c8fd568cd
+
+
+sentencesOnPage = sent_tokenize(fullSentOnPage)
+for word in word_tokenize(outSentAdv)
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+https://pythonprogramming.net/stemming-nltk-tutorial/
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+			USING NLTK
+
+conda create -n ce6idelements1 python=3.7
+conda activate ce6idelements1
+conda install jupyter
+conda install -c conda-forge spacy
+		one time		https://spacy.io/models/en download the en_core_web     _lg is large, there are options for small and medium too.
+python3 -m spacy download en_core_web_lg
+
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+			Stopwords removal
+
+
+
+			Lemmatization
+Lemmatization reduces words to their base word, which is linguistically correct lemmas. It transforms root word with the use of vocabulary and morphological analysis. Lemmatization is usually more sophisticated than stemming. Stemmer works on an individual word without knowledge of the context. For example, The word "better" has "good" as its lemma. This thing will miss by stemming because it requires a dictionary look-up.
+
+
+
+			POS Tagging
+The primary target of Part-of-Speech(POS) tagging is to identify the grammatical group of a given word. Whether it is a NOUN, PRONOUN, ADJECTIVE, VERB, ADVERBS, etc. based on the context. POS Tagging looks for relationships within the sentence and assigns a corresponding tag to the word.
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		SETTING UP ENVIRONMENT FOR      STT TO QUERY DB - STT, ID KEY ELEMENTS, QUERY DB
+
+	*** # Download pre-trained English model files
+	/home/rohit/deepspeech/pretrained/v073 - into this folder downloaded the scorer and pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.scorer
+
+
+conda create -n ce7comb1 python=3.7
+conda install jupyter
+conda install pandas
+
+	*** speech to text transcription
+pip install deepspeech==0.7.3
+
+	*** neo4j db insertions
+conda install pandas
+pip install neo4j
+conda install pytz
+conda install -c conda-forge opencv   ## used opencv 3.4.2
+conda install keras
+conda install pydot
+
+	*** id key elements
+conda install -c conda-forge spacy
+		one time		https://spacy.io/models/en download the en_core_web     _lg is large, there are options for small and medium too.
+python3 -m spacy download en_core_web_lg
+
+	*** query database neo4j
+pip install py2neo
+
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+
+		EXECUTING THE PROGRAMS
+
+			stt_wav_files_loc_1.txt  contents
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input1.wav
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input2.wav
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input3.wav
+
+python3 stt_transcribe_1.py -wavlocfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/stt_wav_files_loc_1.txt" -opfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/stt_op_file_1.txt"
+
+python3 id_elements_3.py -ipfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/combined_execution/queryDb/key_elements_1.txt"
+
+python3 query_neo_3.py -objarrfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/queryDb/key_elements_1.txt"
+
+
+---------------
+
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ 
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ python3 stt_transcribe_1.py -wavlocfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/stt_wav_files_loc_1.txt" -opfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/stt_op_file_1.txt"
+
+['/home/rohit/PyWDUbuntu/thesis/audio/wavs/input1.wav', '/home/rohit/PyWDUbuntu/thesis/audio/wavs/input2.wav', '/home/rohit/PyWDUbuntu/thesis/audio/wavs/input3.wav']
+
+
+
+ds_inf_cmd_fixed=
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio 
+
+
+
+About to execute:::: deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/input1.wav
+
+About to execute:::: deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/input2.wav
+
+About to execute:::: deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/input3.wav
+
+
+deepspeech_inferences_arr
+['me me a tory about persons sitting at table the blanchards', 'i want a story about a car on the road a child plays with a toy', 'generate a story about persons walking on the street a truck is on the road']
+
+
+Output file created: /home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/stt_op_file_1.txt
+
+
+
+Normal exit from program.
+
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ 
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ 
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ python3 id_elements_2.py -ipfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/combined_execution/queryDb/key_elements_1.txt"
+
+
+The following sentences were read from the input file:
+
+	Sentence 1 :
+me me a tory about persons sitting at table the blanchards
+	Sentence 2 :
+i want a story about a car on the road a child plays with a toy
+	Sentence 3 :
+generate a story about persons walking on the street a truck is on the road
+
+
+Each input sentence broken into words:
+
+	Sentence 1 :
+['me', 'me', 'a', 'tory', 'about', 'persons', 'sitting', 'at', 'table', 'the', 'blanchards']
+	Sentence 2 :
+['i', 'want', 'a', 'story', 'about', 'a', 'car', 'on', 'the', 'road', 'a', 'child', 'plays', 'with', 'a', 'toy']
+	Sentence 3 :
+['generate', 'a', 'story', 'about', 'persons', 'walking', 'on', 'the', 'street', 'a', 'truck', 'is', 'on', 'the', 'road']
+
+
+After removing any stop words:
+
+	Sentence 1 :
+['tory', 'persons', 'sitting', 'table', 'blanchards']
+	Sentence 2 :
+['want', 'story', 'car', 'road', 'child', 'plays', 'toy']
+	Sentence 3 :
+['generate', 'story', 'persons', 'walking', 'street', 'truck', 'road']
+
+
+Joining the non-stop words as a new sentence (for readability only):
+
+	New sentence 1 :
+tory persons sitting table blanchards
+	New sentence 2 :
+want story car road child plays toy
+	New sentence 3 :
+generate story persons walking street truck road
+
+
+Contents of list to be written to key elements file:
+[['table'], ['story', 'car', 'road', 'child', 'toy'], ['story', 'truck', 'road']]
+
+
+Normal exit from program.
+
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ 
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ 
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ 
+
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		NEO4J DATABASE DUMPING - FROM NEO4J DESKTOP
+
+Go to manage and open the terminal. Terminal will be opened in suitable folder for the database. Inside this, is a BIN folder, inside that is the neo4j-admin tool to be used. E.g.
+	rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ pwd
+	
+	/home/rohit/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3
+	
+	rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ ls
+	bin  certificates  conf  data  import  lib  LICENSES.txt  LICENSE.txt  logs  metrics  NOTICE.txt  plugins  README.txt  run  UPGRADE.txt
+	rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$
+
+No matter what name i gave the database in the Project, in reality it seems to be neo4j. Here, in the PROJECT    Project_Thesis_1       the db is called    ngThesis_Obj_Det_Db_1
+	but in reality the db name is still neo4j
+
+Verified as follows. Started db, opened browser. Then:
+	:use system
+Then
+	show databases
+Output was
+╒════════╤════════════════╤════════════╤═════════════════╤═══════════════╤═══════╤═════════╕
+│"name"  │"address"       │"role"      │"requestedStatus"│"currentStatus"│"error"│"default"│
+╞════════╪════════════════╪════════════╪═════════════════╪═══════════════╪═══════╪═════════╡
+│"neo4j" │"localhost:7687"│"standalone"│"online"         │"online"       │""     │true     │
+├────────┼────────────────┼────────────┼─────────────────┼───────────────┼───────┼─────────┤
+│"system"│"localhost:7687"│"standalone"│"online"         │"online"       │""     │false    │
+└────────┴────────────────┴────────────┴─────────────────┴───────────────┴───────┴─────────┘
+Then returned to the database i built
+	:use neo4j
+
+
+As per link: https://neo4j.com/docs/operations-manual/current/tools/dump-load/
+format is:
+Dump the database called neo4j into a file called /backups/neo4j/2016-10-02.dump. The destination directory for the dump file - in this case /backups/neo4j - must exist before calling the command.
+$neo4j-home> bin/neo4j-admin dump --database=neo4j --to=/backups/neo4j/2016-10-02.dump 
+
+	EXAMPLE OF DOING THIS FROM THE COMMAND LINE - USED REGULAR COMMAND LINE AND NOT FROM WITHIN THE NEO4J DESKTOP APPLICATION
+        rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ 
+        rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ cd "/home/rohit/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3"
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ ls
+        bin  certificates  conf  data  import  lib  LICENSES.txt  LICENSE.txt  logs  metrics  NOTICE.txt  plugins  README.txt  run  UPGRADE.txt
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ ls ./bin/neo4j-admin 
+        ./bin/neo4j-admin
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ 
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ ./bin/neo4j-admin dump --verbose --database=neo4j --to=/home/rohit/PyWDUbuntu/thesis/neo4jDump/ngThesisObjDetDb1202007172200.dump
+        WARNING: Max 1024 open files allowed, minimum of 40000 recommended. See the Neo4j manual.
+        Done: 68 files, 269.1MiB processed.
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
