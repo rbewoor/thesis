@@ -1,13 +1,32 @@
 NOTES:
 
-ENVIRONMENT SETUP - ANACONDA - for yolov3 model create, save, process images, insert to neo4j
-conda create -n ce2da41 python=3.7
+		SETTING UP ANACONDA ENVIRONMENT FOR      STT TO QUERY DB - STT, ID KEY ELEMENTS, QUERY DB
+
+	*** # Download pre-trained English model files
+	/home/rohit/deepspeech/pretrained/v073 - into this folder downloaded the scorer and pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.scorer
+
+
+conda create -n ce7comb1 python=3.7
 conda install jupyter
 conda install pandas
-pip install py2neo
-#pip install neo4j -- not using this now
+
+	*** speech to text transcription
+pip install deepspeech==0.7.3
+
+	*** neo4j db insertions
+conda install pandas
+pip install neo4j
 conda install pytz
-conda install -c conda-forge opencv
+conda install -c conda-forge opencv   ## used opencv 3.4.2
 conda install keras
 conda install pydot
 
+	*** id key elements
+conda install -c conda-forge spacy
+		one time		https://spacy.io/models/en download the en_core_web     _lg is large, there are options for small and medium too.
+python3 -m spacy download en_core_web_lg
+
+	*** query database neo4j
+pip install py2neo
