@@ -1,6 +1,7 @@
-NOTES:
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-		SETTING UP ANACONDA ENVIRONMENT FOR      STT TO QUERY DB - STT, ID KEY ELEMENTS, QUERY DB
+		SETTING UP ENVIRONMENT FOR      STT TO QUERY DB - STT, ID KEY ELEMENTS, QUERY DB
 
 	*** # Download pre-trained English model files
 	/home/rohit/deepspeech/pretrained/v073 - into this folder downloaded the scorer and pbmm
@@ -15,14 +16,6 @@ conda install pandas
 	*** speech to text transcription
 pip install deepspeech==0.7.3
 
-	*** neo4j db insertions
-conda install pandas
-pip install neo4j
-conda install pytz
-conda install -c conda-forge opencv   ## used opencv 3.4.2
-conda install keras
-conda install pydot
-
 	*** id key elements
 conda install -c conda-forge spacy
 		one time		https://spacy.io/models/en download the en_core_web     _lg is large, there are options for small and medium too.
@@ -30,3 +23,12 @@ python3 -m spacy download en_core_web_lg
 
 	*** query database neo4j
 pip install py2neo
+
+	*** neo4j db insertions
+conda install pandas						## not required as should already be there from earlier steps
+pip install py2neo							## not required as should already be there from earlier steps
+conda install pytz							## not required as should already be there from earlier steps
+conda install -c conda-forge opencv=3.4.2   ## used opencv 3.4.2
+conda install keras=2.3.1					## used keras  2.3.1
+conda install pydot
+
