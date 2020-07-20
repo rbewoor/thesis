@@ -38,7 +38,7 @@ conda install pillow  ##pip install pillow
 
 ----------------------------------------------------------------------------------------------------
 
-PACKAGE LIST:
+PACKAGE LIST - conda list - command output:
 (ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ conda list
 # packages in environment at /home/rohit/anaconda3/envs/ce7comb1:
 #
