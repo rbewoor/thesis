@@ -36,6 +36,9 @@ conda install pydot
 conda install tk      ## pip install python-tk	## not required as should already be there from earlier steps
 conda install pillow  ##pip install pillow
 
+	*** Miscellaneos stuff
+conda install matplotlib
+
 ----------------------------------------------------------------------------------------------------
 
 PACKAGE LIST - conda list - command output:
@@ -65,6 +68,7 @@ chardet                   3.0.4           py37hc8dfbb8_1006    conda-forge
 click                     7.0                      pypi_0    pypi
 colorama                  0.4.3                    pypi_0    pypi
 cryptography              2.9.2            py37hb09aad4_0    conda-forge
+cycler                    0.10.0                   py37_0  
 cymem                     2.0.3            py37h3340039_2    conda-forge
 cython-blis               0.4.1            py37h8f50634_1    conda-forge
 dbus                      1.13.16              hb2f20db_0  
@@ -114,6 +118,7 @@ keras                     2.3.1                         0
 keras-applications        1.0.8                      py_1  
 keras-base                2.3.1                    py37_0  
 keras-preprocessing       1.1.0                      py_1  
+kiwisolver                1.2.0            py37hfd86e86_0  
 lcms2                     2.11                 h396b838_0  
 ld_impl_linux-64          2.33.1               h53a641e_7  
 libedit                   3.1.20191231         h14c3975_1  
@@ -136,6 +141,8 @@ libxml2                   2.9.10               he19cac6_1
 lz4-c                     1.9.2                he6710b0_0  
 markdown                  3.1.1                    py37_0  
 markupsafe                1.1.1            py37h14c3975_1  
+matplotlib                3.2.2                         0  
+matplotlib-base           3.2.2            py37hef1b27d_0  
 mistune                   0.8.4           py37h14c3975_1001  
 mkl                       2020.1                      217  
 mkl-service               2.3.0            py37he904b0f_0  
