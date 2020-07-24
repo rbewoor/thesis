@@ -9,6 +9,7 @@
 ##  PENDING:   change the data strucutre based on selections
 ##  CURRENTLY: when Select button is pressed, toggle the relief and the text
 ##             when Enlarge button is pressed, should show the image in a new larger window
+##  Not deleting from Github as its used as a reference in my Stackoverflow answer
 
 # importing required packages
 import tkinter as tk
