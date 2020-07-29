@@ -1,0 +1,196 @@
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ python3 comb_functional_stt_id_gui_query_img_select_gui_2B.py -wavlocfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/stt_wav_files_loc_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt"
+Using TensorFlow backend.
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+              STARTING EXECUTION OF STT LOGIC                      
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+
+Following wav files are found to process:
+	1) /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/input1.wav
+	2) /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/input2.wav
+	3) /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/input3.wav
+
+
+Commencing model inference from Deepspeech version 0.7.3.
+
+
+
+	Command number 1:
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/input1.wav
+	Inference:
+me me a tory about persons sitting at table the blanchards
+
+
+	Command number 2:
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/input2.wav
+	Inference:
+i want a story about a car on the road a child plays with a toy
+
+
+	Command number 3:
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/input3.wav
+	Inference:
+generate a story about persons walking on the street a truck is on the road
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+       STARTING EXECUTION OF IDENTIFY KEYWORDS LOGIC               
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+
+
+The following sentences will be processed:
+
+	Sentence 1 :
+me me a tory about persons sitting at table the blanchards
+	Sentence 2 :
+i want a story about a car on the road a child plays with a toy
+	Sentence 3 :
+generate a story about persons walking on the street a truck is on the road
+
+
+Words of each input sentence after removing any stop words:
+
+	Sentence 1 :
+['tory', 'persons', 'sitting', 'table', 'blanchards']
+	Sentence 2 :
+['want', 'story', 'car', 'road', 'child', 'plays', 'toy']
+	Sentence 3 :
+['generate', 'story', 'persons', 'walking', 'street', 'truck', 'road']
+
+
+All POS info file successfully created here:
+/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt
+
+
+
+
+CONFIRM SELECTIONS BUTTON PRESSED
+
+
+
+Deselected positions=
+[2]
+
+
+CONFIRM SELECTIONS BUTTON PRESSED
+
+
+
+Deselected positions=
+[0, 2, 3, 4]
+
+
+CONFIRM SELECTIONS BUTTON PRESSED
+
+
+
+Deselected positions=
+[0, 3]
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+          STARTING EXECUTION OF QUERY NEO4J LOGIC                  
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+
+Database query results - Candidate Images at this stage:
+
+
+Query 1) Keywords: ['person', 'table']
+Query result:
+[]
+
+Query 2) Keywords: ['car']
+Query result:
+[{'Image': '000000033951.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000033825.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000292186.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000155796.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000140031.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000139832.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000103436.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000146856.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000088355.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000088316.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000039056.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000038943.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000127879.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000224207.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000292604.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000215662.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313777.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313690.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000484560.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000484558.jpg', 'Source': 'coco_test_2017'}]
+
+Query 3) Keywords: ['person', 'truck']
+Query result:
+[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000169516.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000292186.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000146747.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313777.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000449668.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000509771.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000012149.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168815.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168743.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000518174.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000017467.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000581864.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225580.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000265504.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000361201.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000304424.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225081.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225051.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000499699.jpg', 'Source': 'coco_test_2017'}]
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+  STARTING EXECUTION OF IMAGE SELECTION VIA GUI                    
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+
+
+Inference invoked for: /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000313690.jpg
+
+
+Executing model inference on image_to_infer : /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000313690.jpg
+
+2020-07-29 13:43:52.341234: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-07-29 13:43:52.362504: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-07-29 13:43:52.362901: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559ae5a05c90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-07-29 13:43:52.362913: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-07-29 13:43:52.363156: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+/home/rohit/anaconda3/envs/ce7comb1/lib/python3.7/site-packages/keras/engine/saving.py:341: UserWarning: No training configuration found in save file: the model was *not* compiled. Compile it manually.
+  warnings.warn('No training configuration found in save file: '
+1) person : 99.90%
+2) car : 86.36%
+3) tie : 99.12%
+
+
+Inference invoked for: /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000127879.jpg
+
+
+Executing model inference on image_to_infer : /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000127879.jpg
+
+1) truck : 81.91%
+2) traffic light : 98.51%
+3) traffic light : 96.04%
+4) traffic light : 89.52%
+5) car : 65.01%
+
+
+-------------------------------- SUMMARY INFORMATON STARTS -------------------------------
+
+For Query 1
+Number of candidate images before selection = 0
+Number of Deselections done = 0
+Number of images remaining after Deselections = 0
+For Query 2
+Number of candidate images before selection = 20
+Number of Deselections done = 16
+Number of images remaining after Deselections = 4
+For Query 3
+Number of candidate images before selection = 20
+Number of Deselections done = 18
+Number of images remaining after Deselections = 2
+
+
+-------------------------------- SUMMARY INFORMATON ENDS ---------------------------------
+
+
+Images retained after Deselections (to be passed to Auto-caption block):
+
+
+1) Keywords: ['person', 'table']
+Selected Images results:
+{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}
+
+2) Keywords: ['car']
+Selected Images results:
+{'Image': '000000499699.jpg', 'Source': 'coco_test_2017'}
+
+
+
+Normal exit from program.
+
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$
