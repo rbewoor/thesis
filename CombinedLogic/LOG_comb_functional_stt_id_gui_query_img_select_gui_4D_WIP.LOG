@@ -1,0 +1,166 @@
+LOG_LEVEL INFO : 2020-08-03 01:08:21,053 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+              STARTING EXECUTION OF STT LOGIC                      
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-08-03 01:08:29,424 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+       STARTING EXECUTION OF IDENTIFY KEYWORDS LOGIC               
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-08-03 01:08:32,271 :: 
+
+The following sentences will be processed:
+
+LOG_LEVEL INFO : 2020-08-03 01:08:32,271 :: 	Sentence 1 :
+me me a tory about persons sitting at table the blanchards
+LOG_LEVEL INFO : 2020-08-03 01:08:32,271 :: 	Sentence 2 :
+i want a story about a car on the road a child plays with a toy
+LOG_LEVEL INFO : 2020-08-03 01:08:32,271 :: 	Sentence 3 :
+generate a story about persons walking on the street a truck is on the road
+LOG_LEVEL INFO : 2020-08-03 01:08:32,271 :: 
+
+Words of each input sentence:
+
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 	Sentence 1 :
+['me', 'me', 'a', 'tory', 'about', 'persons', 'sitting', 'at', 'table', 'the', 'blanchards']
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 	Sentence 2 :
+['i', 'want', 'a', 'story', 'about', 'a', 'car', 'on', 'the', 'road', 'a', 'child', 'plays', 'with', 'a', 'toy']
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 	Sentence 3 :
+['generate', 'a', 'story', 'about', 'persons', 'walking', 'on', 'the', 'street', 'a', 'truck', 'is', 'on', 'the', 'road']
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 
+
+Words of each input sentence after removing all stop words:
+
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 	Sentence 1 :
+['tory', 'persons', 'sitting', 'table', 'blanchards']
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 	Sentence 2 :
+['want', 'story', 'car', 'road', 'child', 'plays', 'toy']
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 	Sentence 3 :
+['generate', 'story', 'persons', 'walking', 'street', 'truck', 'road']
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 
+
+Joining the non-stop words as a new sentence (for readability only):
+
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 	New sentence 1 :
+tory persons sitting table blanchards
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 	New sentence 2 :
+want story car road child plays toy
+LOG_LEVEL INFO : 2020-08-03 01:08:32,272 :: 	New sentence 3 :
+generate story persons walking street truck road
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: 
+
+All non-stop words pos info:
+
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: .........
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: Sentence 1, word 1 :
+{'text': 'tory', 'lemma_': 'tory', 'pos_': 'PROPN', 'tag_': 'NNP', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: Sentence 1, word 2 :
+{'text': 'persons', 'lemma_': 'person', 'pos_': 'NOUN', 'tag_': 'NNS', 'dep_': 'nsubj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: Sentence 1, word 3 :
+{'text': 'sitting', 'lemma_': 'sit', 'pos_': 'VERB', 'tag_': 'VBG', 'dep_': 'ROOT', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: Sentence 1, word 4 :
+{'text': 'table', 'lemma_': 'table', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: Sentence 1, word 5 :
+{'text': 'blanchards', 'lemma_': 'blanchard', 'pos_': 'NOUN', 'tag_': 'NNS', 'dep_': 'dobj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: .........
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: Sentence 2, word 1 :
+{'text': 'want', 'lemma_': 'want', 'pos_': 'VERB', 'tag_': 'VBP', 'dep_': 'ROOT', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: Sentence 2, word 2 :
+{'text': 'story', 'lemma_': 'story', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,288 :: Sentence 2, word 3 :
+{'text': 'car', 'lemma_': 'car', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 2, word 4 :
+{'text': 'road', 'lemma_': 'road', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 2, word 5 :
+{'text': 'child', 'lemma_': 'child', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'nsubj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 2, word 6 :
+{'text': 'plays', 'lemma_': 'play', 'pos_': 'VERB', 'tag_': 'VBZ', 'dep_': 'ccomp', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 2, word 7 :
+{'text': 'toy', 'lemma_': 'toy', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'dobj', 'shape_': 'xxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: .........
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 3, word 1 :
+{'text': 'generate', 'lemma_': 'generate', 'pos_': 'VERB', 'tag_': 'VB', 'dep_': 'ROOT', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 3, word 2 :
+{'text': 'story', 'lemma_': 'story', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 3, word 3 :
+{'text': 'persons', 'lemma_': 'person', 'pos_': 'NOUN', 'tag_': 'NNS', 'dep_': 'dobj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 3, word 4 :
+{'text': 'walking', 'lemma_': 'walk', 'pos_': 'VERB', 'tag_': 'VBG', 'dep_': 'acl', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 3, word 5 :
+{'text': 'street', 'lemma_': 'street', 'pos_': 'PROPN', 'tag_': 'NNP', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 3, word 6 :
+{'text': 'truck', 'lemma_': 'truck', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: Sentence 3, word 7 :
+{'text': 'road', 'lemma_': 'road', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'dobj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 01:08:32,289 :: 
+
+All POS info file successfully created here:
+/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt
+
+
+LOG_LEVEL INFO : 2020-08-03 01:08:32,290 :: 
+
+Candidate keywords AFTER matching against class labels:
+[['person'], ['car'], ['person', 'truck']]
+
+
+LOG_LEVEL DEBUG : 2020-08-03 01:08:46,997 :: 
+Sentence 1:
+BEFORE = ['person']
+Deselected = [0]
+AFTER = []
+
+LOG_LEVEL DEBUG : 2020-08-03 01:08:46,997 :: 
+Sentence 2:
+BEFORE = ['car']
+Deselected = []
+AFTER = ['car']
+
+LOG_LEVEL DEBUG : 2020-08-03 01:08:46,997 :: 
+Sentence 3:
+BEFORE = ['person', 'truck']
+Deselected = [0, 1]
+AFTER = []
+
+LOG_LEVEL INFO : 2020-08-03 01:08:47,541 :: After user selection of candidate keywords logic, RC=0, and results::  id_elements_module_results =
+[[], ['car'], []]
+LOG_LEVEL INFO : 2020-08-03 01:08:47,541 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+          STARTING EXECUTION OF QUERY NEO4J LOGIC                  
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL DEBUG : 2020-08-03 01:08:47,690 :: [#0000]  C: <RESOLVE> ('localhost', 7687)
+LOG_LEVEL DEBUG : 2020-08-03 01:08:47,690 :: [#0000]  C: <OPEN> ('127.0.0.1', 7687)
+LOG_LEVEL DEBUG : 2020-08-03 01:08:47,690 :: [#0000]  C: <ERROR> ConnectionRefusedError 111 'Connection refused'
+LOG_LEVEL DEBUG : 2020-08-03 01:08:47,691 :: [#0000]  C: <CLOSE> ('127.0.0.1', 7687)
+LOG_LEVEL ERROR : 2020-08-03 01:08:47,691 :: 
+
+Unexpected ERROR querying neo4j.
+Message:
+Failed to establish connection to ('127.0.0.1', 7687) (reason [Errno 111] Connection refused)
+Function call return with RC=1500.
+
+
+LOG_LEVEL ERROR : 2020-08-03 01:08:47,691 :: 
+
+FATAL ERROR: Database query logic failed. Return code = 310
+	Message = 
+FATAL ERROR: Problem retrieving data from Neo4j; query_rc = 1500.
+RC=310.
+
+Premature Exit.
+
+
