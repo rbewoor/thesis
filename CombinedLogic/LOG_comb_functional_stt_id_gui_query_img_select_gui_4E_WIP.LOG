@@ -1,0 +1,256 @@
+LOG_LEVEL INFO : 2020-08-03 23:56:53,662 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+              STARTING EXECUTION OF STT LOGIC                      
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-08-03 23:56:53,662 :: 
+Following wav files are found to process:
+LOG_LEVEL INFO : 2020-08-03 23:56:53,662 :: 	1) /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/rohit_st1_input1.wav
+LOG_LEVEL INFO : 2020-08-03 23:56:53,662 :: 	2) /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/rohit_st1_input2.wav
+LOG_LEVEL INFO : 2020-08-03 23:56:53,662 :: 	3) /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/rohit_st1_input3.wav
+LOG_LEVEL INFO : 2020-08-03 23:56:53,662 :: 
+
+Commencing model inference from Deepspeech version 0.7.3.
+
+LOG_LEVEL INFO : 2020-08-03 23:56:53,662 :: 
+
+	Command number 1:
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/rohit_st1_input1.wav
+LOG_LEVEL INFO : 2020-08-03 23:56:56,258 :: 	Inference:
+me me a tory about persons sitting at table the blanchards
+LOG_LEVEL INFO : 2020-08-03 23:56:56,258 :: 
+
+	Command number 2:
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/rohit_st1_input2.wav
+LOG_LEVEL INFO : 2020-08-03 23:56:58,758 :: 	Inference:
+i want a story about a car on the road a child plays with a toy
+LOG_LEVEL INFO : 2020-08-03 23:56:58,758 :: 
+
+	Command number 3:
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/combined_execution/audio/wavs/rohit_st1_input3.wav
+LOG_LEVEL INFO : 2020-08-03 23:57:01,602 :: 	Inference:
+generate a story about persons walking on the street a truck is on the road
+LOG_LEVEL INFO : 2020-08-03 23:57:04,484 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+       STARTING EXECUTION OF IDENTIFY KEYWORDS LOGIC               
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-08-03 23:57:07,362 :: 
+
+The following sentences will be processed:
+
+LOG_LEVEL INFO : 2020-08-03 23:57:07,362 :: 	Sentence 1 :
+me me a tory about persons sitting at table the blanchards
+LOG_LEVEL INFO : 2020-08-03 23:57:07,363 :: 	Sentence 2 :
+i want a story about a car on the road a child plays with a toy
+LOG_LEVEL INFO : 2020-08-03 23:57:07,363 :: 	Sentence 3 :
+generate a story about persons walking on the street a truck is on the road
+LOG_LEVEL INFO : 2020-08-03 23:57:07,363 :: 
+
+Words of each input sentence:
+
+LOG_LEVEL INFO : 2020-08-03 23:57:07,363 :: 	Sentence 1 :
+['me', 'me', 'a', 'tory', 'about', 'persons', 'sitting', 'at', 'table', 'the', 'blanchards']
+LOG_LEVEL INFO : 2020-08-03 23:57:07,363 :: 	Sentence 2 :
+['i', 'want', 'a', 'story', 'about', 'a', 'car', 'on', 'the', 'road', 'a', 'child', 'plays', 'with', 'a', 'toy']
+LOG_LEVEL INFO : 2020-08-03 23:57:07,364 :: 	Sentence 3 :
+['generate', 'a', 'story', 'about', 'persons', 'walking', 'on', 'the', 'street', 'a', 'truck', 'is', 'on', 'the', 'road']
+LOG_LEVEL INFO : 2020-08-03 23:57:07,364 :: 
+
+Words of each input sentence after removing all stop words:
+
+LOG_LEVEL INFO : 2020-08-03 23:57:07,364 :: 	Sentence 1 :
+['tory', 'persons', 'sitting', 'table', 'blanchards']
+LOG_LEVEL INFO : 2020-08-03 23:57:07,364 :: 	Sentence 2 :
+['want', 'story', 'car', 'road', 'child', 'plays', 'toy']
+LOG_LEVEL INFO : 2020-08-03 23:57:07,364 :: 	Sentence 3 :
+['generate', 'story', 'persons', 'walking', 'street', 'truck', 'road']
+LOG_LEVEL INFO : 2020-08-03 23:57:07,364 :: 
+
+Joining the non-stop words as a new sentence (for readability only):
+
+LOG_LEVEL INFO : 2020-08-03 23:57:07,364 :: 	New sentence 1 :
+tory persons sitting table blanchards
+LOG_LEVEL INFO : 2020-08-03 23:57:07,364 :: 	New sentence 2 :
+want story car road child plays toy
+LOG_LEVEL INFO : 2020-08-03 23:57:07,364 :: 	New sentence 3 :
+generate story persons walking street truck road
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: 
+
+All non-stop words pos info:
+
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: .........
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 1, word 1 :
+{'text': 'tory', 'lemma_': 'tory', 'pos_': 'PROPN', 'tag_': 'NNP', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 1, word 2 :
+{'text': 'persons', 'lemma_': 'person', 'pos_': 'NOUN', 'tag_': 'NNS', 'dep_': 'nsubj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 1, word 3 :
+{'text': 'sitting', 'lemma_': 'sit', 'pos_': 'VERB', 'tag_': 'VBG', 'dep_': 'ROOT', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 1, word 4 :
+{'text': 'table', 'lemma_': 'table', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 1, word 5 :
+{'text': 'blanchards', 'lemma_': 'blanchard', 'pos_': 'NOUN', 'tag_': 'NNS', 'dep_': 'dobj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: .........
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 2, word 1 :
+{'text': 'want', 'lemma_': 'want', 'pos_': 'VERB', 'tag_': 'VBP', 'dep_': 'ROOT', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 2, word 2 :
+{'text': 'story', 'lemma_': 'story', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 2, word 3 :
+{'text': 'car', 'lemma_': 'car', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 2, word 4 :
+{'text': 'road', 'lemma_': 'road', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 2, word 5 :
+{'text': 'child', 'lemma_': 'child', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'nsubj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 2, word 6 :
+{'text': 'plays', 'lemma_': 'play', 'pos_': 'VERB', 'tag_': 'VBZ', 'dep_': 'ccomp', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 2, word 7 :
+{'text': 'toy', 'lemma_': 'toy', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'dobj', 'shape_': 'xxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: .........
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 3, word 1 :
+{'text': 'generate', 'lemma_': 'generate', 'pos_': 'VERB', 'tag_': 'VB', 'dep_': 'ROOT', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 3, word 2 :
+{'text': 'story', 'lemma_': 'story', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,379 :: Sentence 3, word 3 :
+{'text': 'persons', 'lemma_': 'person', 'pos_': 'NOUN', 'tag_': 'NNS', 'dep_': 'dobj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,380 :: Sentence 3, word 4 :
+{'text': 'walking', 'lemma_': 'walk', 'pos_': 'VERB', 'tag_': 'VBG', 'dep_': 'acl', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,380 :: Sentence 3, word 5 :
+{'text': 'street', 'lemma_': 'street', 'pos_': 'PROPN', 'tag_': 'NNP', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,380 :: Sentence 3, word 6 :
+{'text': 'truck', 'lemma_': 'truck', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,380 :: Sentence 3, word 7 :
+{'text': 'road', 'lemma_': 'road', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'dobj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-08-03 23:57:07,380 :: 
+
+All POS info file successfully created here:
+/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt
+
+
+LOG_LEVEL INFO : 2020-08-03 23:57:07,380 :: 
+
+Candidate keywords AFTER matching against class labels:
+[['person'], ['car'], ['person', 'truck']]
+
+
+LOG_LEVEL DEBUG : 2020-08-03 23:57:18,979 :: 
+Sentence 1:
+BEFORE = ['person']
+Deselected = [0]
+AFTER = []
+
+LOG_LEVEL DEBUG : 2020-08-03 23:57:18,979 :: 
+Sentence 2:
+BEFORE = ['car']
+Deselected = [0]
+AFTER = []
+
+LOG_LEVEL DEBUG : 2020-08-03 23:57:18,979 :: 
+Sentence 3:
+BEFORE = ['person', 'truck']
+Deselected = []
+AFTER = ['person', 'truck']
+
+LOG_LEVEL INFO : 2020-08-03 23:57:19,368 :: After user selection of candidate keywords logic, RC was = 0, and results =
+[[], [], ['person', 'truck']]
+
+
+LOG_LEVEL INFO : 2020-08-03 23:57:19,368 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+          STARTING EXECUTION OF QUERY NEO4J LOGIC                  
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,468 :: [#0000]  C: <RESOLVE> ('localhost', 7687)
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,469 :: [#0000]  C: <OPEN> ('127.0.0.1', 7687)
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,469 :: [#E166]  C: <MAGIC> 0x6060B017
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,469 :: [#E166]  C: <HANDSHAKE> 0x00000003 0x00000002 0x00000001 0x00000000
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,471 :: [#E166]  S: <HANDSHAKE> 0x00000003
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,471 :: [#E166]  C: HELLO {'user_agent': 'neobolt/1.7.17 Python/3.7.7-final-0 (linux)', 'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,472 :: [#E166]  S: SUCCESS {'server': 'Neo4j/4.0.3', 'connection_id': 'bolt-13'}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,472 :: [#E166]  C: BEGIN {}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,472 :: [#0000]  C: <RESOLVE> ('localhost', 7687)
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,472 :: [#0000]  C: <OPEN> ('127.0.0.1', 7687)
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,472 :: [#E168]  C: <MAGIC> 0x6060B017
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,472 :: [#E168]  C: <HANDSHAKE> 0x00000003 0x00000002 0x00000001 0x00000000
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,474 :: [#E168]  S: <HANDSHAKE> 0x00000003
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,474 :: [#E168]  C: HELLO {'user_agent': 'neobolt/1.7.17 Python/3.7.7-final-0 (linux)', 'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,475 :: [#E168]  S: SUCCESS {'server': 'Neo4j/4.0.3', 'connection_id': 'bolt-14'}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,475 :: [#E168]  C: BEGIN {}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,475 :: [#0000]  C: <RESOLVE> ('localhost', 7687)
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,476 :: [#0000]  C: <OPEN> ('127.0.0.1', 7687)
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,476 :: [#E16A]  C: <MAGIC> 0x6060B017
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,476 :: [#E16A]  C: <HANDSHAKE> 0x00000003 0x00000002 0x00000001 0x00000000
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,477 :: [#E16A]  S: <HANDSHAKE> 0x00000003
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,477 :: [#E16A]  C: HELLO {'user_agent': 'neobolt/1.7.17 Python/3.7.7-final-0 (linux)', 'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,478 :: [#E16A]  S: SUCCESS {'server': 'Neo4j/4.0.3', 'connection_id': 'bolt-15'}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,478 :: [#E16A]  C: BEGIN {}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,478 :: [#E16A]  C: RUN 'MATCH (o1:Object)--(i:Image)--(o2:Object) WHERE o1.name = $in_obj1 AND o2.name = $in_obj2 RETURN DISTINCT i.name as Image, i.dataset as Source LIMIT $in_limit' {'in_obj1': 'person', 'in_obj2': 'truck', 'in_limit': 20} {}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,478 :: [#E16A]  C: PULL_ALL
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,490 :: [#E16A]  S: SUCCESS {}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,491 :: [#E16A]  S: SUCCESS {'t_first': 1, 'fields': ['Image', 'Source']}
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,491 :: [#E16A]  S: RECORD * 20
+LOG_LEVEL DEBUG : 2020-08-03 23:57:19,491 :: [#E16A]  S: SUCCESS {'type': 'r', 't_last': 10}
+LOG_LEVEL INFO : 2020-08-03 23:57:19,491 :: 
+Query 1) Keywords: []
+Query result:
+[]
+LOG_LEVEL INFO : 2020-08-03 23:57:19,491 :: 
+Query 2) Keywords: []
+Query result:
+[]
+LOG_LEVEL INFO : 2020-08-03 23:57:19,492 :: 
+Query 3) Keywords: ['person', 'truck']
+Query result:
+[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000169516.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000292186.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000146747.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313777.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000449668.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000509771.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000012149.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168815.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168743.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000518174.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000017467.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000581864.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225580.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000265504.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000361201.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000304424.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225081.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225051.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000499699.jpg', 'Source': 'coco_test_2017'}]
+LOG_LEVEL INFO : 2020-08-03 23:57:19,492 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+  STARTING EXECUTION OF IMAGE SELECTION VIA GUI                    
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-08-03 23:57:34,499 :: 
+Images retained after Deselections (to be passed to Auto-caption block):
+
+LOG_LEVEL INFO : 2020-08-03 23:57:34,499 :: 
+1) Keywords: []
+\Selected Images results:
+[]
+
+Premature Exit.
+
+
+LOG_LEVEL INFO : 2020-08-03 23:57:34,499 :: 
+2) Keywords: []
+\Selected Images results:
+[]
+
+Premature Exit.
+
+
+LOG_LEVEL INFO : 2020-08-03 23:57:34,500 :: 
+3) Keywords: ['person', 'truck']
+\Selected Images results:
+[]
+
+Premature Exit.
+
+
+LOG_LEVEL INFO : 2020-08-03 23:57:34,500 :: 
+
+
+Normal exit from program.
+
