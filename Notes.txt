@@ -36,6 +36,13 @@ conda install pydot
 conda install tk      ## pip install python-tk	## not required as should already be there from earlier steps
 conda install pillow  ##pip install pillow
 
+	*** MS Azure TTS   -- currently is part of totally new environment
+					pre-requisite
+			sudo apt-get update
+			sudo apt-get install libssl1.0.0 libasound2
+pip install azure-cognitiveservices-speech      ## used azure-cognitiveservices-speech  1.13.0
+conda install requests                          ## used requests  2.24.0
+
 	*** Miscellaneos stuff
 conda install matplotlib
 
