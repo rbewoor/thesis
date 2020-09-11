@@ -1,0 +1,41 @@
+Per website: https://kazemnejad.com/blog/how_to_do_deep_learning_research_with_absolutely_no_gpus_part_2/
+
+CPU only VM
+Colab = cpu 2 cores, 12 gigs ram (upgradable to 26 gigs), disk 25 gigs
+Kaggle = cpu 4 cores, 16 gigs ram, disk 5 gigs
+
+GPU VM
+Colab = cpu 2 cores, 12 gigs ram (upgradable to 26 gigs), disk 358 gigs, gpu Nvidia K80 4.1TFLOPS or T4 8.1TFLOPS (cannot choose)
+Kaggle = cpu 2 cores, 12 gigs ram, disk 5 gigs, gpu Nvidia P100 9.3TFLOPS
+
+Execution time limits for CPU and GPU VM cases:
+Colab = Max 12 hrs, max idle time = 90 mins
+Kaggle = Max 9 hrs, max idle time = 60 mins
+
+
+
+Per webiste: https://analyticsindiamag.com/google-colab-vs-kaggle-kernels-which-of-the-two-platforms-should-you-go-for/#:~:text=Google%20Colab%3A%20Colab%20gives%20the,time%20for%20execution%20per%20session.
+
+5. Memory
+Google Colab: Colab has an Nvidia Tesla K80. It is definitely better than Kaggle in terms of speed. But integrating with Google Drive is not very easy. Every session needs authentication every time. Unzipping files in Google is also not very easy.
+Kaggle Kernels: Kaggle had its GPU chip upgraded from K80 to an Nvidia Tesla P100. Many users have experienced a lag in Kernel. It is slow compared to Colab.
+
+6. Execution Time
+Google Colab: Colab gives the user an execution time of a total of 12 hours. After every 90 minutes of being idle, the session restarts all over again.
+Kaggle Kernel: Kaggle claims that they serve a total of 9 hours of execution time. But Kaggle Kernel shows only 6 hours of available time for execution per session. After every 60 minutes, the sessions can also restart all over again.
+
+
+
+
+Per website: https://towardsdatascience.com/kaggle-vs-colab-faceoff-which-free-gpu-provider-is-tops-d4f0cd625029
+
+Specs
+As of early March 2019, Kaggle has upgraded its GPU chip from a Nvidia Tesla K80 to a Nvidia Telsa P100. Colab still gives you a K80.
+Two useful commands are !nvidia-smi for GPU info and !cat /proc/cpuinfo for CPU info. 
+
+Batch Size
+Kaggle use smaller value
+
+Software packages used for GPU runs: CUDA is Nvidia’s API that gives direct access to the GPU’s virtual instruction set. cuDNN is Nvidia’s library of primitives for deep learning built on CUDA.
+Kaggle runs CUDA 9.2.148 and cuDNN 7.4.1, while Colab runs CUDA 10.0.130 and cuDNN 7.5.0.
+
