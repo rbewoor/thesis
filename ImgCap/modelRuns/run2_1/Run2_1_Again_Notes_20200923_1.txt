@@ -1,0 +1,124 @@
+
+unique words in original vocabulary = 24323
+unique words in culled vocab vocab_threshold = 6757
+thus, VOCAB_SIZE = 6757 + 1 = 6758
+
+
+
+CONSOLE PRINT OUTPUT CHECK:
+	Encodings data:
+len(img_encodings_train) = 97000
+len(img_encodings_val) = 3000
+	Descriptions data:
+len(descriptions_train) = 97000
+len(descriptions_val) = 3000
+
+No Validation Set being used for now.
+
+len(wordtoix) = 6757
+VOCAB_SIZE = 6758
+EMBEDDING_DIMS = 200
+embedding_matrix Shape = (6758, 200)
+MAX_LENGTH_CAPTION = 49
+
+
+
+
+		Before freezing:
+#Total params: 4,146,710
+#Trainable params: 4,146,710
+#Non-trainable params: 0
+
+		After freezing:
+#Total params: 4,146,710
+#Trainable params: 2,795,110
+#Non-trainable params: 1,351,600
+
+
+
+		Decoder parameters:
+EMBEDDING_DIMS = 200
+VOCAB_SIZE = 6758
+MAX_LENGTH_CAPTION = 49
+
+
+		Training parameters:
+LR_1 = 0.0005
+BATCH_SIZE_1 = 128   ## how many images per batch
+N_EPOCHS_1 = 2
+Adam optimizer
+
+
+
+
+		Console output during training:
+MODEL 2 :: Training Phase 1 started at :: 17:15:11
+
+
+Phase 1 parameters:
+STEPS_PER_EPOCH_1 = 757
+BATCH_SIZE_1 = 128
+N_EPOCHS_1 = 2
+
+Epoch 1 started at 17:15:11
+LR used = 0.0005000000237487257 
+
+757/757 [==============================] - 7705s 10s/step - loss: 4.3657
+
+Epoch 2 started at 19:23:55
+LR used = 0.0005000000237487257 
+
+757/757 [==============================] - 7793s 10s/step - loss: 3.4819
+
+
+
+
+
+
+
+
+
+
+
+
+
+		OLD  FOR REFERENCE - run for 5 epochs , LR = 0.0001 , different data split
+		Console output during training:
+MODEL 2 :: Training Phase 1 started at :: 12:34:31
+
+
+Phase 1 parameters:
+STEPS_PER_EPOCH_1 = 757
+BATCH_SIZE_1 = 256
+N_EPOCHS_1 = 5
+
+Epoch 1 started at 12:34:31
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5051s 7s/step - loss: 4.9100
+
+Epoch 2 started at 13:58:54
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5074s 7s/step - loss: 3.8901
+
+Epoch 3 started at 15:23:35
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5080s 7s/step - loss: 3.6190
+
+Epoch 4 started at 16:48:23
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5097s 7s/step - loss: 3.4708
+
+Epoch 5 started at 18:13:26
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5129s 7s/step - loss: 3.3735
+
+
+
+
+
+
