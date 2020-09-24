@@ -1,0 +1,137 @@
+
+unique words in original vocabulary = 24323
+unique words in culled vocab vocab_threshold = 6757
+thus, VOCAB_SIZE = 6757 + 1 = 6758
+
+
+
+CONSOLE PRINT OUTPUT CHECK:
+	Encodings data:
+len(img_encodings_train) = 97000
+len(img_encodings_val) = 3000
+	Descriptions data:
+len(descriptions_train) = 97000
+len(descriptions_val) = 3000
+
+NO Validation Set being used for now.
+
+len(wordtoix) = 6757
+VOCAB_SIZE = 6758
+EMBEDDING_DIMS = 200
+embedding_matrix Shape = (6758, 200)
+MAX_LENGTH_CAPTION = 49
+
+Initialed with this input weights file:
+../input/imgcap-kagg-run2-weights-in/Decoder_Run_2_Wt_ep_4.h5
+
+
+
+		Model Parameters - before and after freezing
+Created RNN Decoder model defined with these paramenters:
+EMBEDDING_DIMS = 200 , VOCAB_SIZE = 6758 , MAX_LENGTH_CAPTION = 49
+
+BEFORE LOADING WEIGHTS AND FREEZING, parameter counts:
+Total parameters = 4146710 , Trainable parameter = 4146710 , Non-trainable parameters = 0
+
+Attempting to load weights...
+
+SUCCESS - Reloaded weights from :: ../input/imgcap-kagg-run2-weights-in/Decoder_Run_2_Wt_ep_2.h5
+
+Frozen embeddings layer.
+
+AFTER FREEZING, parameter counts:
+Total parameters = 4146710 , Trainable parameter = 2795110 , Non-trainable parameters = 1351600
+
+<class 'tensorflow.python.keras.engine.functional.Functional'>
+
+
+
+		Decoder parameters:
+EMBEDDING_DIMS = 200
+VOCAB_SIZE = 6758
+MAX_LENGTH_CAPTION = 49
+
+
+		Training parameters - PHASE 3:
+LR_3 = 0.0002
+BATCH_SIZE_3 = 128   ## how many images per batch
+N_EPOCHS_3 = 3
+Adam optimizer
+
+
+
+Weights out only saved till Ep4.
+
+
+
+
+
+
+
+
+
+		Console output during training:
+MODEL 2 :: Training Phase 3 started at :: 08:28:14
+
+
+Phase 3 parameters:
+STEPS_PER_EPOCH_3 = 757
+BATCH_SIZE_3 = 128
+N_EPOCHS_3 = 3
+
+Epoch 5 started at 08:28:14
+LR used = 0.00019999999494757503
+
+549/757 [====================>.........] - ETA: 35:29 - loss: 3.1945
+
+
+
+
+
+
+
+
+
+
+
+
+		OLD  FOR REFERENCE - run for 5 epochs , LR = 0.0001 , different data split
+		Console output during training:
+MODEL 2 :: Training Phase 1 started at :: 12:34:31
+
+
+Phase 1 parameters:
+STEPS_PER_EPOCH_1 = 757
+BATCH_SIZE_1 = 256
+N_EPOCHS_1 = 5
+
+Epoch 1 started at 12:34:31
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5051s 7s/step - loss: 4.9100
+
+Epoch 2 started at 13:58:54
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5074s 7s/step - loss: 3.8901
+
+Epoch 3 started at 15:23:35
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5080s 7s/step - loss: 3.6190
+
+Epoch 4 started at 16:48:23
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5097s 7s/step - loss: 3.4708
+
+Epoch 5 started at 18:13:26
+LR used = 0.00019999999494757503 
+
+757/757 [==============================] - 5129s 7s/step - loss: 3.3735
+
+
+
+
+
+
