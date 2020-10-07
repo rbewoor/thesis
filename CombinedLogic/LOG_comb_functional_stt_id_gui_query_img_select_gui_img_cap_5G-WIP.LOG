@@ -1,0 +1,44 @@
+LOG_LEVEL INFO : 2020-10-07 11:23:48,678 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+  STARTING EXECUTION OF GUI DISPLAY fOR IMAGE CAPTIONING RESULTS   
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL DEBUG : 2020-10-07 11:23:50,656 :: 
+Completed selection process - Query number 1
+Number of images before selection began = 0
+Number of images Deselected by user = 0.
+Number of images that will remain = 0
+
+LOG_LEVEL INFO : 2020-10-07 11:24:03,169 :: 
+For Query 2, Deselected positions=
+[]
+LOG_LEVEL DEBUG : 2020-10-07 11:24:03,187 :: 
+Completed selection process - Query number 2
+Number of images before selection began = 4
+Number of images Deselected by user = 0.
+Number of images that will remain = 4
+
+LOG_LEVEL INFO : 2020-10-07 11:24:10,105 :: 
+For Query 3, Deselected positions=
+[2, 4]
+LOG_LEVEL DEBUG : 2020-10-07 11:24:10,125 :: 
+Completed selection process - Query number 3
+Number of images before selection began = 5
+Number of images Deselected by user = 2.
+Number of images that will remain = 3
+
+LOG_LEVEL INFO : 2020-10-07 11:24:10,125 :: 
+After GUI TO DISPLAY IMAGE CAPTIONING RESULTS logic execution:
+gui_img_cap_show_results_logic_RC = 0
+gui_img_cap_show_results_logic_msg = None
+gui_img_cap_show_results_module_results = None
+
+LOG_LEVEL INFO : 2020-10-07 11:24:10,125 :: 
+
+
+Normal exit from program.
+
