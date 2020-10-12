@@ -1,0 +1,110 @@
+LOG_LEVEL INFO : 2020-10-12 23:00:29,038 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+    STAGE 1)  STARTING EXECUTION OF MIC INPUT LOGIC                
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-10-12 23:00:29,038 :: 
+Listen parameters:
+chunk = 1024
+channels = 1
+sampling frequency = 16000 Hz
+sample_format = 16 bit
+append_every_secs = 2
+Listen Min secs = 3
+Listen Max secs = 10
+Threshold Min volume = 500
+
+LOG_LEVEL INFO : 2020-10-12 23:00:31,394 :: 
+Started listening, please start speaking....
+LOG_LEVEL INFO : 2020-10-12 23:00:35,320 :: 
+Stopped recording: in last 2 seconds, volume was below threshold
+vol (255) < threshold value (500)
+
+LOG_LEVEL INFO : 2020-10-12 23:00:35,322 :: 
+Saved Wav file here: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file1.wavRecording length = 3.93 seconds
+
+LOG_LEVEL INFO : 2020-10-12 23:00:37,150 :: 
+Started listening, please start speaking....
+LOG_LEVEL INFO : 2020-10-12 23:00:41,234 :: 
+Stopped recording: in last 2 seconds, volume was below threshold
+vol (255) < threshold value (500)
+
+LOG_LEVEL INFO : 2020-10-12 23:00:41,235 :: 
+Saved Wav file here: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file2.wavRecording length = 4.08 seconds
+
+LOG_LEVEL INFO : 2020-10-12 23:00:42,081 :: 
+Started listening, please start speaking....
+LOG_LEVEL INFO : 2020-10-12 23:00:45,246 :: 
+Stopped recording: in last 2 seconds, volume was below threshold
+vol (255) < threshold value (500)
+
+LOG_LEVEL INFO : 2020-10-12 23:00:45,246 :: 
+Saved Wav file here: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file3.wavRecording length = 3.16 seconds
+
+LOG_LEVEL INFO : 2020-10-12 23:00:45,253 :: 
+Saved 3 wav files to folder: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/
+Wav files created are: ['/home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file1.wav', '/home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file2.wav', '/home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file3.wav']
+Created file for STT block processing here: /home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/mic_input_wavfiles_1.txt
+LOG_LEVEL INFO : 2020-10-12 23:00:45,253 :: 
+After MIC INPUT logic execution:
+mic_logic_RC = 0
+mic_logic_msg = None
+mic_module_results = None
+
+LOG_LEVEL INFO : 2020-10-12 23:00:45,254 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+    STAGE 2)  STARTING EXECUTION OF STT LOGIC                      
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-10-12 23:00:45,254 :: 
+Following wav files are found to process:
+LOG_LEVEL INFO : 2020-10-12 23:00:45,254 :: 	1) /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file1.wav
+LOG_LEVEL INFO : 2020-10-12 23:00:45,254 :: 	2) /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file2.wav
+LOG_LEVEL INFO : 2020-10-12 23:00:45,255 :: 	3) /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file3.wav
+LOG_LEVEL DEBUG : 2020-10-12 23:00:45,255 :: 
+
+ds_inf_cmd_fixed=
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio 
+
+
+LOG_LEVEL INFO : 2020-10-12 23:00:45,255 :: 
+
+Commencing model inference from Deepspeech version 0.7.3.
+
+LOG_LEVEL INFO : 2020-10-12 23:00:45,255 :: 
+
+	Command number 1:
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file1.wav
+LOG_LEVEL INFO : 2020-10-12 23:01:00,127 :: 	Inference:
+first entering first singles
+LOG_LEVEL INFO : 2020-10-12 23:01:00,128 :: 
+
+	Command number 2:
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file2.wav
+LOG_LEVEL INFO : 2020-10-12 23:01:05,510 :: 	Inference:
+casamassima were
+LOG_LEVEL INFO : 2020-10-12 23:01:05,510 :: 
+
+	Command number 3:
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/mic_wav_file3.wav
+LOG_LEVEL INFO : 2020-10-12 23:01:09,957 :: 	Inference:
+i do for
+LOG_LEVEL INFO : 2020-10-12 23:01:19,519 :: 
+After STT logic execution:
+stt_logic_RC = 0
+stt_logic_msg = None
+stt_module_results = ['first entering first singles', 'casamassima were', 'i do for']
+
+LOG_LEVEL INFO : 2020-10-12 23:01:19,519 :: 
+
+
+Normal exit from program.
+
