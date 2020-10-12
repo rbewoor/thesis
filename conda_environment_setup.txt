@@ -1,6 +1,6 @@
 
 		SETTING UP ENVIRONMENT FOR      MIC INPUT TO GUI IMAGE CAP SHOW/EDIT - MIC INPUT, STT, ID KEY ELEMENTS, QUERY DB, IMAGE CAP INFERENCE, STORY GENERATOR PENDING
-										IMG_CAP Inference (TRAINING VIA KAGGLE THOUGH)
+										IMG_CAP Inference - TRAINING done via KAGGLE
 
 	*** # Download pre-trained English model files
 	/home/rohit/deepspeech/pretrained/v073 - into this folder downloaded the scorer and pbmm
@@ -51,7 +51,7 @@ nothing new required
 	*** Mic input for input sentences and save as wav files
 ## using pyaudio - which has dependency for portaudio which is installed automatically
 conda install pyaudio							## used pyaudio		0.2.11
-												## used portaudio	19.6.0
+									## used portaudio	19.6.0
 
 	*** Story Generation
 PENDING
