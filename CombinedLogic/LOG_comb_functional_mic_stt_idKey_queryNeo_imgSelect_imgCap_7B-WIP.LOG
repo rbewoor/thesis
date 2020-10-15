@@ -1,0 +1,37 @@
+LOG_LEVEL INFO : 2020-10-15 04:25:40,000 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+    STAGE 1)  STARTING EXECUTION OF MIC INPUT + STT LOGIC          
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-10-15 04:25:40,000 :: 
+
+Running WITH mic input
+
+
+LOG_LEVEL INFO : 2020-10-15 04:25:47,431 :: 
+Recorded successfully here: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file1.wav
+
+LOG_LEVEL INFO : 2020-10-15 04:25:50,879 :: 
+Recorded successfully here: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file2.wav
+
+LOG_LEVEL INFO : 2020-10-15 04:25:53,463 :: 
+Attempting to play: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file2.wav
+
+LOG_LEVEL INFO : 2020-10-15 04:25:59,727 :: 
+Recorded successfully here: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file3.wav
+
+LOG_LEVEL INFO : 2020-10-15 04:26:11,363 :: 
+After MIC INPUT + STT logic execution:
+mic_stt_logic_RC = 0
+mic_stt_logic_msg = None
+mic_stt_module_results = []
+
+LOG_LEVEL INFO : 2020-10-15 04:26:11,364 :: 
+
+
+Normal exit from program.
+
