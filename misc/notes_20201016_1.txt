@@ -1,0 +1,2053 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+multiprocessing package check:
+RQ: https://pypi.org/project/multi-rq/
+workflows
+celery
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		UPLOAD TO GOOGLE DRIVE
+		
+		40670 in /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017
+
+python3 test_gdrive_upload_1.py
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		SIDDY notebook
+%cd "/content/gdrive/My Drive/ThesisStoryGen/Data"
+import os
+os.mkdir('coco_val_2017')
+%cd "coco_val_2017"
+!sudo wget http://images.cocodataset.org/zips/val2017.zip
+!ls
+!unzip val2017.zip
+!ls
+%cd val2017/
+len(os.listdir(os.getcwd()))
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		STT USING DEEPSPEECH
+
+	version 0.7.3
+https://deepspeech.readthedocs.io/en/v0.7.3/?badge=latest
+
+# Create anaconda env
+conda create -n ce4ds1 python=3.7
+	# Create and activate a virtualenv
+	virtualenv -p python3 $HOME/tmp/deepspeech-venv/
+	source $HOME/tmp/deepspeech-venv/bin/activate
+			
+conda install jupyter
+(ce4ds1) rohit@rohitu2004lts:~$ pip install deepspeech
+Collecting deepspeech
+  Downloading deepspeech-0.7.3-cp37-cp37m-manylinux1_x86_64.whl (9.7 MB)
+     |████████████████████████████████| 9.7 MB 7.7 MB/s 
+Collecting numpy>=1.14.5
+  Downloading numpy-1.18.5-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+     |████████████████████████████████| 20.1 MB 282 kB/s 
+Installing collected packages: numpy, deepspeech
+Successfully installed deepspeech-0.7.3 numpy-1.18.5
+(ce4ds1) rohit@rohitu2004lts:~$
+# Download pre-trained English model files
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.scorer
+
+		INFERENCE comamnd
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/input1.wav
+
+input1.wav
+Make me a story about persons sitting at a table. They are playing cards.
+INFERENCE: me me a tory about persons sitting at table the blanchards
+
+input2.wav
+I want a story about a car on the road. A child plays with a toy.
+INFERENCE: i want a story about a car on the road a child plays with a toy
+
+input3.wav
+Generate a story about persons walking on the street. A truck is on the road.
+INFERENCE: generate a story about persons walking on the street a truck is on the road
+
+
+			stt_wav_files_loc_1.txt  contents
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input1.wav
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input2.wav
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input3.wav
+
+python3 stt_transcribe_1.py -wavlocfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_wav_files_loc_1.txt" -opfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt"
+
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+		OBJECT DETECTION WITH YOLOV3
+
+https://medium.com/data-science-in-your-pocket/all-about-yolo-object-detection-and-its-3-versions-paper-summary-and-codes-2742d24f56e
+
+Different Versions
+								VERSION 1
+YOLO requires a Neural Network framework for training and for this we have used DarkNet.The first version has 26 layers in total, with 24 Convolution Layers followed by 2 Fully Connected layers. The major problem with YOLOv1 is its inability to detect very small objects.
+
+After the first version, 2 more versions for YOLO released that are:
+
+YOLO9000 / YOLOv2:				VERSION 2
+Inclusion of batch Normalization layers after each Conv Layer
+It has 30 layers in comparison to YOLO v1 26 layers.
+Anchor Boxes were introduced.
+Anchor boxes are predefined boxes provided by the user to Darknet which gives the network an idea about the relative position and dimensions of the objects to be detected. It has to be calculated using the training set Objects.
+No fully connected layer present
+Random dimensions were taken for training images ranging from 320–608
+Multiple labels might be provided to the same objects, but still a multiclass problem(WordTree concept) i.e either the parent or child be the final label and not both.
+Still bad with small objects
+
+								VERSION 3
+YOLOv3:
+106 layers neural network
+Detection on 3 scales for detecting objects of small to very large size
+9 anchor boxes taken; 3 per scale. Hence more bounding boxes are predicted than YOLO9000 & YOLOv1
+MultiClass problem turned in MultiLabel problem
+Certain changes in the Error function.
+Quite good with small objects
+
+
+https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/
+
+The “You Only Look Once,” or YOLO, family of models are a series of end-to-end deep learning models designed for fast object detection, developed by Joseph Redmon, et al. and first described in the 2015 paper titled “You Only Look Once: Unified, Real-Time Object Detection.”
+
+The approach involves a single deep convolutional neural network (originally a version of GoogLeNet, later updated and called DarkNet based on VGG) that splits the input into a grid of cells and each cell directly predicts a bounding box and object classification. The result is a large number of candidate bounding boxes that are consolidated into a final prediction by a post-processing step.
+
+There are three main variations of the approach, at the time of writing; they are YOLOv1, YOLOv2, and YOLOv3. The first version proposed the general architecture, whereas the second version refined the design and made use of predefined anchor boxes to improve bounding box proposal, and version three further refined the model architecture and training process.
+
+Although the accuracy of the models is close but not as good as Region-Based Convolutional Neural Networks (R-CNNs), they are popular for object detection because of their detection speed, often demonstrated in real-time on video or with camera feed input.
+
+			using KERAS for YOLOv3
+
+Instead of developing this code from scratch, we can use a third-party implementation. There are many third-party implementations designed for using YOLO with Keras, and none appear to be standardized and designed to be used as a library.
+
+The YAD2K project was a de facto standard for YOLOv2 and provided scripts to convert the pre-trained weights into Keras format, use the pre-trained model to make predictions, and provided the code required to distill interpret the predicted bounding boxes. Many other third-party developers have used this code as a starting point and updated it to support YOLOv3.
+
+Perhaps the most widely used project for using pre-trained the YOLO models is called “keras-yolo3: Training and Detecting Objects with YOLO3” by Huynh Ngoc Anh or experiencor. The code in the project has been made available under a permissive MIT open source license. Like YAD2K, it provides scripts to both load and use pre-trained YOLO models as well as transfer learning for developing YOLOv3 models on new datasets.
+
+He also has a keras-yolo2 project that provides similar code for YOLOv2 as well as detailed tutorials on how to use the code in the repository. The keras-yolo3 project appears to be an updated version of that project.
+
+We will use experiencor’s keras-yolo3 project as the basis for performing object detection with a YOLOv3 model in this tutorial.
+
+
+			yolo3_one_file_to_detect_them_all.py           - directly create a model and use it
+In this section, we will use a pre-trained model to perform object detection on an unseen photograph. This capability is available in a single Python file in the repository called “yolo3_one_file_to_detect_them_all.py” that has about 435 lines. This script is, in fact, a program that will use pre-trained weights to prepare a model and use that model to perform object detection and output a model. It also depends upon OpenCV.
+
+
+
+			get the pre-trained weights file for YOLOv3
+From this link: https://pjreddie.com/media/files/yolov3.weights
+/home/rohit/PyWDUbuntu/DA4_1/keras-yolo3-master/yoloWeights/yolov3.weights
+
+Images to detect are here:
+/home/rohit/PyWDUbuntu/DA4_1/Imgs2Detect/
+
+
+			ENVIRONMENT SETUP - ANACONDA - for only neo4j db writing
+conda create -n ce2da41 python=3.7
+conda install jupyter
+conda install pandas
+pip install neo4j
+conda install pytz
+conda install -c conda-forge opencv   ## used opencv 3.4.2
+conda install keras
+conda install pydot
+
+			env yml file using conda tool
+Output of: conda env export
+
+			MULTI processing		MULTI processing		MULTI processing		MULTI processing		MULTI processing
+
+
+python3 TEST_yolo3_process_coco_py2neo_multiproc_1.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 2 -nipt 2 -opfilelocneo home/rohit/PyWDUbuntu/thesis/Imgs2Detect_op4neo
+
+python3 TEST_yolo3_process_coco_py2neo_multiproc_3.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 2 -nipt 4 -opfilelocneo home/rohit/PyWDUbuntu/thesis/Imgs2Detect_op4neo
+
+		use version 4 to only save the model
+python3 TEST_yolo3_process_coco_py2neo_multiproc_4.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3.saved.model
+
+		use version 5 as multiprocessing using reloaded model
+python3 TEST_yolo3_process_coco_py2neo_multiproc_5.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3.saved.model -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 5 -nipt 4 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_op4neo
+---------------------------------------------------------------------------------------------------------------------------------------------
+	
+		BUILD AND SAVE MODEL
+python3 detection_yolov3_build_save_model_1.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3.saved.model
+
+		MULTIPROCESSING PROCESS IMAGES AND SAVE JOB NEO ARRAYS
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3.saved.model -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more -isrc coco80 -sf 3 -nipt 20 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more_op4neo
+
+		PICK SAVED NEO ARRAYS OF JOBS AND UPDATE NEO4J GRAPH DB
+python3 detection_update_neo_1.py -sf 3 -iploc /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more_op4neo
+
+python3 detection_update_neo_1.py -sf 20 -iploc /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+
+python3 detection_update_neo_1.py -sf 20 -iploc /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo
+
+
+/home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more
+
+    savedmodelpath = args.savedmodelpath       # -smp parameter, location of the saved kears model for pre-trained yolov3 model
+    image_path     = args.imagefolder          # -if parameter, where to pick the images from to process
+    img_dataset    = args.imgsource            # -isrc parameter, image node property value for dataset
+    status_freq    = args.statusfrequency      # -sf parameter, after how many images info is processed for neo4j inserts should a status message be shown
+    nipt           = args.numberimagespertask  # -nipt parameter, how many images files to be processed in each task
+    opfilelocneo   = args.ouputfilelocationneo # -opfileneo parameter, location where dump of neo4j array of each task should be written to file
+---------------------------------------------------------------------------------------------------------------------------------------------
+			TEST on small set of 127 images
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more" -isrc coco80 -sf 2 -nipt 5 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more_op4neo
+
+
+			FLICKR data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/flickr30k_images/flickr30k_images" : 31783 images
+			CHANGE THE dataset property to flickr30k
+			/home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/flickr30k_images/flickr30k_images" -isrc flickr30k -sf 25 -nipt 250 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo
+
+
+			COCO VAL 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_val2017_5k/val2017" : 5000 images
+			/home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_val2017_5k/val2017" -isrc coco_val_2017 -sf 25 -nipt 125 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+
+
+			COCO VAL 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 40670 images
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/COCO_test2017_40k_images_op4neo
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf x -nipt x -opfilelocneo /home/rohit/PyWDUbuntu/thesis/COCO_test2017_40k_images_op4neo
+
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			10k to 15k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_10k_15k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_10k_15k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_10k_15k
+
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			15k to 20k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_15k_20k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_15k_20k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_15k_20k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			20k to 25k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_20k_25k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_20k_25k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_20k_25k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 10000 images
+			25k to 35k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_25k_35k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_25k_35k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_25k_35k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			5k to 10k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_5k_10k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_20k_25k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_5k_10k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 10000 images
+			1 to 10k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_1_10k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_1_10k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 100 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_1_10k
+
+			COCO TEST 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" : 5000 images
+			35k to 40k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_1_10k
+python3 detection_yolo3_process_images_multiproc_1_cocotest_35k_40k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017" -isrc coco_test_2017 -sf 10 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_test_2017_40k_images_op4neo_1_35k_40k
+
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 10000 images
+			1 to 10k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_1_10k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_1_20k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_1_10k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 10000 images
+			10k to 20k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_10k_20k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_10k_20k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_10k_20k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 5000 images
+			20k to 25k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_20k_25k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_25k_35k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_20k_25k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 5000 images
+			25k to 30k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_25k_30k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_25k_30k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_25k_30k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 5000 images
+			30k to 35k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_30k_35k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_30k_35k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_30k_35k
+
+			COCO TRAIN 2017 data set processing : "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" : 5000 images
+			35k to 40k
+		on PC
+			/home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_35k_40k
+python3 detection_yolo3_process_images_multiproc_1_cocotrain_35k_40k.py -smp /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model -if "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_train2017_118k" -isrc coco_train_2017 -sf 15 -nipt 50 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/coco_train_2017_118k_images_op4neo_1_35k_40k
+
+
+		on Google COLAB
+			/home/rohit/PyWDUbuntu/thesis/COCO_test2017_40k_images_op4neo
+-smp r"/content/gdrive/My Drive/ThesisStoryGen/Data/saved_keras_model/yolov3_coco80.saved.model"
+-if r"/content/gdrive/My Drive/ThesisStoryGen/Data/coco_test2017_wget_1/test2017"
+-isrc r"coco_test_2017"
+-if r"/content/gdrive/My Drive/ThesisStoryGen/Data/Imgs2Detect"
+-isrc r"testrun"
+-sf 10
+-nipt 100
+-opfilelocneo r"/content/gdrive/My Drive/ThesisStoryGen/Data/coco_test_2017_40k_images_op4neo"
+-opfilelocneo r"/content/gdrive/My Drive/ThesisStoryGen/Data/Imgs2Detect_op4neo"
+
+
+					INSERT TO Neo4j
+		FLICKR30K
+python3 detection_update_neo_2.py -sf 25 -iploc /home/rohit/PyWDUbuntu/thesis/flickr30k_images_op4neo_corrected
+
+		COCO VAL 5K
+python3 detection_update_neo_2.py -sf 25 -iploc /home/rohit/PyWDUbuntu/thesis/COCO_val2017_5k_images_op4neo
+
+
+		COCO TEST 41K
+	coco_test_2017_40k_images_op4neo_1_1_10k
+	coco_test_2017_40k_images_op4neo_1_10k_15k
+	coco_test_2017_40k_images_op4neo_1_15k_20k
+	coco_test_2017_40k_images_op4neo_1_20k_25k
+	coco_test_2017_40k_images_op4neo_1_25k_35k
+	coco_test_2017_40k_images_op4neo_1_35k_40k
+python3 detection_update_neo_2.py -sf 25 -iploc coco_test_2017_40k_images_op4neo_1_15k_20k
+
+
+
+			SINGLE processing		SINGLE processing		SINGLE processing		SINGLE processing		SINGLE processing
+python3 TEST_yolo3_process_coco_py2neo_2.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 2
+
+python3 TEST_yolo3_process_coco_py2neo_2.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect_more -isrc coco80 -sf 5
+	Yolo processing stats:
+	Total images = 127
+	Success = 111
+	Failed = 16
+	After inserting 111 images info in Neo: Image nodes = 111, Object nodes = 37, HAS = 596
+
+Yolo inference and Neo4j inserts
+Inference on images with Yolo v3
+All images in specified input folder processed.
+May fail during pre-process step due to image size issued and such images will be rejected.
+Successfully processed image results inserted to Neo4j db
+
+
+python3 TEST_yolo3_process_coco_py2neo_3.py -w /home/rohit/PyWDUbuntu/thesis/yoloWeights/yolov3.weights -if /home/rohit/PyWDUbuntu/thesis/Imgs2Detect -isrc coco80 -sf 2
+
+		my model visualize script    my_yolo3_model_stats_1.py
+python3 my_yolo3_model_stats_1.py -w /home/rohit/PyWDUbuntu/DA4_1/keras-yolo3-master/yoloWeights/yolov3.weights
+
+
+Visualize model with Keras tools.
+Using functions:
+plot_model() to save as png image file.
+model.summary() for textual description (to console and to a file).
+
+
+		Output of plot_model function
+Output of plot_model function
+
+		Output of model.summary function
+Output of model.summary function captured to file.
+
+
+		data structure to hold info for neo4j
+# Info about objects detected to be stored in a multi-dimensional array.
+# E.g. suppose two images, each image with two objects detected will be stored as:
+# [{"img_name": "img1.jpg", "detections": [["label1", "label1_score"], ["label2", "label2_score"] ] } ,
+#  {"img_name": "img2.jpg", "detections": [["label3", "label3_score"], ["label4", "label4_score"] ] } ]
+[{"img_name": "img1.jpg", "detections": [["label1", "label1_score"], ["label2", "label2_score"] ] } , {"img_name": "img2.jpg", "detections": [["label3", "label3_score"], ["label4", "label4_score"] ] } ]
+
+
+[{'img_name': '65567.jpg', 'detections': [['person', 96.35], ['person', 99.99], ['person', 99.65], ['person', 56.89], ['tie', 58.39], ['person', 61.28], ['tie', 91.13]]}, {'img_name': '36979.jpg', 'detections': [['person', 99.46], ['person', 98.9], ['person', 99.7], ['person', 99.91], ['person', 89.37], ['cup', 54.63]]}]
+
+def make_db_entry(tx, imgFile, objDetected):
+    tx.run("MATCH (i:Image{name: $imgFile}) "
+	       "MATCH (o:Object{name: $objDetected}) "
+	       "MERGE (i)-[:HAS_OBJECT{score:'95.34'}]->(o) ")
+
+
+			Github description notes for the python script
+Yolo inference and Neo4j inserts
+Inference on images with Yolo v3
+All images in specified input folder processed.
+May fail during pre-process step due to image size issued and such images will be rejected.
+Successfully processed image results inserted to Neo4j db
+
+			Github project Readme.md
+# DataAnalytics4_Project
+1) Masters program coursework for Data Analytics 4 module.
+
+2) Topic assigned: YOLO
+
+3) Use case is to present new images to pre-trained YOLO v3 model. Capture the inference (class names and confidence score) for all image, and then put into a Neo4j database. Using Neo4j Desktop v1.2.8.
+
+4) Anaconda environment setup notes. Below are the commands entered manually in the order specified.
+Create Python 3.7 environment (e.g. conda create -n ce2da41 python=3.7)
+conda install jupyter
+pip install neo4j
+conda instlall pytz
+conda install keras
+-- Refer environment.yml file for output of command: conda env export > environment.yml
+
+5) References used in the project:
+Webiste: https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/
+Github: On 05.06.2020, forked from https://github.com/jbrownlee/keras-yolo3 to https://github.com/rbewoor/keras-yolo3
+Yolo weights link: link: https://pjreddie.com/media/files/yolov3.weights
+
+6) Script: my_yolo3_one_file_to_detect_them_all_6.py
+Action: Uses pre-trained Yolo v3 model for inference on images. The inference data is stored in a Neo4j database in the form of (:Image)-[:HAS]->(:Object). User provides a folder which contains all the images to process. Note: some images cannot be processed due to resizing issues and will be skipped.
+
+7) Script: my_yolo3_model_stats_1.py
+Action: Uses the model.summary and plot_model functionality of Keras to output a textual and visual description of the YOLO v3 model.
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+			ENVIRONMENT SETUP - ANACONDA - for only neo4j db writing
+conda create -n conenv2da41 python=3.8
+conda install jupyter
+conda install pandas
+
+	pip install neo4j
+		OR
+	pip install py2neo
+conda install pytz
+
+
+
+from neo4j import GraphDatabase
+print("Yes")
+
+
+
+https://sharing.luminis.eu/blog/neo4j-for-python-users-and-broken-pipe-error/
+from neo4j import GraphDatabase
+uri = "bolt://localhost:7687", user="neo4j", password="abc"
+driver = GraphDatabase.driver(uri, auth=(user, password))
+with driver.session() as session:
+	session.run("CREATE (w:MyNode {Name : 'John', Title : 'President', Age : 22}) RETURN id(w)")
+	session.close()
+
+
+
+
+https://github.com/neo4j-examples/movies-python-bolt/blob/master/movies.py
+import os
+from neo4j import GraphDatabase, basic_auth
+url = os.getenv("NEO4J_URL","bolt://localhost")
+password = os.getenv("NEO4J_PASSWORD","test")
+driver = GraphDatabase.driver(url,auth=basic_auth("neo4j", password),encrypted=False)
+
+
+
+
+
+from neo4j import GraphDatabase
+
+uri = "neo4j://localhost:7687"
+driver = GraphDatabase.driver(uri, auth=("neo4j", "abc"))
+
+def create_friend_of(tx, name, friend):
+    tx.run("CREATE (a:Person)-[:KNOWS]->(f:Person {name: $friend}) "
+           "WHERE a.name = $name "
+           "RETURN f.name AS friend", name=name, friend=friend)"
+
+with driver.session() as session:
+    session.write_transaction(create_friend_of, "Alice", "Bob")
+
+with driver.session() as session:
+    session.write_transaction(create_friend_of, "Alice", "Carl")
+
+driver.close()
+
+
+
+MERGE (:Image {name: "1.jpg"})
+MERGE (:Object {name: "person"})
+
+MATCH (i1:Image{name: "1.jpg"}), (o1:Object{name: "person"})
+CREATE (i1)-[:HAS{score: 98.45}]->(o1)
+
+MATCH (i1:Image), (o1:Object)
+WHERE i1.name = "1.jpg" AND o1.name = "person"
+CREATE (i1)-[:HAS{score: 98.45}]->(o1)
+
+'MATCH (i1:Image{name: ' + in_imgFile + '}), (o1:Object{name: ' + str(in_objDetected) + '}) CREATE (i1)-[:HAS{score: ' + in_detScore1 + '}]->(o1)'
+
+MATCH (n)
+DETACH DELETE n
+
+MATCH (n)
+RETURN (n)
+LIMIT 200
+
+
+
+KARAM inputs:
+in a chrome browser run     http://localhost:7474/browser/
+
+
+check service running ?
+
+sudo service neo4j-service status
+sudo service neo4j status
+
+systemctl {start|stop|restart} neo4j
+systemctl start neo4j
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+		CHANGES TO PROPOSAL
+
+1) Database only consists of images tagged with the COCO 80 classes. So the user input must only cover these specific classes.
+2) Add motivation
+3) Voice input simulated using wav files to represent each of the three sentences. These need to be recorded separately and then presented to the transcription model.
+4) Each sentence to include maximum three classes. This will increase chance of finding a suitable image with all the objects present. Better will be to include only two classes per sentence.
+5) Sentence to consist of active voice and not passive voice (person is walking his dog, NOT dog is being walked by a person)
+6) 
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+							QUERYING THE NEO4J GRAPH DB
+
+labels = ['aeroplane', 'apple', 'backpack', 'banana', 'baseball bat', 'baseball glove', \
+          'bear', 'bed', 'bench', 'bicycle', 'bird', 'boat', 'book', 'bottle', 'bowl', \
+          'broccoli', 'bus', 'cake', 'car', 'carrot', 'cat', 'cell phone', 'chair', \
+          'clock', 'cow', 'cup', 'diningtable', 'dog', 'donut', 'elephant', 'fire hydrant', \
+          'fork', 'frisbee', 'giraffe', 'hair drier', 'handbag', 'horse', 'hot dog', \
+          'keyboard', 'kite', 'knife', 'laptop', 'microwave', 'motorbike', 'mouse', \
+          'orange', 'oven', 'parking meter', 'person', 'pizza', 'pottedplant', \
+          'refrigerator', 'remote', 'sandwich', 'scissors', 'sheep', 'sink', 'skateboard', 'skis', \
+          'snowboard', 'sofa', 'spoon', 'sports ball', 'stop sign', 'suitcase', 'surfboard', \
+          'teddy bear', 'tennis racket', 'tie', 'toaster', 'toilet', 'toothbrush', 'traffic light', \
+          'train', 'truck', 'tvmonitor', 'umbrella', 'vase', 'wine glass', 'zebra']
+
+
+	image 000000548113.jpg of coco test has all three objects 'cat' 'dog' 'person'
+MATCH (o1:Object)--(i:Image)--(o2:Object)--(i)--(o3:Object)
+WHERE o1.name = 'dog' AND o2.name = 'cat' AND o3.name = 'person'
+RETURN i.name, i.dataset
+LIMIT 20
+
+
+[ ["clock", "book"], ["person", "bird", "clock"]]
+[ ["dog", "cat"], ["person", "book"], ["person", "car"] ]
+
+python3 query_neo_2.py -objarrfile "/home/rohit/PyWDUbuntu/thesis/queryDb/query_db_input_test_3_dblquote.txt"
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+							IDENTIFY KEY ELEMENTS
+	SPACY better than NLTK. Even better is BERT from google. Twitter HUGGING FACES join the group have their own tool.
+	
+	
+	Another option may be as per this link: DeepCorrection 1: Sentence Segmentation of unpunctuated text.
+https://medium.com/@praneethbedapudi/deepcorrection-1-sentence-segmentation-of-unpunctuated-text-a1dbc0db4e98
+
+python3 id_elements_1.py -ipfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/IdElements/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/IdElements/key_elements_1.txt"
+
+python3 id_elements_2.py -ipfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/IdElements/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/IdElements/key_elements_1.txt"
+
+python3 id_elements_3.py -ipfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/IdElements/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/IdElements/key_elements_1.txt"
+
+
+				GUI version
+python3 id_elements_4_gui.py -ipfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/IdElements/gui_ver_output/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/IdElements/gui_ver_output/key_elements_1.txt"
+
+
+				GUI version -  disables proceed to grid selection if no words. No need for label_error in root window.
+python3 id_elements_5_gui.py -ipfile "/home/rohit/PyWDUbuntu/thesis/SttTranscribe/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/IdElements/gui_ver_output/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/IdElements/gui_ver_output/key_elements_1.txt"
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+			USING NLTK
+
+conda create -n ce6idelements1 python=3.7
+conda activate ce6idelements1
+conda install jupyter
+conda install nltk
+conda install -c conda-forge spacy
+		one time		https://spacy.io/models/en
+python3 -m spacy download en_core_web_lg
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+			SETUP NLTK DATA MANUALLY
+	https://www.nltk.org/data.html
+Manual installation
+Create a folder nltk_data, e.g. C:\nltk_data, or /usr/local/share/nltk_data, and subfolders chunkers, grammars, misc, sentiment, taggers, corpora, help, models, stemmers, tokenizers.
+
+Download individual packages from http://nltk.org/nltk_data/ (see the “download” links). Unzip them to the appropriate subfolder. For example, the Brown Corpus, found at: https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/brown.zip is to be unzipped to nltk_data/corpora/brown.
+
+Set your NLTK_DATA environment variable to point to your top level nltk_data folder.
+
+--------------------------------------------
+
+			DOWNLOAD DATA LINK
+http://www.nltk.org/nltk_data/
+/home/rohit/nltk_data
+
+5. Porter Stemmer Test Files [ download | source ]
+id: porter_test; size: 200510; author: ; copyright: ; license: ;
+
+18. Averaged Perceptron Tagger [ download | source ]
+id: averaged_perceptron_tagger; size: 2526731; author: ; copyright: ; license: ;
+
+20. Mappings to the Universal Part-of-Speech Tagset [ download | source ]
+id: universal_tagset; size: 19095; author: ; copyright: ; license: ;
+
+37. Project Gutenberg Selections [ download | source ]
+id: gutenberg; size: 4251829; author: ; copyright: public domain; license: public domain;
+
+70. Stopwords Corpus [ download | source ]
+id: stopwords; size: 23047; author: ; copyright: ; license: ;
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+			Tokenization
+Tokenization is the first step in text analytics. The process of breaking down a text paragraph into smaller chunks such as words or sentence is called Tokenization. Token is a single entity that is building blocks for sentence or paragraph.
+
+	Sentence Tokenization
+Sentence tokenizer breaks text paragraph into sentences.
+
+	Word Tokenization
+Word tokenizer breaks text paragraph into words.
+
+			Stopwords
+Stopwords considered as noise in the text. Text may contain stop words such as is, am, are, this, a, an, the, etc.
+In NLTK for removing stopwords, you need to create a list of stopwords and filter out your list of tokens from these words.
+
+			Lexicon Normalization
+Lexicon normalization considers another type of noise in the text. For example, connection, connected, connecting word reduce to a common word "connect". It reduces derivationally related forms of a word to a common root word.
+
+	Stemming
+Stemming is a process of linguistic normalization, which reduces words to their word root word or chops off the derivational affixes. For example, connection, connected, connecting word reduce to a common word "connect".
+
+	Lemmatization
+Lemmatization reduces words to their base word, which is linguistically correct lemmas. It transforms root word with the use of vocabulary and morphological analysis. Lemmatization is usually more sophisticated than stemming. Stemmer works on an individual word without knowledge of the context. For example, The word "better" has "good" as its lemma. This thing will miss by stemming because it requires a dictionary look-up.
+
+
+			POS Tagging
+The primary target of Part-of-Speech(POS) tagging is to identify the grammatical group of a given word. Whether it is a NOUN, PRONOUN, ADJECTIVE, VERB, ADVERBS, etc. based on the context. POS Tagging looks for relationships within the sentence and assigns a corresponding tag to the word.
+
+
+			Sentiment Analysis
+Sentiments are combination words, tone, and writing style. As a data analyst, It is more important to understand our sentiments, what it really means?
+There are mainly two approaches for performing sentiment analysis.
+Lexicon-based: count number of positive and negative words in given text and the larger count will be the sentiment of text.
+Machine learning based approach: Develop a classification model, which is trained using the pre-labeled dataset of positive, negative, and neutral.
+In this Tutorial, you will use the second approach(Machine learning based approach). This is how you learn sentiment and text classification with a single example.
+
+
+			Text Classification
+Text classification is one of the important tasks of text mining. It is a supervised approach. Identifying category or class of given text such as a blog, book, web page, news articles, and tweets. It has various application in today's computer world such as spam detection, task categorization in CRM services, categorizing products on E-retailer websites, classifying the content of websites for a search engine, sentiments of customer feedback, etc. In the next section, you will learn how you can do text classification in python.
+
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+			pdf extraction code snippets
+
+from nltk import sent_tokenize, word_tokenize
+# https://www.datacamp.com/community/tutorials/text-analytics-beginners-nltk
+# https://medium.com/analytics-vidhya/sentence-extraction-using-textrank-algorithm-7f5c8fd568cd
+
+
+sentencesOnPage = sent_tokenize(fullSentOnPage)
+for word in word_tokenize(outSentAdv)
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+https://pythonprogramming.net/stemming-nltk-tutorial/
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+			USING NLTK
+
+conda create -n ce6idelements1 python=3.7
+conda activate ce6idelements1
+conda install jupyter
+conda install -c conda-forge spacy
+		one time		https://spacy.io/models/en download the en_core_web     _lg is large, there are options for small and medium too.
+python3 -m spacy download en_core_web_lg
+
+
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+			Stopwords removal
+
+
+
+			Lemmatization
+Lemmatization reduces words to their base word, which is linguistically correct lemmas. It transforms root word with the use of vocabulary and morphological analysis. Lemmatization is usually more sophisticated than stemming. Stemmer works on an individual word without knowledge of the context. For example, The word "better" has "good" as its lemma. This thing will miss by stemming because it requires a dictionary look-up.
+
+
+
+			POS Tagging
+The primary target of Part-of-Speech(POS) tagging is to identify the grammatical group of a given word. Whether it is a NOUN, PRONOUN, ADJECTIVE, VERB, ADVERBS, etc. based on the context. POS Tagging looks for relationships within the sentence and assigns a corresponding tag to the word.
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+		SETTING UP ENVIRONMENT FOR      MIC INPUT TO GUI IMAGE CAP SHOW/EDIT - MIC INPUT, STT, ID KEY ELEMENTS, QUERY DB, IMAGE CAP INFERENCE, STORY GENERATOR PENDING
+										IMG_CAP Inference - TRAINING done via KAGGLE
+
+	*** # Download pre-trained English model files
+	/home/rohit/deepspeech/pretrained/v073 - into this folder downloaded the scorer and pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.pbmm
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.3/deepspeech-0.7.3-models.scorer
+
+
+conda create -n ce7comb1 python=3.7
+conda install jupyter
+conda install pandas
+
+	*** speech to text transcription
+pip install deepspeech==0.7.3
+
+	*** id key elements
+conda install -c conda-forge spacy
+		one time		https://spacy.io/models/en download the en_core_web     _lg is large, there are options for small and medium too.
+python3 -m spacy download en_core_web_lg
+
+	*** query database neo4j
+pip install py2neo
+
+	*** neo4j db insertions
+conda install pandas						## not required as should already be there from earlier steps
+pip install py2neo							## not required as should already be there from earlier steps
+conda install pytz							## not required as should already be there from earlier steps
+conda install -c conda-forge opencv=3.4.2   ## used opencv 3.4.2
+conda install keras=2.3.1					## used keras  2.3.1
+conda install pydot
+
+	*** GUI - with Tkinter
+conda install tk      ## pip install python-tk	## not required as should already be there from earlier steps
+conda install pillow  ##pip install pillow
+
+	*** MS Azure TTS   -- currently is part of totally new environment
+					pre-requisite
+			sudo apt-get update
+			sudo apt-get install libssl1.0.0 libasound2
+pip install azure-cognitiveservices-speech      ## used azure-cognitiveservices-speech  1.13.0
+conda install requests                          ## used requests  2.24.0
+
+	*** Image Captioning Inference
+conda install scikit-learn
+
+	*** GUI Image Captions Display and/or edit
+nothing new required
+
+	*** Mic input for input sentences and save as wav files
+## using pyaudio - which has dependency for portaudio which is installed automatically
+conda install pyaudio							## used pyaudio		0.2.11
+									## used portaudio	19.6.0
+
+	*** Story Generation
+PENDING
+
+	*** Miscellaneos stuff
+conda install matplotlib
+
+
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ conda list
+# packages in environment at /home/rohit/anaconda3/envs/ce7comb1:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+_tflow_select             2.3.0                       mkl  
+absl-py                   0.9.0                    py37_0  
+astor                     0.8.0                    py37_0  
+attrs                     19.3.0                     py_0  
+backcall                  0.2.0                      py_0  
+blas                      1.0                         mkl  
+bleach                    3.1.5                      py_0  
+blinker                   1.4                      py37_0  
+brotlipy                  0.7.0           py37h8f50634_1000    conda-forge
+bzip2                     1.0.8                h516909a_2    conda-forge
+c-ares                    1.15.0            h7b6447c_1001  
+ca-certificates           2020.7.22                     0  
+cachetools                4.1.0                      py_1  
+cairo                     1.14.12              h8948797_3  
+catalogue                 1.0.0                      py_0    conda-forge
+certifi                   2020.6.20                py37_0  
+cffi                      1.14.0           py37h2e261b9_0  
+chardet                   3.0.4           py37hc8dfbb8_1006    conda-forge
+click                     7.0                      pypi_0    pypi
+colorama                  0.4.3                    pypi_0    pypi
+cryptography              2.9.2            py37hb09aad4_0    conda-forge
+cycler                    0.10.0                   py37_0  
+cymem                     2.0.3            py37h3340039_2    conda-forge
+cython-blis               0.4.1            py37h8f50634_1    conda-forge
+dbus                      1.13.16              hb2f20db_0  
+decorator                 4.4.2                      py_0  
+deepspeech                0.7.3                    pypi_0    pypi
+defusedxml                0.6.0                      py_0  
+en-core-web-lg            2.3.1                    pypi_0    pypi
+entrypoints               0.3                      py37_0  
+expat                     2.2.9                he6710b0_2  
+ffmpeg                    4.0                  hcdf2ecd_0  
+fontconfig                2.13.0               h9420a91_0  
+freeglut                  3.0.0             hf484d3e_1005    conda-forge
+freetype                  2.10.2               h5ab3b9f_0  
+fribidi                   1.0.9                h7b6447c_0  
+gast                      0.2.2                    py37_0  
+glib                      2.63.1               h5a9c865_0  
+google-auth               1.17.2                     py_0  
+google-auth-oauthlib      0.4.1                      py_2  
+google-pasta              0.2.0                      py_0  
+graphite2                 1.3.13            he1b5a44_1001    conda-forge
+graphviz                  2.40.1               h21bd128_2  
+grpcio                    1.27.2           py37hf8bcb03_0  
+gst-plugins-base          1.14.0               hbbd80ab_1  
+gstreamer                 1.14.0               hb31296c_0  
+h5py                      2.8.0            py37h989c5e5_3  
+harfbuzz                  1.8.8                hffaf4a1_0  
+hdf5                      1.10.2               hc401514_3    conda-forge
+icu                       58.2                 he6710b0_3  
+idna                      2.10               pyh9f0ad1d_0    conda-forge
+importlib-metadata        1.7.0                    py37_0  
+importlib_metadata        1.7.0                         0  
+intel-openmp              2020.1                      217  
+ipykernel                 5.3.2            py37h5ca1d4c_0  
+ipython                   7.16.1           py37h5ca1d4c_0  
+ipython_genutils          0.2.0                    py37_0  
+ipywidgets                7.5.1                      py_0  
+jasper                    2.0.14               h07fcdf6_1  
+jedi                      0.17.1                   py37_0  
+jinja2                    2.11.2                     py_0  
+joblib                    0.16.0                     py_0  
+jpeg                      9b                   h024ee3a_2  
+jsonschema                3.2.0                    py37_1  
+jupyter                   1.0.0                    py37_7  
+jupyter_client            6.1.6                      py_0  
+jupyter_console           6.1.0                      py_0  
+jupyter_core              4.6.3                    py37_0  
+keras                     2.3.1                         0  
+keras-applications        1.0.8                      py_1  
+keras-base                2.3.1                    py37_0  
+keras-preprocessing       1.1.0                      py_1  
+kiwisolver                1.2.0            py37hfd86e86_0  
+lcms2                     2.11                 h396b838_0  
+ld_impl_linux-64          2.33.1               h53a641e_7  
+libedit                   3.1.20191231         h14c3975_1  
+libffi                    3.2.1                hd88cf55_4  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libgfortran               3.0.0                         1    conda-forge
+libgfortran-ng            7.3.0                hdf63c60_0  
+libglu                    9.0.0             he1b5a44_1001    conda-forge
+libopencv                 3.4.2                hb342d67_1  
+libopus                   1.3.1                h7b6447c_0  
+libpng                    1.6.37               hbc83047_0  
+libprotobuf               3.12.3               hd408876_0  
+libsodium                 1.0.18               h7b6447c_0  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+libtiff                   4.1.0                h2733197_1  
+libuuid                   1.0.3                h1bed415_2  
+libvpx                    1.7.0                h439df22_0  
+libxcb                    1.14                 h7b6447c_0  
+libxml2                   2.9.10               he19cac6_1  
+lz4-c                     1.9.2                he6710b0_0  
+markdown                  3.1.1                    py37_0  
+markupsafe                1.1.1            py37h14c3975_1  
+matplotlib                3.2.2                         0  
+matplotlib-base           3.2.2            py37hef1b27d_0  
+mistune                   0.8.4           py37h14c3975_1001  
+mkl                       2020.1                      217  
+mkl-service               2.3.0            py37he904b0f_0  
+mkl_fft                   1.1.0            py37h23d657b_0  
+mkl_random                1.1.1            py37h0573a6f_0  
+murmurhash                1.0.0            py37h3340039_0    conda-forge
+nbconvert                 5.6.1                    py37_1  
+nbformat                  5.0.7                      py_0  
+ncurses                   6.2                  he6710b0_1  
+neobolt                   1.7.17                   pypi_0    pypi
+neotime                   1.7.4                    pypi_0    pypi
+notebook                  6.0.3                    py37_0  
+numpy                     1.19.0                   pypi_0    pypi
+numpy-base                1.18.5           py37hde5b4d6_0  
+oauthlib                  3.1.0                      py_0  
+olefile                   0.46                     py37_0  
+opencv                    3.4.2            py37h6fd60c2_1  
+openssl                   1.1.1h               h7b6447c_0  
+opt_einsum                3.1.0                      py_0  
+packaging                 20.4                       py_0  
+pandas                    1.0.5            py37h0573a6f_0  
+pandoc                    2.10                          0  
+pandocfilters             1.4.2                    py37_1  
+pango                     1.42.4               h049681c_0  
+parso                     0.7.0                      py_0  
+pcre                      8.44                 he6710b0_0  
+pexpect                   4.8.0                    py37_1  
+pickleshare               0.7.5                 py37_1001  
+pillow                    7.2.0            py37hb39fc2d_0  
+pip                       20.1.1                   py37_1  
+pixman                    0.38.0            h516909a_1003    conda-forge
+plac                      0.9.6                    py37_1  
+portaudio                 19.6.0               h7b6447c_4  
+preshed                   3.0.2            py37h3340039_3    conda-forge
+prometheus_client         0.8.0                      py_0  
+prompt-toolkit            2.0.10                   pypi_0    pypi
+prompt_toolkit            3.0.5                         0  
+protobuf                  3.12.3           py37he6710b0_0  
+ptyprocess                0.6.0                    py37_0  
+py-opencv                 3.4.2            py37hb342d67_1  
+py2neo                    4.3.0                    pypi_0    pypi
+pyasn1                    0.4.8                      py_0  
+pyasn1-modules            0.2.7                      py_0  
+pyaudio                   0.2.11           py37h7b6447c_2  
+pycparser                 2.20               pyh9f0ad1d_2    conda-forge
+pydot                     1.4.1                    py37_0  
+pygments                  2.3.1                    pypi_0    pypi
+pyjwt                     1.7.1                    py37_0  
+pyopenssl                 19.1.0                     py_1    conda-forge
+pyparsing                 2.4.7                      py_0  
+pyqt                      5.9.2            py37h05f1152_2  
+pyrsistent                0.16.0           py37h7b6447c_0  
+pysocks                   1.7.1            py37hc8dfbb8_1    conda-forge
+python                    3.7.7           hcf32534_0_cpython  
+python-dateutil           2.8.1                      py_0  
+python_abi                3.7                     1_cp37m    conda-forge
+pytz                      2020.1                     py_0  
+pyyaml                    5.3.1            py37h7b6447c_1  
+pyzmq                     19.0.1           py37he6710b0_1  
+qt                        5.9.7                h5867ecd_1  
+qtconsole                 4.7.5                      py_0  
+qtpy                      1.9.0                      py_0  
+readline                  8.0                  h7b6447c_0  
+requests                  2.24.0             pyh9f0ad1d_0    conda-forge
+requests-oauthlib         1.3.0                      py_0  
+rsa                       4.0                        py_0  
+scikit-learn              0.23.2           py37h0573a6f_0  
+scipy                     1.5.0            py37h0b6359f_0  
+send2trash                1.5.0                    py37_0  
+setuptools                49.2.0                   py37_0  
+sip                       4.19.8           py37hf484d3e_0  
+six                       1.15.0                     py_0  
+spacy                     2.3.2            py37h99015e2_0    conda-forge
+sqlite                    3.32.3               h62c20be_0  
+srsly                     1.0.2            py37h3340039_0    conda-forge
+tensorboard               2.2.1              pyh532a8cf_0  
+tensorboard-plugin-wit    1.6.0                      py_0  
+tensorflow                2.1.0           mkl_py37h80a91df_0  
+tensorflow-base           2.1.0           mkl_py37h6d63fb7_0  
+tensorflow-estimator      2.1.0              pyhd54b08b_0  
+termcolor                 1.1.0                    py37_1  
+terminado                 0.8.3                    py37_0  
+testpath                  0.4.4                      py_0  
+thinc                     7.4.1            py37h99015e2_0    conda-forge
+threadpoolctl             2.1.0              pyh5ca1d4c_0  
+tk                        8.6.10               hbc83047_0  
+tornado                   6.0.4            py37h7b6447c_1  
+tqdm                      4.47.0             pyh9f0ad1d_0    conda-forge
+traitlets                 4.3.3                    py37_0  
+urllib3                   1.24.3                   pypi_0    pypi
+wasabi                    0.7.0              pyh9f0ad1d_0    conda-forge
+wcwidth                   0.2.5                      py_0  
+webencodings              0.5.1                    py37_1  
+werkzeug                  1.0.1                      py_0  
+wheel                     0.34.2                   py37_0  
+widgetsnbextension        3.5.1                    py37_0  
+wrapt                     1.12.1           py37h7b6447c_1  
+xorg-fixesproto           5.0               h14c3975_1002    conda-forge
+xorg-inputproto           2.3.2             h14c3975_1002    conda-forge
+xorg-kbproto              1.0.7             h14c3975_1002    conda-forge
+xorg-libx11               1.6.9                h516909a_0    conda-forge
+xorg-libxau               1.0.9                h14c3975_0    conda-forge
+xorg-libxext              1.3.4                h516909a_0    conda-forge
+xorg-libxfixes            5.0.3             h516909a_1004    conda-forge
+xorg-libxi                1.7.10               h516909a_0    conda-forge
+xorg-xextproto            7.3.0             h14c3975_1002    conda-forge
+xorg-xproto               7.0.31            h14c3975_1007    conda-forge
+xz                        5.2.5                h7b6447c_0  
+yaml                      0.2.5                h7b6447c_0  
+zeromq                    4.3.2                he6710b0_2  
+zipp                      3.1.0                      py_0  
+zlib                      1.2.11               h7b6447c_3  
+zstd                      1.4.5                h0b5b093_0  
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ 
+
+
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+
+				INDIVIDUAL EXECUTING THE PROGRAMS INDIVIDUALLY
+
+	SPEECH TO TEXT TRANSCRIPTION
+			stt_wav_files_loc_1.txt  contents
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input1.wav
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input2.wav
+	/home/rohit/PyWDUbuntu/thesis/audio/wavs/input3.wav
+
+python3 stt_transcribe_1.py -wavlocfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/stt_wav_files_loc_1.txt" -opfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/stt_op_file_1.txt"
+
+
+	IDENTIFY KEYWORDS ELEMENTS
+python3 id_elements_3.py -ipfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/stt_op_file_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt" -opfilekeyelem "/home/rohit/PyWDUbuntu/thesis/combined_execution/queryDb/key_elements_1.txt"
+
+
+	QUERY DETECTION DATABASE
+python3 query_neo_3.py -objarrfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/queryDb/key_elements_1.txt"
+
+
+	CREATE DETECTION DATABASE
+		BUILD AND SAVE MODEL
+python3 detection_yolov3_build_save_model_1.py -w /home/rohit/PyWDUbuntu/thesis/combined_execution/DectectionDBCreation/yoloWeights/yolov3.weights -smp /home/rohit/PyWDUbuntu/thesis/combined_execution/DectectionDBCreation/saved_keras_model/yolov3.saved.model
+
+		MULTIPROCESSING PROCESS IMAGES AND SAVE JOB NEO ARRAYS
+python3 detection_yolo3_process_images_multiproc_1.py -smp /home/rohit/PyWDUbuntu/thesis/combined_execution/DectectionDBCreation/saved_keras_model/yolov3.saved.model -if /home/rohit/PyWDUbuntu/thesis/combined_execution/DectectionDBCreation/Imgs2Detect_20imgs -isrc coco80 -sf 2 -nipt 5 -opfilelocneo /home/rohit/PyWDUbuntu/thesis/combined_execution/DectectionDBCreation/Imgs2Detect_20imgs_op4neo
+
+		PICK SAVED NEO ARRAYS OF JOBS AND UPDATE NEO4J GRAPH DB
+python3 detection_update_neo_2.py -sf 2 -iploc /home/rohit/PyWDUbuntu/thesis/combined_execution/DectectionDBCreation/Imgs2Detect_20imgs_op4neo
+
+		CYPHER QUERIES
+MATCH (n)
+DETACH DELETE n
+
+MATCH (n)
+RETURN (n)
+LIMIT 200
+
+
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+
+				COMBINED EXECUTING THE PROGRAMS COMBINED
+
+------------------------
+
+labels = ['aeroplane', 'apple', 'backpack', 'banana', 'baseball bat', 'baseball glove', \
+          'bear', 'bed', 'bench', 'bicycle', 'bird', 'boat', 'book', 'bottle', 'bowl', \
+          'broccoli', 'bus', 'cake', 'car', 'carrot', 'cat', 'cell phone', 'chair', \
+          'clock', 'cow', 'cup', 'diningtable', 'dog', 'donut', 'elephant', 'fire hydrant', \
+          'fork', 'frisbee', 'giraffe', 'hair drier', 'handbag', 'horse', 'hot dog', \
+          'keyboard', 'kite', 'knife', 'laptop', 'microwave', 'motorbike', 'mouse', \
+          'orange', 'oven', 'parking meter', 'person', 'pizza', 'pottedplant', \
+          'refrigerator', 'remote', 'sandwich', 'scissors', 'sheep', 'sink', 'skateboard', 'skis', \
+          'snowboard', 'sofa', 'spoon', 'sports ball', 'stop sign', 'suitcase', 'surfboard', \
+          'teddy bear', 'tennis racket', 'tie', 'toaster', 'toilet', 'toothbrush', 'traffic light', \
+          'train', 'truck', 'tvmonitor', 'umbrella', 'vase', 'wine glass', 'zebra']
+
+------------------------
+Sent 1:	Some persons are standing near a truck
+Sent 2:	A man is cycling on his bicycle in the park
+Sent 3:	A person is eating his sandwich sitting on a bench
+
+				MIC INPUT AND STT WITH GUI + ID KEYWORDS AND GUI SELECTION + QUERY DB AND GUI IMAGE SELECTION + IMAGE CAPTIONING AND GUI SELECTION
+
+		OPTION 1 - Running with mic input. Specify micYorN parameter = Y.
+python3 comb_functional_mic_stt_idKey_queryNeo_imgSelect_imgCap_7D-WIP.py -micYorN "Y" -sw_here "/home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/" -file4STT "/home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/mic_input_wavfiles_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt" -logfileloc "./LOG_comb_functional_mic_stt_idKey_queryNeo_imgSelect_imgCap_7D-WIP.LOG"
+
+		OPTION 2 - Bypass mic input logic, directly execute STT inference logic. Specify micYorN parameter = N.
+				   Note that file4STT parameter file MUST exist already and the wav files should be present in the locations specified in this file.
+python3 comb_functional_mic_stt_idKey_queryNeo_imgSelect_imgCap_7D-WIP.py -micYorN "N" -sw_here "/home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/" -file4STT "/home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/mic_input_wavfiles_1.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt" -logfileloc "./LOG_comb_functional_mic_stt_idKey_queryNeo_imgSelect_imgCap_7D-WIP.LOG"
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+		NEO4J DATABASE DUMPING - FROM NEO4J DESKTOP
+
+Go to manage and open the terminal. Terminal will be opened in suitable folder for the database. Inside this, is a BIN folder, inside that is the neo4j-admin tool to be used. E.g.
+	rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ pwd
+	
+	/home/rohit/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3
+	
+	rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ ls
+	bin  certificates  conf  data  import  lib  LICENSES.txt  LICENSE.txt  logs  metrics  NOTICE.txt  plugins  README.txt  run  UPGRADE.txt
+	rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$
+
+No matter what name i gave the database in the Project, in reality it seems to be neo4j. Here, in the PROJECT    Project_Thesis_1       the db is called    ngThesis_Obj_Det_Db_1
+	but in reality the db name is still neo4j
+
+Verified as follows. Started db, opened browser. Then:
+	:use system
+Then
+	show databases
+Output was
+╒════════╤════════════════╤════════════╤═════════════════╤═══════════════╤═══════╤═════════╕
+│"name"  │"address"       │"role"      │"requestedStatus"│"currentStatus"│"error"│"default"│
+╞════════╪════════════════╪════════════╪═════════════════╪═══════════════╪═══════╪═════════╡
+│"neo4j" │"localhost:7687"│"standalone"│"online"         │"online"       │""     │true     │
+├────────┼────────────────┼────────────┼─────────────────┼───────────────┼───────┼─────────┤
+│"system"│"localhost:7687"│"standalone"│"online"         │"online"       │""     │false    │
+└────────┴────────────────┴────────────┴─────────────────┴───────────────┴───────┴─────────┘
+Then returned to the database i built
+	:use neo4j
+
+
+As per link: https://neo4j.com/docs/operations-manual/current/tools/dump-load/
+format is:
+Dump the database called neo4j into a file called /backups/neo4j/2016-10-02.dump. The destination directory for the dump file - in this case /backups/neo4j - must exist before calling the command.
+$neo4j-home> bin/neo4j-admin dump --database=neo4j --to=/backups/neo4j/2016-10-02.dump 
+
+	EXAMPLE OF DOING THIS FROM THE COMMAND LINE - USED REGULAR COMMAND LINE AND NOT FROM WITHIN THE NEO4J DESKTOP APPLICATION
+        rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ 
+        rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ cd "/home/rohit/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3"
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ ls
+        bin  certificates  conf  data  import  lib  LICENSES.txt  LICENSE.txt  logs  metrics  NOTICE.txt  plugins  README.txt  run  UPGRADE.txt
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ ls ./bin/neo4j-admin 
+        ./bin/neo4j-admin
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ 
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$ ./bin/neo4j-admin dump --verbose --database=neo4j --to=/home/rohit/PyWDUbuntu/thesis/neo4jDump/ngThesisObjDetDb1202007172200.dump
+        WARNING: Max 1024 open files allowed, minimum of 40000 recommended. See the Neo4j manual.
+        Done: 68 files, 269.1MiB processed.
+        rohit@rohitu2004lts:~/.config/Neo4j Desktop/Application/neo4jDatabases/database-25da62ad-3332-4f6d-8fa2-86c4becf2f97/installation-4.0.3$
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+							GUI USING TKINTER
+
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+		Show some buttons and detect press, throw up new window
+		
+	my question on stackoverflow: https://stackoverflow.com/questions/6920302/how-to-pass-arguments-to-a-button-command-in-tkinter
+
+				About gui_query_neo_results_image_selection_8.py
+		Has image row + Enlarge button + Select button.
+		Max 20 thumbnails.
+		Root -> Grid window -> Enlarged image window -> Inference image window
+		Inference image window displays inferenece info textually in label.
+		Grid window shows live count of currently Selected images.
+		Maximum 5 images per query allowed.
+		Possible to Deselect ALL the images for a query.
+		Inference logic is part of dedicated class. The object for it is made in the Grid window (so new object will be made for each Query processing)
+		
+		PENDING: REVAMP TO drop use of Enlarge button. User should click the thumbnail itself to see Enarged image.
+
+python3 gui_query_neo_results_image_selection_8.py
+
+
+
+
+				About gui_query_neo_results_image_selection_9.py
+		Compared to version 8, completely revamped code to use least number of widgets. No frames used now.
+		Has thumbnail image row + Enlarge button
+		No Select button as the Image thumbnail itself can be clicked to Select the image
+		Max 20 thumbnails.
+		Root -> Grid window -> Enlarged image window -> Inference image window
+		Inference image window displays inferenece info textually in label.
+		Grid window shows live count of currently Selected images.
+		Maximum 5 images per query allowed.
+		Possible to Deselect ALL the images for a query.
+		Inference logic is part of dedicated class. The object for it is made in the Grid window (so new object will be made for each Query processing)
+		
+		PENDING: REVAMP TO drop use of Enlarge button. User should click the thumbnail itself to see Enarged image.
+
+python3 gui_query_neo_results_image_selection_9.py
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+							IMAGE CAPTIONING
+
+Image Captioning with Keras		Link: https://towardsdatascience.com/image-captioning-with-keras-teaching-computers-to-describe-pictures-c88a46a311b8
+
+
+	Usage key:
+python3 ImgCap_Reload_Lappy_Infer_1.py -img "/Path/Image/ToInfer/filename.jpg" -wtfile "/Path/PickleFile/WeightsDecoder/filename.h5"
+
+
+	Testing it out:
+
+python3 ImgCap_Reload_Lappy_Infer_1.py -img "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000000001.jpg" -wtfile "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run2/Decoder_Run_2_Wt_ep_5.h5"
+
+python3 ImgCap_Reload_Lappy_Infer_1.py -img "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000003104.jpg" -wtfile  "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run2/Decoder_Run_2_Wt_ep_8.h5"
+
+python3 ImgCap_Reload_Lappy_Infer_2.py -img "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000003104.jpg" -wtfile  "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run2/Decoder_Run_2_Wt_ep_8.h5"
+
+python3 comb_functional_stt_id_gui_query_img_select_gui_img_cap_5B-WIP.py -wavlocfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/st_1_HM_Rohit.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt" -logfileloc "./LOG_comb_functional_stt_id_gui_query_img_select_gui_img_cap_5B-WIP.LOG"
+
+
+
+python3 comb_functional_stt_id_gui_query_img_select_gui_img_cap_6A-WIP.py -wavlocfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/st_1_HM_Rohit.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt" -logfileloc "./LOG_comb_functional_stt_id_gui_query_img_select_gui_img_cap_6A-WIP.LOG"
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+	-- use results of two previous stages to prepare data for this functionality to work on
+
+##              5) Expects the results from two previous stages to be sent. This will be combined for processing by
+##                 this stage. The two previous stages are:
+##                 a) Id Key Elements - final selected words by user for each sentence that were used to query Neo4j
+##                 b) GUI Candidate Image Selection - final images selected by user from the images output by Neo4j query
+
+    """
+    ## Explanation of the data preparation using previous stage outputs:
+    ## 
+    ## The main variable is a list of exactly 3 items - one for each of the original input sentence.
+    ##     Each of these entries in the list is a dict with two keys: 'key_elements' and 'selected_images'
+    ## 'key_elements' is a list of objects selected by user at end of the Id Key Elements stage
+    ##      - 0 to 3 values - can be empty list too
+    ## 'selected_images' is a list containing tuples. These tuples represent each of the images finally selected
+    ##      by the user at end GUI Selection of images output by the Neo4j query.
+    ##      - 0 to 5 images - can be empty list too
+    ##      Regarding tuple: first entry is the image path, second is initialed as None to be filled later with
+    ##          the caption after processing the image through this stage.
+    ##          Thus, ('/full/path/to/image.jpg' , None) will become something like
+    ##                ('/full/path/to/image.jpg' , 'caption of the images after processing')
+    ## 
+    ## Example of how the data structure could be in this scenario:
+    ## For input sentence 1, the user finally selected 2 Key Elements, then out of the up to 20 images
+    ##     returned by the neo4j query, user selected only 3 images to send to captioning stage while
+    ##     up to 5 could have been selected.
+    ## For input sentence 2, the user finally selected 0 Key Elements, thus there were no images
+    ##     returned by the neo4j query, and nothing for the user to select and to send to captioning stage.
+    ## For input sentence 3, the user finally selected 3 Key Elements, then out of the up to 20 images
+    ##     returned by the neo4j query, user selected 0 images to send to captioning stage while
+    ##     up to 5 could have been selected.
+    ## -----------------------------------------------------------------------------
+    example_data_usable_by_img_captioning_functionality = \
+    [
+        {
+            'key_elements' : ['q1_obj1', 'q1_obj2'],
+            'selected_images' : [
+                ('Image': '/path/to/q1_image1.jpg' , None),
+                ('Image': '/path/to/q1_image2.jpg' , None),
+                ('Image': '/path/to/q1_image3.jpg' , None)
+            ]
+        },
+        {
+            'key_elements' : [],
+            'selected_images' : []
+        },
+        {
+            'key_elements' : ['q3_obj1', 'q3_obj2', 'q3_obj3'],
+            'selected_images' : []
+        }
+    ]
+    ## -----------------------------------------------------------------------------
+
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+				EXAMPLE OF RUN OF ALL PREVIOUS COMBINED LOGIC - LAST STAGE IMAGE SELECTION VIA GUI STAGE
+				
+				Query 1: Had not words as all deselected during id key elements stage
+				Query 2: One key element "car" - selected only 4 images to send to image captioning stage
+				Query 3: Two key elements "person" and "truck" - selected only 5 images to send to image captioning stage
+
+
+python3 comb_functional_stt_id_gui_query_img_select_gui_4G-WIP.py -wavlocfile "/home/rohit/PyWDUbuntu/thesis/combined_execution/SttTranscribe/st_1_HM_Rohit.txt" -opfileallposinfo "/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt" -logfileloc "./LOG_comb_functional_stt_id_gui_query_img_select_gui_4G_WIP.LOG"
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+  STARTING EXECUTION OF IMAGE SELECTION VIA GUI                    
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL DEBUG :: 
+Completed selection process - Query number 1
+Number of images before selection began = 0
+
+Number of images Deselected by user = 0.
+Number of images that will remain = 0
+
+LOG_LEVEL DEBUG :: Num of images = 20
+array=
+['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000033951.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000033825.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000292186.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000155796.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000140031.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000139832.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000103436.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000146856.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000088355.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000088316.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000039056.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000038943.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000127879.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000224207.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000292604.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000215662.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000313777.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000313690.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000484560.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000484558.jpg']
+
+LOG_LEVEL INFO :: 
+For Query 2, Deselected positions=
+[0, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 17, 18, 19]
+LOG_LEVEL DEBUG :: 
+Completed selection process - Query number 2
+Number of images before selection began = 20
+
+Number of images Deselected by user = 16.
+Number of images that will remain = 4
+
+LOG_LEVEL DEBUG :: Num of images = 20
+array=
+['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169542.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169516.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000292186.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000146747.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000313777.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000449668.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000509771.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000012149.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000168815.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000168743.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000518174.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000017467.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000581864.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225580.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000265504.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000361201.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000304424.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225081.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225051.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000499699.jpg']
+
+LOG_LEVEL INFO :: 
+For Query 3, Deselected positions=
+[1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 17, 18, 19]
+LOG_LEVEL DEBUG :: 
+Completed selection process - Query number 3
+Number of images before selection began = 20
+
+Number of images Deselected by user = 15.
+Number of images that will remain = 5
+
+LOG_LEVEL DEBUG :: 
+
+-------------------------------- SUMMARY INFORMATON --------------------------------
+
+LOG_LEVEL DEBUG :: For Query 1
+Number of candidate images before selection = 0
+Number of Deselections done = 0
+Number of images remaining after Deselections = 0
+
+LOG_LEVEL DEBUG :: 
+	------ Query images info BEFORE::
+[]
+	------ Positions removed::
+[]
+	------ Query images info AFTER::
+[]
+
+
+LOG_LEVEL DEBUG :: For Query 2
+Number of candidate images before selection = 20
+Number of Deselections done = 16
+Number of images remaining after Deselections = 4
+
+LOG_LEVEL DEBUG :: 
+	------ Query images info BEFORE::
+[{'Image': '000000033951.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000033825.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000292186.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000155796.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000140031.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000139832.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000103436.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000146856.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000088355.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000088316.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000039056.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000038943.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000127879.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000224207.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000292604.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000215662.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313777.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313690.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000484560.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000484558.jpg', 'Source': 'coco_test_2017'}]
+	------ Positions removed::
+[0, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 17, 18, 19]
+	------ Query images info AFTER::
+[{'Image': '000000033825.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000155796.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000224207.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313777.jpg', 'Source': 'coco_test_2017'}]
+
+
+LOG_LEVEL DEBUG :: For Query 3
+Number of candidate images before selection = 20
+Number of Deselections done = 15
+Number of images remaining after Deselections = 5
+
+LOG_LEVEL DEBUG :: 
+	------ Query images info BEFORE::
+[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000169516.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000292186.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000146747.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313777.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000449668.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000509771.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000012149.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168815.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168743.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000518174.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000017467.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000581864.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225580.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000265504.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000361201.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000304424.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225081.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225051.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000499699.jpg', 'Source': 'coco_test_2017'}]
+	------ Positions removed::
+[1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 17, 18, 19]
+	------ Query images info AFTER::
+[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000449668.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000518174.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000361201.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000304424.jpg', 'Source': 'coco_test_2017'}]
+
+
+LOG_LEVEL INFO :: 
+After GUI CANDIDATE IMAGES SELECTION logic execution:
+gui_candidate_image_selection_logic_RC = 0
+gui_candidate_image_selection_logic_msg = None
+gui_candidate_image_selection_module_results = [[], [{'Image': '000000033825.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000155796.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000224207.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313777.jpg', 'Source': 'coco_test_2017'}], [{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000449668.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000518174.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000361201.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000304424.jpg', 'Source': 'coco_test_2017'}]]
+
+LOG_LEVEL INFO :: 
+Images retained after Deselections (to be passed to Auto-caption block):
+
+LOG_LEVEL INFO :: 
+1) Keywords: []
+Selected Images results:
+[]
+LOG_LEVEL INFO :: 
+2) Keywords: ['car']
+Selected Images results:
+[{'Image': '000000033825.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000155796.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000224207.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000313777.jpg', 'Source': 'coco_test_2017'}]
+LOG_LEVEL INFO :: 
+3) Keywords: ['person', 'truck']
+Selected Images results:
+[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000449668.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000518174.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000361201.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000304424.jpg', 'Source': 'coco_test_2017'}]
+LOG_LEVEL INFO :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+  STARTING EXECUTION OF IMAGE SELECTION VIA GUI                    
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO :: 
+
+
+Normal exit from program.
+
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+			Find validation losses on already trained decoder model - all with BS=64
+	Script: ImgCap_Check_Val_Loss_Lappy_1.py
+## compile model - note that all layers frozen as model set as trainable = False during loading
+reloaded_RNN_decoder.compile(loss='categorical_crossentropy', metrics=['accuracy'])
+
+## make data suitable to use for model evaluation step
+inputs, outputs = create_data_for_evaluation(descriptions_arr, imgs_encodings_arr, wordtoix, MAX_LENGTH_CAPTION, VOCAB_SIZE)
+
+start_timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+start_tick = time.time()
+
+print(f"\n\nStarted at = {start_timestamp}\n")
+
+## evaluate it and get score
+model_loss = reloaded_RNN_decoder.evaluate(inputs, outputs, batch_size=BATCH_SIZE)
+print(f"\n\nLoss with Batch size of {BATCH_SIZE} =\n{model_loss}\n\n")
+
+---------------------------------------------------------
+			Validation Dataset (3k images) Losses AFTER model is trained - so technically used it as a Test set loss
+			Run on Model 3 - Epoch 2 to 18
+			MODEL 3			MODEL 3			MODEL 3			MODEL 3			MODEL 3
+---------------------------------------------------------
+
+python3 ImgCap_Check_Val_Loss_Lappy_1.py -wtfile "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run3/Decoder_Run_3_Wt_ep_18.h5"
+
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ python3 ImgCap_Check_Val_Loss_Lappy_1.py -wtfile "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run3/Decoder_Run_3_Wt_ep_18.h5"
+
+Check wordtoix entries ::
+startseq = 1	endseq = 9	bird = 974
+Check ixtoword entries ::
+ix 1 = startseq	ix 10 = red	ix 974 = bird
+
+2020-10-09 01:45:21.473022: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-10-09 01:45:21.503822: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-10-09 01:45:21.504628: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f5af12d200 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-09 01:45:21.504660: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-10-09 01:45:21.504813: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+
+SUCCESS - Reloaded weights from :: /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run3/Decoder_Run_3_Wt_ep_18.h5
+
+RNN Decoder model (non-trainable type) defined with these paramenters:
+EMBEDDING_DIMS = 200 , VOCAB_SIZE = 6758 , MAX_LENGTH_CAPTION = 49
+Attempting to load weights...
+
+Length of Descriptions dict = 3000
+
+
+
+Started at = 2020-10-09 01:45:35
+
+116287/116287 [==============================] - 536s 5ms/sample - loss: 3.0886 - accuracy: 0.3635
+
+
+Loss with Batch size of 64 =
+[3.088649831643242, 0.3634628]
+
+
+
+
+Ended at = 2020-10-09 01:54:35
+Time taken = 539.990523815155 seconds
+
+
+Done
+
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$
+
+---------------------------------------------------------
+
+		Epoch 18
+116287/116287 [==============================] - 536s 5ms/sample - loss: 3.0886 - accuracy: 0.3635
+Loss with Batch size of 64 =
+[3.088649831643242, 0.3634628]
+		Epoch 16
+116287/116287 [==============================] - 516s 4ms/sample - loss: 3.0937 - accuracy: 0.3632
+Loss with Batch size of 64 =
+[3.0936912543075312, 0.36319622]
+		Epoch 14 -- seems to be wrong - maybe accidentally overwritten the weights file - or it was not saved properly
+116287/116287 [==============================] - 516s 4ms/sample - loss: 3.0882 - accuracy: 0.3629
+Loss with Batch size of 64 =
+[3.088215761960429, 0.36293826]
+		AGAIN Epoch 14
+116287/116287 [==============================] - 520s 4ms/sample - loss: 3.0882 - accuracy: 0.3629
+Loss with Batch size of 64 =
+[3.088215761960429, 0.36293826]
+		Epoch 12
+116287/116287 [==============================] - 522s 4ms/sample - loss: 3.1133 - accuracy: 0.3587
+Loss with Batch size of 64 =
+[3.113307865008768, 0.35872453]
+		Epoch 10
+116287/116287 [==============================] - 519s 4ms/sample - loss: 3.1144 - accuracy: 0.3584
+Loss with Batch size of 64 =
+[3.11437327314346, 0.35841495]
+		Epoch 8
+116287/116287 [==============================] - 516s 4ms/sample - loss: 3.1233 - accuracy: 0.3563
+Loss with Batch size of 64 =
+[3.1233026144950213, 0.3562565]
+		Epoch 6
+116287/116287 [==============================] - 526s 5ms/sample - loss: 3.1429 - accuracy: 0.3537
+Loss with Batch size of 64 =
+[3.142919300563814, 0.35367668]
+		Epoch 4
+116287/116287 [==============================] - 516s 4ms/sample - loss: 3.1752 - accuracy: 0.3472
+Loss with Batch size of 64 =
+[3.1751763146481715, 0.3471755]
+		Epoch 2
+116287/116287 [==============================] - 517s 4ms/sample - loss: 3.2749 - accuracy: 0.3328
+Loss with Batch size of 64 =
+[3.2749193742732507, 0.3327801]
+
+
+---------------------------------------------------------
+			Validation Dataset (3k images) Losses AFTER model is trained - so technically used it as a Test set loss
+			Run on Model 2 - Epoch 2 to 10
+			MODEL 2			MODEL 2			MODEL 2			MODEL 2			MODEL 2
+---------------------------------------------------------
+
+python3 ImgCap_Check_Val_Loss_Lappy_1.py -wtfile "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run2/Decoder_Run_2_Wt_ep_10.h5"
+
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ python3 ImgCap_Check_Val_Loss_Lappy_1.py -wtfile "/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run2/Decoder_Run_2_Wt_ep_10.h5"
+
+Check wordtoix entries ::
+startseq = 1	endseq = 9	bird = 974
+Check ixtoword entries ::
+ix 1 = startseq	ix 10 = red	ix 974 = bird
+
+2020-10-09 13:53:48.592726: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-10-09 13:53:48.623552: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2199995000 Hz
+2020-10-09 13:53:48.624314: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55da6b9233b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-09 13:53:48.624350: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-10-09 13:53:48.624474: I tensorflow/core/common_runtime/process_util.cc:147] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+
+SUCCESS - Reloaded weights from :: /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run2/Decoder_Run_2_Wt_ep_10.h5
+
+RNN Decoder model (non-trainable type) defined with these paramenters:
+EMBEDDING_DIMS = 200 , VOCAB_SIZE = 6758 , MAX_LENGTH_CAPTION = 49
+Attempting to load weights...
+
+Length of Descriptions dict = 3000
+
+
+
+Started at = 2020-10-09 13:54:01
+
+116287/116287 [==============================] - 528s 5ms/sample - loss: 3.2169 - accuracy: 0.3365
+
+
+Loss with Batch size of 64 =
+[3.2169498203267946, 0.33647785]
+
+
+
+
+Ended at = 2020-10-09 14:02:53
+Time taken = 531.6395823955536 seconds
+
+
+Done
+
+(ce7comb1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$
+
+---------------------------------------------------------
+
+		Epoch 10
+116287/116287 [==============================] - 528s 5ms/sample - loss: 3.2169 - accuracy: 0.3365
+Loss with Batch size of 64 =
+[3.2169498203267946, 0.33647785]
+		Epoch 8
+116287/116287 [==============================] - 476s 4ms/sample - loss: 3.2466 - accuracy: 0.3332
+Loss with Batch size of 64 =
+[3.2466391558613816, 0.3331585]
+		Epoch 6
+116287/116287 [==============================] - 436s 4ms/sample - loss: 3.2908 - accuracy: 0.3282
+Loss with Batch size of 64 =
+[3.290836356369273, 0.328231]
+		Epoch 4
+116287/116287 [==============================] - 489s 4ms/sample - loss: 3.3666 - accuracy: 0.3184
+Loss with Batch size of 64 =
+[3.3666324971813695, 0.31841907]
+		Epoch 2
+116287/116287 [==============================] - 351s 3ms/sample - loss: 3.5284 - accuracy: 0.2984
+Loss with Batch size of 64 =
+[3.5284207623579418, 0.29835665]
+
+
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+							RECORD SOUND AS WAV FILE
+
+		using deepspeech for real-time inference
+https://awesomeopensource.com/project/daanzu/deepspeech-websocket-server
+
+uses pyaudio and portaudio
+
+		conda environment setup  -- using python 3.7.7 as thats what combined execution is using already
+conda create -n ce10recsnd1 python=3.7.7
+conda install pyaudio			-- installed portaudio automatically
+conda install jupyter
+
+
+conda list
+
+				(ce10recsnd1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$ conda list
+				# packages in environment at /home/rohit/anaconda3/envs/ce10recsnd1:
+				#
+				# Name                    Version                   Build  Channel
+				_libgcc_mutex             0.1                        main  
+				argon2-cffi               20.1.0           py37h7b6447c_1  
+				async_generator           1.10             py37h28b3542_0  
+				attrs                     20.2.0                     py_0  
+				backcall                  0.2.0                      py_0  
+				bleach                    3.2.1                      py_0  
+				ca-certificates           2020.7.22                     0  
+				certifi                   2020.6.20                py37_0  
+				cffi                      1.14.3           py37he30daa8_0  
+				dbus                      1.13.16              hb2f20db_0  
+				decorator                 4.4.2                      py_0  
+				defusedxml                0.6.0                      py_0  
+				entrypoints               0.3                      py37_0  
+				expat                     2.2.10               he6710b0_2  
+				fontconfig                2.13.0               h9420a91_0  
+				freetype                  2.10.2               h5ab3b9f_0  
+				glib                      2.65.0               h3eb4bd4_0  
+				gst-plugins-base          1.14.0               hbbd80ab_1  
+				gstreamer                 1.14.0               hb31296c_0  
+				icu                       58.2                 he6710b0_3  
+				importlib-metadata        2.0.0                      py_1  
+				importlib_metadata        2.0.0                         1  
+				ipykernel                 5.3.4            py37h5ca1d4c_0  
+				ipython                   7.18.1           py37h5ca1d4c_0  
+				ipython_genutils          0.2.0                    py37_0  
+				ipywidgets                7.5.1                      py_1  
+				jedi                      0.17.2                   py37_0  
+				jinja2                    2.11.2                     py_0  
+				jpeg                      9b                   h024ee3a_2  
+				jsonschema                3.2.0                    py37_1  
+				jupyter                   1.0.0                    py37_7  
+				jupyter_client            6.1.7                      py_0  
+				jupyter_console           6.2.0                      py_0  
+				jupyter_core              4.6.3                    py37_0  
+				jupyterlab_pygments       0.1.2                      py_0  
+				ld_impl_linux-64          2.33.1               h53a641e_7  
+				libedit                   3.1.20191231         h14c3975_1  
+				libffi                    3.3                  he6710b0_2  
+				libgcc-ng                 9.1.0                hdf63c60_0  
+				libpng                    1.6.37               hbc83047_0  
+				libsodium                 1.0.18               h7b6447c_0  
+				libstdcxx-ng              9.1.0                hdf63c60_0  
+				libuuid                   1.0.3                h1bed415_2  
+				libxcb                    1.14                 h7b6447c_0  
+				libxml2                   2.9.10               he19cac6_1  
+				markupsafe                1.1.1            py37h14c3975_1  
+				mistune                   0.8.4           py37h14c3975_1001  
+				nbclient                  0.5.0                      py_0  
+				nbconvert                 6.0.7                    py37_0  
+				nbformat                  5.0.7                      py_0  
+				ncurses                   6.2                  he6710b0_1  
+				nest-asyncio              1.4.1                      py_0  
+				notebook                  6.1.4                    py37_0  
+				openssl                   1.1.1h               h7b6447c_0  
+				packaging                 20.4                       py_0  
+				pandoc                    2.10.1                        0  
+				pandocfilters             1.4.2                    py37_1  
+				parso                     0.7.0                      py_0  
+				pcre                      8.44                 he6710b0_0  
+				pexpect                   4.8.0                    py37_1  
+				pickleshare               0.7.5                 py37_1001  
+				pip                       20.2.3                   py37_0  
+				portaudio                 19.6.0               h7b6447c_4  			- version 19.6.0
+				prometheus_client         0.8.0                      py_0  
+				prompt-toolkit            3.0.7                      py_0  
+				prompt_toolkit            3.0.7                         0  
+				ptyprocess                0.6.0                    py37_0  
+				pyaudio                   0.2.11           py37h7b6447c_2  			- version 0.2.11
+				pycparser                 2.20                       py_2  
+				pygments                  2.7.1                      py_0  
+				pyparsing                 2.4.7                      py_0  
+				pyqt                      5.9.2            py37h05f1152_2  
+				pyrsistent                0.17.3           py37h7b6447c_0  
+				python                    3.7.7                hcff3b4d_5  
+				python-dateutil           2.8.1                      py_0  
+				pyzmq                     19.0.2           py37he6710b0_1  
+				qt                        5.9.7                h5867ecd_1  
+				qtconsole                 4.7.7                      py_0  
+				qtpy                      1.9.0                      py_0  
+				readline                  8.0                  h7b6447c_0  
+				send2trash                1.5.0                    py37_0  
+				setuptools                50.3.0           py37hb0f4dca_1  
+				sip                       4.19.8           py37hf484d3e_0  
+				six                       1.15.0                     py_0  
+				sqlite                    3.33.0               h62c20be_0  
+				terminado                 0.9.1                    py37_0  
+				testpath                  0.4.4                      py_0  
+				tk                        8.6.10               hbc83047_0  
+				tornado                   6.0.4            py37h7b6447c_1  
+				traitlets                 5.0.4                      py_0  
+				wcwidth                   0.2.5                      py_0  
+				webencodings              0.5.1                    py37_1  
+				wheel                     0.35.1                     py_0  
+				widgetsnbextension        3.5.1                    py37_0  
+				xz                        5.2.5                h7b6447c_0  
+				zeromq                    4.3.2                he6710b0_3  
+				zipp                      3.3.0                      py_0  
+				zlib                      1.2.11               h7b6447c_3  
+				(ce10recsnd1) rohit@rohitu2004lts:~/PyWDUbuntu/thesis$
+
+
+
+
+
+[pulseaudio] module.c: Failed to load module "module-alsa-card" (argument: "device_id="1" name="pci-0000_00_1f.3-platform-skl_hda_dsp_generic" card_name="alsa_card.pci-0000_00_1f.3-platform-skl_hda_dsp_generic" namereg_fail=false tsched=yes fixed_latency_range=no ignore_dB=no deferred_volume=yes use_ucm=yes avoid_resampling=no card_properties="module-udev-detect.discovered=1""): initialization failed.
+
+
+
+
+rohit@rohitu2004lts:/etc/modprobe.d$ sudo gedit alsa-base.conf 
+
+added lines as per link: https://stackoverflow.com/questions/61643364/how-to-fix-no-sound-on-ubuntu-18-04
+there the link: https://www.reddit.com/r/linuxmint/comments/fltlrl/no_sound_on_acer_swift_3_with_kernel_53/
+
+		lines added at end of the existing options
+options snd-hda-intel dmic_detect=0
+options snd-hda-intel model=laptop-amic enable=yes
+		then on saving got error below:
+(gedit:1854548): Tepl-WARNING **: 22:46:24.991: GVfs metadata is not supported. Fallback to TeplMetadataManager. Either GVfs is not correctly installed or GVfs metadata are not supported on this platform. In the latter case, you should configure Tepl with --disable-gvfs-metadata.
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+							STORY GENERATION
+
+			From https://github.com/rbewoor/gpt-2 readme (cloned from https://github.com/openai/gpt-2/)
+
+You can read about GPT-2 and its staged release in our original blog post, 6 month follow-up post, and final post.
+
+final post was a link: https://www.openai.com/blog/gpt-2-1-5b-release/
+
+			From https://www.openai.com/blog/gpt-2-1-5b-release/
+
+GPT-2: 1.5B Release
+As the final model release of GPT-2’s staged release, we’re releasing the largest version (1.5B parameters) of GPT-2 along with code and model weights to facilitate detection of outputs of GPT-2 models. While there have been larger language models released since August, we’ve continued with our original staged release plan in order to provide the community with a test case of a full staged release process. We hope that this test case will be useful to developers of future powerful models, and we’re actively continuing the conversation with the AI community on responsible publication.
+
+code and model weights was a link: https://github.com/openai/gpt-2-output-dataset  which i cloned to https://github.com/rbewoor/gpt-2-output-dataset   on 10.10.2020
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+https://research.fb.com/downloads/babi/
+
+The Children’s Book Test
+This section presents the Children’s Book Test (CBT), designed to measure directly how well language models can exploit wider linguistic context. The CBT is built from books that are freely available thanks to Project Gutenberg. Details and baseline results on this dataset can be found in the paper:
+
+Felix Hill, Antoine Bordes, Sumit Chopra and Jason Weston. The Goldilocks Principle: Reading Children’s Books with Explicit Memory Representations, arXiv:1511.02301.
+
+After allocating books to either training, validation or test sets, we formed example ‘questions’ from chapters in the book by enumerating 21 consecutive sentences. In each question, the first 20 sentences form the context, and a word is removed from the 21st sentence, which becomes the query. Models must identify the answer word among a selection of 10 candidate answers appearing in the context sentences and the query. For finer-grained analyses, we evaluated four classes of question by removing distinct types of word: Named Entities, (Common) Nouns, Verbs and Prepositions
+
+Here is an example of question (context + query) from Alice in Wonderland by Lewis Carroll:
+
+Context:
+1 So they had to fall a long way .	
+2 So they got their tails fast in their mouths .	
+3 So they could n't get them out again .	
+4 That 's all .	
+5 `` Thank you , " said Alice , `` it 's very interesting .	
+6 I never knew so much about a whiting before . "	
+7 `` I can tell you more than that , if you like , " said the Gryphon .	
+8 `` Do you know why it 's called a whiting ? "	
+9 `` I never thought about it , " said Alice .	
+10 `` Why ? "	
+11 `` IT DOES THE BOOTS AND SHOES . '	
+12 the Gryphon replied very solemnly .	
+13 Alice was thoroughly puzzled .	
+14 `` Does the boots and shoes ! "	
+15 she repeated in a wondering tone .	
+16 `` Why , what are YOUR shoes done with ? "	
+17 said the Gryphon .	
+18 `` I mean , what makes them so shiny ? "	
+19 Alice looked down at them , and considered a little before she gave her answer .	
+20 `` They 're done with blacking , I believe . "	
+
+Query: `` Boots and shoes under the sea , " the XXXXX went on in a deep voice , `` are done with a whiting ".
+
+Candidates: Alice|BOOTS|Gryphon|SHOES|answer|fall|mouths|tone|way|whiting	
+	
+Answer: gryphon 
