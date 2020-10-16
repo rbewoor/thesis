@@ -1,0 +1,610 @@
+LOG_LEVEL INFO : 2020-10-16 16:25:00,565 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+    STAGE 1)  STARTING EXECUTION OF MIC INPUT + STT LOGIC          
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-10-16 16:25:00,565 :: 
+
+Running WITHOUT mic input
+
+
+LOG_LEVEL INFO : 2020-10-16 16:25:00,565 :: 
+Entries for Wav files:
+LOG_LEVEL INFO : 2020-10-16 16:25:00,565 :: 	1) /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file1.wav
+LOG_LEVEL INFO : 2020-10-16 16:25:00,565 :: 	2) /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file2.wav
+LOG_LEVEL INFO : 2020-10-16 16:25:00,566 :: 	3) /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file3.wav
+LOG_LEVEL INFO : 2020-10-16 16:25:04,242 :: 
+Attempting to play: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file1.wav
+
+LOG_LEVEL INFO : 2020-10-16 16:25:16,061 :: 
+Finished playing file 1
+
+LOG_LEVEL INFO : 2020-10-16 16:25:21,065 :: 
+Attempting to play: /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file3.wav
+
+LOG_LEVEL INFO : 2020-10-16 16:25:32,859 :: 
+Finished playing file 3
+
+LOG_LEVEL INFO : 2020-10-16 16:25:34,873 :: 
+Commencing STT inference with Deepspeech version 0.7.3.
+on wav file = /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file1.wav
+	Command built as :
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file1.wav
+LOG_LEVEL INFO : 2020-10-16 16:25:38,658 :: 
+Inference output :
+some persons are standing near a truck
+LOG_LEVEL INFO : 2020-10-16 16:25:41,490 :: 
+Commencing STT inference with Deepspeech version 0.7.3.
+on wav file = /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file2.wav
+	Command built as :
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file2.wav
+LOG_LEVEL INFO : 2020-10-16 16:25:45,273 :: 
+Inference output :
+a man is sailing on his bicycle in the park
+LOG_LEVEL INFO : 2020-10-16 16:25:51,025 :: 
+Commencing STT inference with Deepspeech version 0.7.3.
+on wav file = /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file3.wav
+	Command built as :
+deepspeech --model /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.pbmm --scorer /home/rohit/deepspeech/pretrained/v073/deepspeech-0.7.3-models.scorer --audio /home/rohit/PyWDUbuntu/thesis/audio/wavs/fromMic/st_MIC_file3.wav
+LOG_LEVEL INFO : 2020-10-16 16:25:54,825 :: 
+Inference output :
+a person is eating his sandwich sitting on a bench
+LOG_LEVEL INFO : 2020-10-16 16:26:04,611 :: 
+After MIC INPUT + STT logic execution:
+mic_stt_logic_RC = 0
+mic_stt_logic_msg = None
+mic_stt_module_results = ['some persons are standing near a truck', 'a man is sailing on his bicycle in the park', 'a person is eating his sandwich sitting on a bench']
+
+LOG_LEVEL INFO : 2020-10-16 16:26:04,611 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+    STAGE 2)  STARTING EXECUTION OF IDENTIFY KEYWORDS LOGIC        
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:07,480 :: 
+
+The following sentences will be processed:
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:07,480 :: 	Sentence 1 :
+some persons are standing near a truck
+LOG_LEVEL DEBUG : 2020-10-16 16:26:07,480 :: 	Sentence 2 :
+a man is sailing on his bicycle in the park
+LOG_LEVEL DEBUG : 2020-10-16 16:26:07,480 :: 	Sentence 3 :
+a person is eating his sandwich sitting on a bench
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 
+
+Words of each input sentence:
+
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 	Sentence 1 :
+['some', 'persons', 'are', 'standing', 'near', 'a', 'truck']
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 	Sentence 2 :
+['a', 'man', 'is', 'sailing', 'on', 'his', 'bicycle', 'in', 'the', 'park']
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 	Sentence 3 :
+['a', 'person', 'is', 'eating', 'his', 'sandwich', 'sitting', 'on', 'a', 'bench']
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 
+
+Words of each input sentence after removing all stop words:
+
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 	Sentence 1 :
+['persons', 'standing', 'near', 'truck']
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 	Sentence 2 :
+['man', 'sailing', 'bicycle', 'park']
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 	Sentence 3 :
+['person', 'eating', 'sandwich', 'sitting', 'bench']
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 
+
+Joining the non-stop words as a new sentence (for readability only):
+
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 	New sentence 1 :
+persons standing near truck
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 	New sentence 2 :
+man sailing bicycle park
+LOG_LEVEL INFO : 2020-10-16 16:26:07,481 :: 	New sentence 3 :
+person eating sandwich sitting bench
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: 
+
+All non-stop words pos info:
+
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: .........
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: Sentence 1, word 1 :
+{'text': 'persons', 'lemma_': 'person', 'pos_': 'NOUN', 'tag_': 'NNS', 'dep_': 'ROOT', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: Sentence 1, word 2 :
+{'text': 'standing', 'lemma_': 'stand', 'pos_': 'VERB', 'tag_': 'VBG', 'dep_': 'acl', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: Sentence 1, word 3 :
+{'text': 'near', 'lemma_': 'near', 'pos_': 'SCONJ', 'tag_': 'IN', 'dep_': 'prep', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: Sentence 1, word 4 :
+{'text': 'truck', 'lemma_': 'truck', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'pobj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: .........
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: Sentence 2, word 1 :
+{'text': 'man', 'lemma_': 'man', 'pos_': 'PROPN', 'tag_': 'NNP', 'dep_': 'compound', 'shape_': 'xxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: Sentence 2, word 2 :
+{'text': 'sailing', 'lemma_': 'sailing', 'pos_': 'PROPN', 'tag_': 'NNP', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: Sentence 2, word 3 :
+{'text': 'bicycle', 'lemma_': 'bicycle', 'pos_': 'PROPN', 'tag_': 'NNP', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: Sentence 2, word 4 :
+{'text': 'park', 'lemma_': 'park', 'pos_': 'PROPN', 'tag_': 'NNP', 'dep_': 'ROOT', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,495 :: .........
+LOG_LEVEL INFO : 2020-10-16 16:26:07,496 :: Sentence 3, word 1 :
+{'text': 'person', 'lemma_': 'person', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'ROOT', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,496 :: Sentence 3, word 2 :
+{'text': 'eating', 'lemma_': 'eat', 'pos_': 'VERB', 'tag_': 'VBG', 'dep_': 'acl', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,496 :: Sentence 3, word 3 :
+{'text': 'sandwich', 'lemma_': 'sandwich', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,496 :: Sentence 3, word 4 :
+{'text': 'sitting', 'lemma_': 'sit', 'pos_': 'VERB', 'tag_': 'VBG', 'dep_': 'compound', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,496 :: Sentence 3, word 5 :
+{'text': 'bench', 'lemma_': 'bench', 'pos_': 'NOUN', 'tag_': 'NN', 'dep_': 'dobj', 'shape_': 'xxxx', 'is_alpha': True, 'is_stop': False}
+LOG_LEVEL INFO : 2020-10-16 16:26:07,496 :: 
+
+All POS info file successfully created here:
+/home/rohit/PyWDUbuntu/thesis/combined_execution/IdElements/all_words_pos_info_1.txt
+
+
+LOG_LEVEL INFO : 2020-10-16 16:26:07,496 :: 
+
+Candidate keywords AFTER matching against class labels:
+[['truck', 'person'], ['bicycle'], ['bench', 'person', 'sandwich']]
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:07,496 :: 
+
+Candidate key words BEFORE any changes for sentence 1 :
+['truck', 'person']
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:13,448 :: 
+
+CONFIRM SELECTIONS BUTTON PRESSED
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:13,449 :: 
+Deselected positions=
+[]
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:13,468 :: 
+
+Candidate key words BEFORE any changes for sentence 2 :
+['bicycle']
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:16,793 :: 
+
+CONFIRM SELECTIONS BUTTON PRESSED
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:16,793 :: 
+Deselected positions=
+[]
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:16,814 :: 
+
+Candidate key words BEFORE any changes for sentence 3 :
+['bench', 'person', 'sandwich']
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,265 :: 
+
+CONFIRM SELECTIONS BUTTON PRESSED
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,266 :: 
+Deselected positions=
+[]
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,287 :: 
+Sentence 1:
+BEFORE = ['truck', 'person']
+Deselected = []
+AFTER = ['truck', 'person']
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,288 :: 
+Sentence 2:
+BEFORE = ['bicycle']
+Deselected = []
+AFTER = ['bicycle']
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,288 :: 
+Sentence 3:
+BEFORE = ['bench', 'person', 'sandwich']
+Deselected = []
+AFTER = ['bench', 'person', 'sandwich']
+
+LOG_LEVEL INFO : 2020-10-16 16:26:22,676 :: 
+After ID KEYWORDS AND SELECTION logic execution:
+id_elements_logic_RC = 0
+id_elements_logic_msg = None
+id_elements_module_results = [['truck', 'person'], ['bicycle'], ['bench', 'person', 'sandwich']]
+
+LOG_LEVEL INFO : 2020-10-16 16:26:22,676 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+    STAGE 3)  STARTING EXECUTION OF QUERY NEO4J LOGIC              
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,676 :: 
+
+type key_elements_list = <class 'list'>
+key_elements_list =
+[['truck', 'person'], ['bicycle'], ['bench', 'person', 'sandwich']]
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,783 :: [#0000]  C: <RESOLVE> ('localhost', 7687)
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,784 :: [#0000]  C: <OPEN> ('127.0.0.1', 7687)
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,784 :: [#AF42]  C: <MAGIC> 0x6060B017
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,784 :: [#AF42]  C: <HANDSHAKE> 0x00000003 0x00000002 0x00000001 0x00000000
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,788 :: [#AF42]  S: <HANDSHAKE> 0x00000003
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,788 :: [#AF42]  C: HELLO {'user_agent': 'neobolt/1.7.17 Python/3.7.7-final-0 (linux)', 'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,789 :: [#AF42]  S: SUCCESS {'server': 'Neo4j/4.0.3', 'connection_id': 'bolt-5'}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,789 :: [#AF42]  C: BEGIN {}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,789 :: [#AF42]  C: RUN 'MATCH (o1:Object)-[r1:HAS]-(i:Image)-[r2:HAS]-(o2:Object) WHERE o1.name = $in_obj1 AND o2.name = $in_obj2 AND r1.score > $in_r1_score AND r2.score > $in_r2_score AND i.dataset IN [$in_src_ds_1 , $in_src_ds_2]RETURN DISTINCT i.name as Image, i.dataset as Source LIMIT $in_limit' {'in_obj1': 'truck', 'in_obj2': 'person', 'in_limit': 20, 'in_r1_score': 90.0, 'in_r2_score': 90.0, 'in_src_ds_1': 'flickr30k', 'in_src_ds_2': 'coco_test_2017'} {}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:22,789 :: [#AF42]  C: PULL_ALL
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,521 :: [#AF42]  S: SUCCESS {}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,522 :: [#AF42]  S: SUCCESS {'t_first': 286, 'fields': ['Image', 'Source']}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,522 :: [#AF42]  S: RECORD * 20
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,522 :: [#AF42]  S: SUCCESS {'type': 'r', 't_last': 443}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,522 :: [#0000]  C: <RESOLVE> ('localhost', 7687)
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,522 :: [#0000]  C: <OPEN> ('127.0.0.1', 7687)
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,522 :: [#AF44]  C: <MAGIC> 0x6060B017
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,522 :: [#AF44]  C: <HANDSHAKE> 0x00000003 0x00000002 0x00000001 0x00000000
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,524 :: [#AF44]  S: <HANDSHAKE> 0x00000003
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,524 :: [#AF44]  C: HELLO {'user_agent': 'neobolt/1.7.17 Python/3.7.7-final-0 (linux)', 'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,525 :: [#AF44]  S: SUCCESS {'server': 'Neo4j/4.0.3', 'connection_id': 'bolt-6'}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,526 :: [#AF44]  C: BEGIN {}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,526 :: [#AF44]  C: RUN 'MATCH (o1:Object)-[r1:HAS]-(i:Image) WHERE o1.name = $in_obj1 AND r1.score > $in_r1_score AND i.dataset IN [$in_src_ds_1 , $in_src_ds_2]RETURN DISTINCT i.name as Image, i.dataset as Source LIMIT $in_limit' {'in_obj1': 'bicycle', 'in_limit': 20, 'in_r1_score': 90.0, 'in_src_ds_1': 'flickr30k', 'in_src_ds_2': 'coco_test_2017'} {}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,526 :: [#AF44]  C: PULL_ALL
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,601 :: [#AF44]  S: SUCCESS {}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,601 :: [#AF44]  S: SUCCESS {'t_first': 68, 'fields': ['Image', 'Source']}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,602 :: [#AF44]  S: RECORD * 20
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,602 :: [#AF44]  S: SUCCESS {'type': 'r', 't_last': 6}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,602 :: [#0000]  C: <RESOLVE> ('localhost', 7687)
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,602 :: [#0000]  C: <OPEN> ('127.0.0.1', 7687)
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,603 :: [#AF46]  C: <MAGIC> 0x6060B017
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,603 :: [#AF46]  C: <HANDSHAKE> 0x00000003 0x00000002 0x00000001 0x00000000
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,604 :: [#AF46]  S: <HANDSHAKE> 0x00000003
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,604 :: [#AF46]  C: HELLO {'user_agent': 'neobolt/1.7.17 Python/3.7.7-final-0 (linux)', 'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,605 :: [#AF46]  S: SUCCESS {'server': 'Neo4j/4.0.3', 'connection_id': 'bolt-7'}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,605 :: [#AF46]  C: BEGIN {}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,606 :: [#AF46]  C: RUN 'MATCH (o1:Object)-[r1:HAS]-(i:Image)-[r2:HAS]-(o2:Object)--(i)-[r3:HAS]-(o3:Object) WHERE o1.name = $in_obj1 AND o2.name = $in_obj2 AND o3.name = $in_onj3 AND r1.score > $in_r1_score AND r2.score > $in_r2_score AND r3.score > $in_r3_score AND i.dataset IN [$in_src_ds_1 , $in_src_ds_2]RETURN DISTINCT i.name as Image, i.dataset as Source LIMIT $in_limit' {'in_obj1': 'bench', 'in_obj2': 'person', 'in_onj3': 'sandwich', 'in_limit': 20, 'in_r1_score': 90.0, 'in_r2_score': 90.0, 'in_r3_score': 90.0, 'in_src_ds_1': 'flickr30k', 'in_src_ds_2': 'coco_test_2017'} {}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:23,606 :: [#AF46]  C: PULL_ALL
+LOG_LEVEL DEBUG : 2020-10-16 16:26:26,216 :: [#AF46]  S: SUCCESS {}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:26,216 :: [#AF46]  S: SUCCESS {'t_first': 258, 'fields': ['Image', 'Source']}
+LOG_LEVEL DEBUG : 2020-10-16 16:26:26,216 :: [#AF46]  S: SUCCESS {'type': 'r', 't_last': 2350}
+LOG_LEVEL INFO : 2020-10-16 16:26:26,216 :: 
+After QUERY NEO4J logic execution, Database query results - Candidate Images at this stage:
+
+LOG_LEVEL INFO : 2020-10-16 16:26:26,216 :: 
+Query 1) Keywords: ['truck', 'person']
+Query result:
+[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000169516.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000292186.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000146747.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168815.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168743.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000265504.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225081.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225051.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000241061.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000230729.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000526988.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000006844.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000078095.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000079789.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000039440.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000121451.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000562653.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000254474.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000279257.jpg', 'Source': 'coco_test_2017'}]
+LOG_LEVEL INFO : 2020-10-16 16:26:26,216 :: 
+Query 2) Keywords: ['bicycle']
+Query result:
+[{'Image': '000000033973.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000033951.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000169618.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000155758.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000139832.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000503231.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000214602.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000234858.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000063509.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000499654.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000097494.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000069493.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000414617.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000414587.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000539106.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000023319.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000445120.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000180594.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000418375.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000128488.jpg', 'Source': 'coco_test_2017'}]
+LOG_LEVEL INFO : 2020-10-16 16:26:26,216 :: 
+Query 3) Keywords: ['bench', 'person', 'sandwich']
+Query result:
+[]
+LOG_LEVEL INFO : 2020-10-16 16:26:26,217 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+    STAGE 4)  STARTING EXECUTION OF IMAGE SELECTION VIA GUI        
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:26:27,938 :: Num of images = 20
+array=
+['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169542.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169516.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000292186.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000146747.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000168815.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000168743.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000265504.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225081.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225051.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000241061.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000230729.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000526988.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000006844.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000078095.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000079789.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000039440.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000121451.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000562653.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000254474.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000279257.jpg']
+
+LOG_LEVEL INFO : 2020-10-16 16:27:10,017 :: 
+For Query 1, Deselected positions=
+[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, 19]
+LOG_LEVEL DEBUG : 2020-10-16 16:27:10,058 :: 
+Completed selection process - Query number 1
+Number of images before selection began = 20
+Number of images Deselected by user = 16.
+Number of images that will remain = 4
+
+LOG_LEVEL DEBUG : 2020-10-16 16:27:11,601 :: Num of images = 20
+array=
+['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000033973.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000033951.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169618.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000155758.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000139832.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000503231.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000214602.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000234858.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000063509.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000499654.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000097494.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000069493.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000414617.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000414587.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000023319.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000445120.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000180594.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000418375.jpg', '/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000128488.jpg']
+
+LOG_LEVEL DEBUG : 2020-10-16 16:27:34,201 :: 
+
+Inference invoked for: /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg
+
+LOG_LEVEL DEBUG : 2020-10-16 16:27:34,202 :: 
+
+Executing model inference on image_to_infer : /media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg
+
+LOG_LEVEL INFO : 2020-10-16 16:27:39,736 :: 
+
+    LOADED KERAS MODEL from: /home/rohit/PyWDUbuntu/thesis/saved_keras_model/yolov3_coco80.saved.model      
+
+
+LOG_LEVEL INFO : 2020-10-16 16:27:46,916 :: 1) person : 99.95%
+LOG_LEVEL INFO : 2020-10-16 16:27:47,013 :: 2) bicycle : 99.62%
+LOG_LEVEL INFO : 2020-10-16 16:27:47,116 :: 3) backpack : 69.63%
+LOG_LEVEL INFO : 2020-10-16 16:28:01,561 :: 
+For Query 2, Deselected positions=
+[0, 1, 2, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19]
+LOG_LEVEL DEBUG : 2020-10-16 16:28:01,598 :: 
+Completed selection process - Query number 2
+Number of images before selection began = 20
+Number of images Deselected by user = 15.
+Number of images that will remain = 5
+
+LOG_LEVEL DEBUG : 2020-10-16 16:28:42,802 :: 
+Completed selection process - Query number 3
+Number of images before selection began = 0
+Number of images Deselected by user = 0.
+Number of images that will remain = 0
+
+LOG_LEVEL DEBUG : 2020-10-16 16:28:42,802 :: 
+
+-------------------------------- SUMMARY INFORMATON --------------------------------
+
+LOG_LEVEL DEBUG : 2020-10-16 16:28:42,802 :: 
+FOR QUERY 1
+Number of candidate images before selection = 20
+Number of Deselections done = 16
+Number of images remaining after Deselections = 4
+
+LOG_LEVEL DEBUG : 2020-10-16 16:28:42,802 :: 
+	------ Query images info BEFORE::
+[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000169516.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000292186.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000146747.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168815.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000168743.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000265504.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225081.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225051.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000241061.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000230729.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000526988.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000006844.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000078095.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000079789.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000039440.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000121451.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000562653.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000254474.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000279257.jpg', 'Source': 'coco_test_2017'}]
+	------ Positions removed::
+[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, 19]
+	------ Query images info AFTER::
+[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225051.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000121451.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000254474.jpg', 'Source': 'coco_test_2017'}]
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:28:42,803 :: 
+FOR QUERY 2
+Number of candidate images before selection = 20
+Number of Deselections done = 15
+Number of images remaining after Deselections = 5
+
+LOG_LEVEL DEBUG : 2020-10-16 16:28:42,803 :: 
+	------ Query images info BEFORE::
+[{'Image': '000000033973.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000033951.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000169618.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000155758.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000139832.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000503231.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000214602.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000234858.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000063509.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000499654.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000097494.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000069493.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000414617.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000414587.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000539106.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000023319.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000445120.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000180594.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000418375.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000128488.jpg', 'Source': 'coco_test_2017'}]
+	------ Positions removed::
+[0, 1, 2, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19]
+	------ Query images info AFTER::
+[{'Image': '000000155758.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000139832.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000503231.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000214602.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000539106.jpg', 'Source': 'coco_test_2017'}]
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:28:42,803 :: 
+FOR QUERY 3
+Number of candidate images before selection = 0
+Number of Deselections done = 0
+Number of images remaining after Deselections = 0
+
+LOG_LEVEL DEBUG : 2020-10-16 16:28:42,803 :: 
+	------ Query images info BEFORE::
+[]
+	------ Positions removed::
+[]
+	------ Query images info AFTER::
+[]
+
+
+LOG_LEVEL INFO : 2020-10-16 16:28:42,803 :: 
+After GUI CANDIDATE IMAGES SELECTION logic execution:
+gui_candidate_image_selection_logic_RC = 0
+gui_candidate_image_selection_logic_msg = None
+gui_candidate_image_selection_module_results = [[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225051.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000121451.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000254474.jpg', 'Source': 'coco_test_2017'}], [{'Image': '000000155758.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000139832.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000503231.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000214602.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000539106.jpg', 'Source': 'coco_test_2017'}], []]
+
+LOG_LEVEL INFO : 2020-10-16 16:28:42,803 :: 
+Images retained after Deselections (to be passed to Auto-caption block):
+
+LOG_LEVEL INFO : 2020-10-16 16:28:42,803 :: 
+1) Keywords: ['truck', 'person']
+Selected Images results:
+[{'Image': '000000169542.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000225051.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000121451.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000254474.jpg', 'Source': 'coco_test_2017'}]
+LOG_LEVEL INFO : 2020-10-16 16:28:42,803 :: 
+2) Keywords: ['bicycle']
+Selected Images results:
+[{'Image': '000000155758.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000139832.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000503231.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000214602.jpg', 'Source': 'coco_test_2017'}, {'Image': '000000539106.jpg', 'Source': 'coco_test_2017'}]
+LOG_LEVEL INFO : 2020-10-16 16:28:42,803 :: 
+3) Keywords: ['bench', 'person', 'sandwich']
+Selected Images results:
+[]
+LOG_LEVEL INFO : 2020-10-16 16:28:42,803 :: 
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+    STAGE 5)  STARTING EXECUTION OF IMAGE CAPTIONING               
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+LOG_LEVEL INFO : 2020-10-16 16:28:45,481 :: 
+RNN Decoder model defined with these paramenters:
+
+EMBEDDING_DIMS = 200 , VOCAB_SIZE = 6758 , MAX_LENGTH_CAPTION = 49
+
+Attempting to load weights...
+LOG_LEVEL INFO : 2020-10-16 16:28:45,490 :: 
+Reloaded Image Captioning Decoder using weights file =
+
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Code/ModelsRuns/ImgCap/SavedData/Thesis_ImgCap_Weights_In_Run3/Decoder_Run_3_Wt_ep_18.h5
+
+LOG_LEVEL INFO : 2020-10-16 16:30:14,385 :: 
+After IMAGE CAPTIONING logic execution:
+img_cap_inference_logic_RC = 0
+img_cap_inference_logic_msg = None
+img_cap_inference_module_results = [{'key_elements': ['truck', 'person'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169542.jpg', 'large truck is parked on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225051.jpg', 'an airplane sitting on the tarmac at an airport'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000121451.jpg', 'truck is parked in front of building'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000254474.jpg', 'fire truck is parked on the side of the road']]}, {'key_elements': ['bicycle'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000155758.jpg', 'man riding bike on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000139832.jpg', 'bike parked on the side of the road next to car'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000503231.jpg', 'person riding bike on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000214602.jpg', 'man riding bike on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg', 'person riding bike on the side of the road']]}, {'key_elements': ['bench', 'person', 'sandwich'], 'selected_images': []}]
+
+LOG_LEVEL INFO : 2020-10-16 16:30:14,386 :: 
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+    STAGE 6)  STARTING EXECUTION OF GUI DISPLAY fOR IMAGE CAPTIONING RESULTS   
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+
+LOG_LEVEL DEBUG : 2020-10-16 16:30:57,530 :: 
+
+ImgCap:: After Enlarge window for Query 1, Image=
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000254474.jpg
+Caption WAS CHANGED
+Original Caption =
+fire truck is parked on the side of the road
+Editable Caption =
+truck is being driven on the road with two women on it
+
+LOG_LEVEL DEBUG : 2020-10-16 16:31:20,466 :: 
+
+ImgCap:: After Enlarge window for Query 1, Image=
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000121451.jpg
+Caption WAS CHANGED
+Original Caption =
+truck is parked in front of building
+Editable Caption =
+truck is parked in parking lot with four persons standing in front of it with an award
+
+LOG_LEVEL DEBUG : 2020-10-16 16:31:39,114 :: 
+
+ImgCap:: After Enlarge window for Query 1, Image=
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225051.jpg
+Caption WAS CHANGED
+Original Caption =
+an airplane sitting on the tarmac at an airport
+Editable Caption =
+an airplane parked on the tarmac at an airport with a truck next to it
+
+LOG_LEVEL DEBUG : 2020-10-16 16:32:02,561 :: 
+
+ImgCap:: After Enlarge window for Query 1, Image=
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169542.jpg
+Caption WAS CHANGED
+Original Caption =
+large truck is parked on the side of the road
+Editable Caption =
+large truck is parked with three persons posing in front of it
+
+LOG_LEVEL DEBUG : 2020-10-16 16:32:09,282 :: 
+For Query 1, Deselected positions=
+[1]
+
+LOG_LEVEL DEBUG : 2020-10-16 16:32:09,297 :: 
+Completed selection process - Query number 1
+Deselected image positions this query = [1]
+Number of images before selection began = 4
+Number of images Deselected by user = 1.
+Number of images that will remain = 3
+
+LOG_LEVEL DEBUG : 2020-10-16 16:32:24,794 :: 
+
+ImgCap:: After Enlarge window for Query 2, Image=
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000155758.jpg
+Caption WAS CHANGED
+Original Caption =
+man riding bike on the side of the road
+Editable Caption =
+man riding bike through a park
+
+LOG_LEVEL DEBUG : 2020-10-16 16:32:31,050 :: 
+
+ImgCap:: After Enlarge window for Query 2, Image=
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000139832.jpg
+Caption NOT CHANGED
+Original Caption =
+bike parked on the side of the road next to car
+Editable Caption =
+bike parked on the side of the road next to car
+
+LOG_LEVEL DEBUG : 2020-10-16 16:32:46,354 :: 
+
+ImgCap:: After Enlarge window for Query 2, Image=
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000503231.jpg
+Caption WAS CHANGED
+Original Caption =
+person riding bike on the side of the road
+Editable Caption =
+person riding bike on a dirt road through a park
+
+LOG_LEVEL DEBUG : 2020-10-16 16:33:04,298 :: 
+
+ImgCap:: After Enlarge window for Query 2, Image=
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000214602.jpg
+Caption WAS CHANGED
+Original Caption =
+man riding bike on the side of the road
+Editable Caption =
+boy riding bike on a beach
+
+LOG_LEVEL DEBUG : 2020-10-16 16:33:21,561 :: 
+
+ImgCap:: After Enlarge window for Query 2, Image=
+/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg
+Caption WAS CHANGED
+Original Caption =
+person riding bike on the side of the road
+Editable Caption =
+person riding bike while speaking on phone
+
+LOG_LEVEL DEBUG : 2020-10-16 16:33:25,986 :: 
+For Query 2, Deselected positions=
+[0]
+
+LOG_LEVEL DEBUG : 2020-10-16 16:33:26,010 :: 
+Completed selection process - Query number 2
+Deselected image positions this query = [0]
+Number of images before selection began = 5
+Number of images Deselected by user = 1.
+Number of images that will remain = 4
+
+LOG_LEVEL DEBUG : 2020-10-16 16:33:28,180 :: 
+Completed selection process - Query number 3
+Deselected image positions this query = []
+Number of images before selection began = 0
+Number of images Deselected by user = 0.
+Number of images that will remain = 0
+
+LOG_LEVEL DEBUG : 2020-10-16 16:33:28,180 :: 
+
+
+******************************************************************
+********* SUMMARY for Image Captioning GUI - all queries *********
+*********     BEFORE removing the deselected images      *********
+******************************************************************
+Data structure BEFORE =
+[{'key_elements': ['truck', 'person'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169542.jpg', 'large truck is parked on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225051.jpg', 'an airplane sitting on the tarmac at an airport'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000121451.jpg', 'truck is parked in front of building'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000254474.jpg', 'fire truck is parked on the side of the road']]}, {'key_elements': ['bicycle'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000155758.jpg', 'man riding bike on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000139832.jpg', 'bike parked on the side of the road next to car'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000503231.jpg', 'person riding bike on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000214602.jpg', 'man riding bike on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg', 'person riding bike on the side of the road']]}, {'key_elements': ['bench', 'person', 'sandwich'], 'selected_images': []}]
+Data structure AFTER GUI only; only changed captions should reflect but no deselection done as yet  =
+[{'key_elements': ['truck', 'person'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169542.jpg', 'large truck is parked with three persons posing in front of it'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225051.jpg', 'an airplane parked on the tarmac at an airport with a truck next to it'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000121451.jpg', 'truck is parked in parking lot with four persons standing in front of it with an award'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000254474.jpg', 'truck is being driven on the road with two women on it']]}, {'key_elements': ['bicycle'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000155758.jpg', 'man riding bike through a park'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000139832.jpg', 'bike parked on the side of the road next to car'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000503231.jpg', 'person riding bike on a dirt road through a park'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000214602.jpg', 'boy riding bike on a beach'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg', 'person riding bike while speaking on phone']]}, {'key_elements': ['bench', 'person', 'sandwich'], 'selected_images': []}]
+
+LOG_LEVEL DEBUG : 2020-10-16 16:33:28,180 :: 
+
+
+******************************************************************
+********* SUMMARY for Image Captioning GUI - all queries *********
+*********     AFTER removing the deselected images      *********
+******************************************************************
+Data structure BEFORE =
+[{'key_elements': ['truck', 'person'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169542.jpg', 'large truck is parked on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000225051.jpg', 'an airplane sitting on the tarmac at an airport'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000121451.jpg', 'truck is parked in front of building'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000254474.jpg', 'fire truck is parked on the side of the road']]}, {'key_elements': ['bicycle'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000155758.jpg', 'man riding bike on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000139832.jpg', 'bike parked on the side of the road next to car'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000503231.jpg', 'person riding bike on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000214602.jpg', 'man riding bike on the side of the road'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg', 'person riding bike on the side of the road']]}, {'key_elements': ['bench', 'person', 'sandwich'], 'selected_images': []}]
+Deselected image positions all queries = [[1], [0], []]
+Data structure AFTER GUI; changed captions and removing Deselected images =
+[{'key_elements': ['truck', 'person'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169542.jpg', 'large truck is parked with three persons posing in front of it'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000121451.jpg', 'truck is parked in parking lot with four persons standing in front of it with an award'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000254474.jpg', 'truck is being driven on the road with two women on it']]}, {'key_elements': ['bicycle'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000139832.jpg', 'bike parked on the side of the road next to car'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000503231.jpg', 'person riding bike on a dirt road through a park'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000214602.jpg', 'boy riding bike on a beach'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg', 'person riding bike while speaking on phone']]}, {'key_elements': ['bench', 'person', 'sandwich'], 'selected_images': []}]
+
+LOG_LEVEL INFO : 2020-10-16 16:33:28,181 :: 
+After GUI TO DISPLAY IMAGE CAPTIONING RESULTS logic execution:
+gui_img_cap_show_results_logic_RC = 0
+gui_img_cap_show_results_logic_msg =
+None
+gui_img_cap_module_results =
+[{'key_elements': ['truck', 'person'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000169542.jpg', 'large truck is parked with three persons posing in front of it'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000121451.jpg', 'truck is parked in parking lot with four persons standing in front of it with an award'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000254474.jpg', 'truck is being driven on the road with two women on it']]}, {'key_elements': ['bicycle'], 'selected_images': [['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000139832.jpg', 'bike parked on the side of the road next to car'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000503231.jpg', 'person riding bike on a dirt road through a park'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000214602.jpg', 'boy riding bike on a beach'], ['/media/rohit/DATA/EverythingD/01SRH-BDBA Acads/Thesis/StoryGenerator/Data/COCO_test2017_41k/test2017/000000539106.jpg', 'person riding bike while speaking on phone']]}, {'key_elements': ['bench', 'person', 'sandwich'], 'selected_images': []}]
+
+LOG_LEVEL INFO : 2020-10-16 16:33:28,181 :: 
+
+
+Normal exit from program.
+
