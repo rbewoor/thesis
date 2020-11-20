@@ -1,0 +1,110 @@
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+1)	2		95	0		NO		NoCorr			1 of 12
+2)	2		60	0		NO		NoCorr			1 of 12
+3)	2		95	0		NO		WithCorr		1 of 12
+4)	2		95	0		WITH		NoCorr			1 of 12
+5)	2		95	0		WITH		WithCorr		1 of 12
+
+6)	1		95	0		NO		NoCorr			1 of 6
+7)	1		60	0		NO		NoCorr			1 of 6
+8)	1		95	0		NO		WithCorr		1 of 6
+9)	1		95	0		WITH		NoCorr			1 of 6
+10)	1		95	0		WITH		WithCorr		1 of 6
+
+
+
+How would you rate this story in terms of making sense INDEPENDENT of the images? Higher score means story makes more sense.
+
+How would you rate the relevance of the story to the accompanying images? Higher score means story is more relevant to its images.
+
+How would you rate this story and images in terms of suitability for an adult? Higher score means higher suitability.
+
+How would you rate this story and images in terms of suitability for a young child (5-8 years old)? Higher score means higher suitability.
+
+
+
+Simply study the images and read the story text.
+Please select a number from 1 to 10.
+
+
+
+		STORY 1			STORY 1
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+1)	2			95		0		NO				NoCorr			1 of 12
+Story_1_Th2_T95_Topk0_NoCorr_Sty1of12_NoAttn
+
+Truck is parked in front of building. Man riding bike on the side of the road. Woman sitting at table with pizza and drink. 34 years ago, Marie Blythe had been a young girl, and she's been less than long-ago. She 'd come home from school one Saturday afternoon, Jan. And she had been that night with her father in her head with books and conversation, with the violin, a red letter, and a little bow of her mother that she was taught to sign, wondering if it would remain Montague Day. She had been a year and a half innocent. `` Is she going away ? '' Susan Ansley was saying. `` Yes, she is not, '' Marilla said to herself. Without asking Ms. Skil on the question -- for she had given no little or desired attention at the war -- she answered solemnly : `` We have faith, Mother, that she will come and stay for a time. She can get along out of the Commonwealth territory. And she will stay sober, keep out of trouble and look up . '' `` My baby, she would not wait for anything, '' Susan said. `` She talks so much of the past that I do not think any of it could be less risky, '' Marilla said. Susan shook hands with her father from the middle of the driveway. Marilla did not return for the remainder of the weekly service. That winter she lived in a sort of limbo while her husband was going to the King 's Folly Travels -- often bored
+
+
+		STORY 2			STORY 2
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+2)	2			60		0		NO				NoCorr			1 of 12
+Story_2_Th2_T60_Topk0_NoCorr_Sty1of12_NoAttn
+
+Truck is parked in front of building. Man riding bike on the side of the road. Woman sitting at table with pizza and drink. Uncle and Mrs. McAllister on the back seat. Son sitting on the sofa, looking at the picture. Frequently used as a stage prop. In the winter, when the snow was over, the house was very quiet. But a little later it was very quiet. The house was not quiet now, but quiet enough to be quiet. It was a quiet house. It was so quiet that the house was silent, and the little girl it was for. The little girl was very quiet. She was not not very loud. She was too young to run away -- she was only a baby. It was so quiet that she could not run away. She was very quiet ; she was not too young ; she was not too young to run away. She was very quiet. She was not very loud. She was not very young ; she was very young. She was not very loud. She was not very young. She was very quiet. She was not very young. She was not very loud. She was not very young. She was very quiet. She was not very young. She was not very young. She was not very young. She was not very young. She was not very young. She was not very young. She was not very young. She was not very young. She was not very
+
+
+		STORY 3			STORY 3
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+3)	2			95		0		NO				WithCorr		1 of 12
+Story_3_Th2_T95_Topk0_WithCorr_Sty1of12_NoAttn
+
+Persons are standing next to a truck parked in front of a building. A man is riding a bike down a road. Two women are sitting at a table with pizza and drink. Everyone is looking at those women but two. They will expire soon of their distance . '' `` Hey, sweetheart, '' said Grandmother. `` Did you ever hear what you said to a knave old man ? '' `` I do not care, '' said her son. `` And I hate to think of my son going back to his neglected aspect. Yet, maybe it is worth while . '' Grandmother was silent. The boy had not yet been very tall. She was too young. Cultural merit seemed to have figured prominently in her mind. `` Yeah, sweetheart, yes, sweetheart, none have my heart. It must be a different family, if reverence for the corpse . '' said she to herself, `` they do not see any danger in blood ; perhaps I will scare them off their lunacy in the way I did with Tommy a few days ago . '' She stood up and turned her back on James. Then she struggled to her knees and fumbled in a stiff, nervous sort of queer sock held against her shoe ; and within a minute she knew! Weeks and weeks went on. In six months she had grudgingly agreed to announce her decision. `` I will ! '' said she in a shifting voice. `` I will go ! '' Pea sat on the stool and her head turned. `` Can I tidy up and pack so
+
+
+		STORY 4			STORY 4
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+4)	2			95		0		WITH			NoCorr			1 of 12
+Story_4_Th2_T95_Topk0_NoCorr_Sty1of12_WithAttn
+
+A man standing next to a large truck. A man and woman are riding a bike with a dog. A group of people sitting at a table with a plate of food. A homosexual who is leaning over a chair and is smoking a cigar at a distance while a group of men are laboriously making cakes for a grain of rice together. A young man and a Christian sorcerer who must have not been very much acquainted with Chinese Basics. An Eastern physician teaching religiousnell, and his wife and mother are sitting by a big fire smoking green tea. a man with three children sitting with him. Three people sitting. Everybody prepay `` well, '' and everybody is going to stay together in a kind of festive inn and war-house. Old Lady du Gilles ' bad name, and aunt, and Una had a good supper then, except Baby, who would not serve "well . '' -LRB- New main caregiver. -RRB- We had to work and see the guests depart. Rhonda got the bangle off and some lanterns and whistles she needed. Then Aunt Madele, having stayed all the way from Bangsham to call on a day that fell out of the schedule, laid out all her gifts. I got a silk risper. Ava Ten Dictionary. Aunt Madele carried everything she had except Mother Kipperton 's quilt and a little mantle -- and no bride, but Beryl was Mr. Dick. Aunt Bo housed him in twelve identical rooms, and he never complained, and he asked no questions of the guests.
+
+
+		STORY 5			STORY 5
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+5)	2			95		0		WITH			WithCorr		1 of 12
+Story_5_Th2_T95_Topk0_WithCorr_Sty1of12_WithAttn
+
+A group of men standing next to a large truck. A man and child are riding a bike and there are some dogs far behind. A group of people sitting at a table with a plate of food. One woman has her head missing. He could not smell her body though out she was running. His shots opened the mouth of a woman but it had not been broken at all and he told her it was broken. When a woman and she turned she bade them cure her. Souse yourselves but tell the man he is too in the cab . '' He was getting up while that Ketchumson parade came up the convoy. The autopsy exam was scheduled in a few days after that. You may never have seen men in their hands better than he was doing ; and see how he turned out, it was hard to ask if he could have sniffed at breath. But in the autumn there were no things to talk of. The danger had evidently moved on towards the east and the graves where the dead were buried were marched up large and day after day. Nigel had resolved to die on the south, but he did not want to. To die in a small, empty, dead-house like this while his biographer pitied him. Saturday service at Glen O'Driscoll was unusually silent . '' They had been in the sprawl four-and-twenty hours and the place was deserted. Nigel was hardly one of the low-smiling men of an old time when his way was to be a pleasant one. He wished that he had remembered him -- he had forgotten him -- but
+
+
+		STORY 6			STORY 6
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+6)	1			95		0		NO				NoCorr			3 of 6
+Story_6_Th1_T95_Topk0_NoCorr_Sty3of6_NoAttn
+
+Woman is sitting on couch with her cell phone. Young boy standing in front of tv playing video game. She put her foot on couch where it was damp and shook and shook it violently for 's sake. My heart left me helpless, dried to its roots everything was wrong, and I sat awake wondering what the matter was. `` When I asked Mr. and Mrs. Mightie if Sara Ray had heard what her little man 's wife had said to her father, she just turned upon my back and ignored me. I supposed she wanted me to run away, but she did not. I would asked her several times if it was any thing to take care of her, but she kept sighing like a king. It seemed stupid of me even to ask her. Mrs. Mightie did make her _______ face as white as her tongue, whiting her forehead, and then went off in an instant. She must have gone right out of my mind when I told her the whole story. I sat staring at her, as if she had told me a lie to be heard and circumstances and circumstances that could give child to young men, and courage to young girls. He made the music fair, and Sara Ray 's guests went out. She came up and spoke with a grace and dignity that I had ever heard of. She asked me unspeakable pity, well knowing she was frightened and perplexed, but I could not think a word. `` She made death-dealing, and while she spoke she made my
+
+
+		STORY 7			STORY 7
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+7)	1			60		0		NO				NoCorr			3 of 6
+Story_7_Th1_T60_Topk0_NoCorr_Sty3of6_NoAttn
+
+Woman is sitting on couch with her cell phone. Young boy standing in front of tv playing video game. You know what music I listened to yesterday. You have been there to-day, I hope. You are not there to-night. I am laughing to think of you. Come in, and we will have a good talk, and Mrs. King will see to you . '' I came in and sat down on the edge of the sofa. The young lady was sitting on the sofa, her white hands clasped to her knees. She had a nice, calm face, with a certain, benevolent, maternal smile of which the young lady was always proud. I sat like a boy, and I was all the time a little girl. I did not mind it. I was a little boy. I had not been a boy so long. I had not cared, but I was not a little girl. I was a little girl. I looked up at the big, tall, pale-blue eyes that had been watching me from the sofa. I felt as if I had been looking down at a mirror. The black eyes were large and dark and strong and deep. They were frowning at me. I had been in a hurry of the morning to get ready for the day 's work, but I had never been at work since the morning. I was glad to get my breakfast, and I went to work. The whole world was full of men and women and children who
+
+
+		STORY 8			STORY 8
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+8)	1			95		0		NO				WithCorr		3 of 6
+Story_8_Th1_T95_Topk0_WithCorr_Sty3of6_NoAttn
+
+A woman is sitting on a couch with a book. A young girl is standing in front of a tv playing a video game. This is called a lecture. Another girl is sitting. She has a anxious expression. She is talking on a large tea pillow at her arm breast, as if she was thinking of something. It is a peculiarly thrilling thing to watch women or young men when they come across the threshold and get friendly. It happened this evening, when the agate was taking up once more, and his red file was akward. The Dickson family went to church for one Sunday evening while the minister and Ward neighbors were out , waiting for one thing. The Dickson boys attended also, as they are a people that live close to nature, and operate under the surface level, "capital dwelling . ''' Sevilla Dickson became energetic. `` Mum, is that your wish ? '' he asked. `` It was, yes. They are sitting on the sofa. They are not out in school, but they can not do a word of business. How is Ellen convinced ? '' `` She may agree to be there, but it would be foolish to entertain such a disposition. She is so sick and ill that she might fall to work on her personal problems by the morning of it. It would not do for her to be an expected person. Well, I will see what I can do . '' Sevilla always took her duty seriously, and a few beaten hearts pleased her. She was
+
+
+		STORY 9			STORY 9
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+9)	1			95		0		WITH			NoCorr			3 of 6
+Story_9_Th1_T95_Topk0_NoCorr_Sty3of6_WithAttn
+
+A man sitting on a couch with a laptop. A man playing a game with a wii remote. A man sitting in a green chair sitting-place while his family made up their various gifts. A man sitting in a black-and-yellow velvet briefcase. A man looking up from his narrow avenue dinner-table with a breadth of glowing-yellow hair, which glowed out in earnest on his soft, dry lips. A man sitting on the long stool opposite to the man who sat in the green chair. A man with round, white hands and a gay silence. He gave a short address in a very appropriate tone to a thin and Americanysky voice. This, Leroy Young, and I think the simile, is appealing to you . '' Even then, Lin-Drift said, `` That is the courteous way of it all . '' I was surprised. Leroy Young had never at any time so expressed himself. I believed he was that resignation of any kind. But the Company came for Lin-Drift and said to him, `` Lin, look here. You have had the talk of the bay so long, you really need not say so, '' for I heard the mahogany bluish glow guard his ready interest. Still the gentleman did not talk one word of English. He was not a dull old white beaver, but a little grubbier unhappy's worst ; so good would he be with me then, the more seemed I to think
+
+
+		STORY 10		STORY 10
+SN)	TH_1_OR_2	TEMP	TOP_K	NO_or_WITH_Attn	NO_or_WITH_CORR	STORY NUMBER
+10)	1			95		0		WITH			WithCorr		3 of 6
+Story_10_Th1_T95_Topk0_WithCorr_Sty3of6_WithAttn
+
+A woman sitting on a couch with a book. A girl is playing a video game with a wii remote. What do you know in that era of possibility instead of just observance? Typical women in a past age of innocence come in these new-fangled sounds, celchter the haunts meaner yet, and shrug the woman standing with her hand on the child 's rosy face. They bewaite the instant. A woman having the herd from holy Scott -- she might be the babe he felled last night -- this was the outcome of an important roping interview with Mrs. Logan, who was the pioneer in its used. Beth sniped. Beth had not said such things; now that Hilzenbach 's camp was in the neighborhood, I found a universe of truth in her speech ; she could not ping and take a pleasure in Baz 's strange words. After Hertzfeldt looked at me, he turned and saw her. No. Not at the house. Not at her paper. She had a vanished memory of the whole business. It was wrote in a preface in a shelf-covering book, and she had still a left arm. She positively relived it of late and sat silent. A sort of pall and sensibility came over her and did not fade. A very variegated exhilaration came over her breath. There was an extraordinary grace of youth. I knew that she was in love with my bosom ; and I grew gu
+
+
