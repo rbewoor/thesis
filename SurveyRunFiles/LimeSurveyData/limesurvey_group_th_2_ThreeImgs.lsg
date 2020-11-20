@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+ <LimeSurveyDocType>Group</LimeSurveyDocType>
+ <DBVersion>365</DBVersion>
+ <languages>
+  <language>en</language>
+ </languages>
+ <groups>
+  <fields>
+   <fieldname>gid</fieldname>
+   <fieldname>sid</fieldname>
+   <fieldname>group_name</fieldname>
+   <fieldname>group_order</fieldname>
+   <fieldname>description</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>randomization_group</fieldname>
+   <fieldname>grelevance</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <gid><![CDATA[3]]></gid>
+    <sid><![CDATA[687335]]></sid>
+    <group_name><![CDATA[QGp_1_Sty1]]></group_name>
+    <group_order><![CDATA[1]]></group_order>
+    <description><![CDATA[Story_1_Th2_T95_Topk0_NoCorr_Sty1of12_NoAttn]]></description>
+    <language><![CDATA[en]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+  </rows>
+ </groups>
+ <questions>
+  <fields>
+   <fieldname>qid</fieldname>
+   <fieldname>parent_qid</fieldname>
+   <fieldname>sid</fieldname>
+   <fieldname>gid</fieldname>
+   <fieldname>type</fieldname>
+   <fieldname>title</fieldname>
+   <fieldname>question</fieldname>
+   <fieldname>preg</fieldname>
+   <fieldname>help</fieldname>
+   <fieldname>other</fieldname>
+   <fieldname>mandatory</fieldname>
+   <fieldname>question_order</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>scale_id</fieldname>
+   <fieldname>same_default</fieldname>
+   <fieldname>relevance</fieldname>
+   <fieldname>modulename</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <qid><![CDATA[3]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[687335]]></sid>
+    <gid><![CDATA[3]]></gid>
+    <type><![CDATA[X]]></type>
+    <title><![CDATA[G1Q1]]></title>
+    <question><![CDATA[<p>Images:</p>
+
+<p><img alt="Story_1_Image_1_th2_s1_i1" src="/upload/surveys/687335/images/th2_s1_i1_000000121451.jpg" /></p>
+
+<p><img alt="Story1_Image_2_th2_s2_i1" src="/upload/surveys/687335/images/th2_s2_i1_000000155758.jpg" /></p>
+
+<p><img alt="Story_1_Image_3_th2_s3_i1" src="/upload/surveys/687335/images/th2_s3_i1_000000469453.jpg" /></p>
+
+<p>Story text for your evaluation - Story number 1:<br /><br />Truck is parked in front of building. Man riding bike on the side of the road. Woman sitting at table with pizza and drink. 34 years ago, Marie Blythe had been a young girl, and she's been less than long-ago. She 'd come home from school one Saturday afternoon, Jan. And she had been that night with her father in her head with books and conversation, with the violin, a red letter, and a little bow of her mother that she was taught to sign, wondering if it would remain Montague Day. She had been a year and a half innocent. `` Is she going away ? '' Susan Ansley was saying. `` Yes, she is not, '' Marilla said to herself. Without asking Ms. Skil on the question -- for she had given no little or desired attention at the war -- she answered solemnly : `` We have faith, Mother, that she will come and stay for a time. She can get along out of the Commonwealth territory. And she will stay sober, keep out of trouble and look up . '' `` My baby, she would not wait for anything, '' Susan said. `` She talks so much of the past that I do not think any of it could be less risky, '' Marilla said. Susan shook hands with her father from the middle of the driveway. Marilla did not return for the remainder of the weekly service. That winter she lived in a sort of limbo while her husband was going to the King 's Folly Travels -- often bored</p>
+]]></question>
+    <preg/>
+    <help><![CDATA[Simply study the images and read the story text.]]></help>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[0]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[4]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[687335]]></sid>
+    <gid><![CDATA[3]]></gid>
+    <type><![CDATA[B]]></type>
+    <title><![CDATA[G1Q2]]></title>
+    <question/>
+    <preg/>
+    <help><![CDATA[Please select a number from 1 to 10.]]></help>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+  </rows>
+ </questions>
+ <subquestions>
+  <fields>
+   <fieldname>qid</fieldname>
+   <fieldname>parent_qid</fieldname>
+   <fieldname>sid</fieldname>
+   <fieldname>gid</fieldname>
+   <fieldname>type</fieldname>
+   <fieldname>title</fieldname>
+   <fieldname>question</fieldname>
+   <fieldname>preg</fieldname>
+   <fieldname>help</fieldname>
+   <fieldname>other</fieldname>
+   <fieldname>mandatory</fieldname>
+   <fieldname>question_order</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>scale_id</fieldname>
+   <fieldname>same_default</fieldname>
+   <fieldname>relevance</fieldname>
+   <fieldname>modulename</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <qid><![CDATA[6]]></qid>
+    <parent_qid><![CDATA[4]]></parent_qid>
+    <sid><![CDATA[687335]]></sid>
+    <gid><![CDATA[3]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[G1Q01]]></title>
+    <question><![CDATA[How would you rate this story in terms of making sense INDEPENDENT of the images? Higher score means story makes more sense.]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[7]]></qid>
+    <parent_qid><![CDATA[4]]></parent_qid>
+    <sid><![CDATA[687335]]></sid>
+    <gid><![CDATA[3]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[G1Q02]]></title>
+    <question><![CDATA[How would you rate the relevance of this story to the accompanying images? Higher score means story is more relevant to its images.]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[8]]></qid>
+    <parent_qid><![CDATA[4]]></parent_qid>
+    <sid><![CDATA[687335]]></sid>
+    <gid><![CDATA[3]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[G1Q03]]></title>
+    <question><![CDATA[How would you rate this story and its images in terms of suitability for an adult? Higher score means higher suitability.]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[9]]></qid>
+    <parent_qid><![CDATA[4]]></parent_qid>
+    <sid><![CDATA[687335]]></sid>
+    <gid><![CDATA[3]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[G1Q04]]></title>
+    <question><![CDATA[How would you rate this story and its images in terms of suitability for a young child (5-8 years old)? Higher score means higher suitability.]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+  </rows>
+ </subquestions>
+</document>
